@@ -1,0 +1,86 @@
+//Maya ASCII 2015 scene
+//Name: Bet.ma
+//Last modified: Thu, Nov 27, 2014 11:14:22 AM
+//Codeset: 1252
+requires maya "2015";
+currentUnit -l centimeter -a degree -t film;
+fileInfo "application" "maya";
+fileInfo "product" "Maya 2015";
+fileInfo "version" "2015";
+fileInfo "cutIdentifier" "201410051530-933320";
+fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
+fileInfo "license" "education";
+createNode transform -n "pCube8";
+	setAttr ".t" -type "double3" 13.721662812522183 5.3969145837577965 -33.672395195580478 ;
+	setAttr ".s" -type "double3" 1 0.38402647528521161 1 ;
+createNode mesh -n "pCubeShape8" -p "pCube8";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode polyCube -n "polyCube3";
+	setAttr ".w" 30.806848209085651;
+	setAttr ".h" 15.277858859724468;
+	setAttr ".d" 18.981335431815182;
+	setAttr ".cuv" 4;
+createNode materialInfo -n "materialInfo3";
+createNode shadingEngine -n "lambert4SG";
+	setAttr ".ihi" 0;
+	setAttr -s 3 ".dsm";
+	setAttr ".ro" yes;
+createNode lambert -n "Braun";
+	setAttr ".c" -type "float3" 0.52200001 0.29011172 0.030798009 ;
+createNode lightLinker -s -n "lightLinker1";
+	setAttr -s 10 ".lnk";
+	setAttr -s 10 ".slnk";
+select -ne :time1;
+	setAttr ".o" 329;
+	setAttr ".unw" 329;
+select -ne :renderPartition;
+	setAttr -s 10 ".st";
+select -ne :renderGlobalsList1;
+select -ne :defaultShaderList1;
+	setAttr -s 9 ".s";
+select -ne :postProcessList1;
+	setAttr -s 2 ".p";
+select -ne :defaultRenderingList1;
+select -ne :defaultTextureList1;
+select -ne :initialShadingGroup;
+	setAttr ".ro" yes;
+select -ne :initialParticleSE;
+	setAttr ".ro" yes;
+select -ne :initialMaterialInfo;
+select -ne :defaultResolution;
+	setAttr ".pa" 1;
+select -ne :hardwareRenderGlobals;
+	setAttr ".ctrs" 256;
+	setAttr ".btrs" 512;
+select -ne :hardwareRenderingGlobals;
+	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
+	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
+		 1 1 1 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 ;
+select -ne :defaultHardwareRenderGlobals;
+	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
+connectAttr "polyCube3.out" "pCubeShape8.i";
+connectAttr "lambert4SG.msg" "materialInfo3.sg";
+connectAttr "Braun.msg" "materialInfo3.m";
+connectAttr "Braun.oc" "lambert4SG.ss";
+connectAttr "pCubeShape7.iog" "lambert4SG.dsm" -na;
+connectAttr "pCubeShape8.iog" "lambert4SG.dsm" -na;
+connectAttr "pCubeShape9.iog" "lambert4SG.dsm" -na;
+relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "lambert4SG.message" ":defaultLightSet.message";
+connectAttr "lambert4SG.pa" ":renderPartition.st" -na;
+connectAttr "Braun.msg" ":defaultShaderList1.s" -na;
+// End of Bet.ma
