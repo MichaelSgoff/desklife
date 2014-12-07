@@ -1,64 +1,63 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Fri, Dec 05, 2014 08:22:51 PM
+//Last modified: Sun, Dec 07, 2014 08:48:31 PM
 //Codeset: 1252
-file -rdi 1 -ns "Raum" -rfn "RaumRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Raum.ma";
-file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma";
-file -rdi 1 -ns "Stuhl" -rfn "StuhlRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Stuhl.ma";
-file -rdi 1 -ns "Monitor" -rfn "MonitorRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Monitor.ma";
-file -rdi 1 -ns "Bild" -rfn "BildRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bild.ma";
-file -rdi 1 -ns "Schreibtischunerlage" -rfn "SchreibtischunerlageRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma";
-file -rdi 1 -ns "Becher" -rfn "BecherRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Becher.ma";
+file -rdi 1 -ns "Raum" -rfn "RaumRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Raum.ma";
+file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischlampe.ma";
+file -rdi 1 -ns "Stuhl" -rfn "StuhlRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Stuhl.ma";
+file -rdi 1 -ns "Monitor" -rfn "MonitorRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Monitor.ma";
+file -rdi 1 -ns "Bild" -rfn "BildRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bild.ma";
+file -rdi 1 -ns "Schreibtischunerlage" -rfn "SchreibtischunerlageRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischunerlage.ma";
+file -rdi 1 -ns "Becher" -rfn "BecherRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Becher.ma";
 file -rdi 1 -ns "Ordner" -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma";
-file -rdi 1 -ns "Ordner1" -rfn "OrdnerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma";
-file -rdi 1 -ns "Ordner2" -rfn "OrdnerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma";
+		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
+file -rdi 1 -ns "Ordner1" -rfn "OrdnerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
+file -rdi 1 -ns "Ordner2" -rfn "OrdnerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
 file -rdi 1 -ns "Bleistift1" -rfn "BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift2" -rfn "BleistiftRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift3" -rfn "BleistiftRN3" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift2" -rfn "BleistiftRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift3" -rfn "BleistiftRN3" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
 file -rdi 1 -ns "Tür2" -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tür2.ma";
-file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
+		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tür2.ma";
+file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Deckenlampe.ma";
 file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 06:30:12 PM|ICON|undef|INFO|undef|OBJN|72|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tisch2.ma";
-file -rdi 1 -ns "bueroklammer" -rfn "bueroklammerRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -rdi 1 -ns "bueroklammer1" -rfn "bueroklammerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -rdi 1 -ns "bueroklammer2" -rfn "bueroklammerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -rdi 1 -ns "Bett" -rfn "BettRN" -op "v=0;" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bett.ma";
-file -r -ns "Raum" -dr 1 -rfn "RaumRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Raum.ma";
-file -r -ns "Schreibtischlampe" -dr 1 -rfn "SchreibtischlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma";
-file -r -ns "Stuhl" -dr 1 -rfn "StuhlRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Stuhl.ma";
-file -r -ns "Monitor" -dr 1 -rfn "MonitorRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Monitor.ma";
-file -r -ns "Bild" -dr 1 -rfn "BildRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bild.ma";
-file -r -ns "Schreibtischunerlage" -dr 1 -rfn "SchreibtischunerlageRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma";
-file -r -ns "Becher" -dr 1 -rfn "BecherRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Becher.ma";
+		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tisch2.ma";
+file -rdi 1 -ns "bueroklammer" -rfn "bueroklammerRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
+file -rdi 1 -ns "bueroklammer1" -rfn "bueroklammerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
+file -rdi 1 -ns "bueroklammer2" -rfn "bueroklammerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
+file -rdi 1 -ns "Bett" -rfn "BettRN" -op "v=0;" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bett.ma";
+file -r -ns "Raum" -dr 1 -rfn "RaumRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Raum.ma";
+file -r -ns "Schreibtischlampe" -dr 1 -rfn "SchreibtischlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischlampe.ma";
+file -r -ns "Stuhl" -dr 1 -rfn "StuhlRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Stuhl.ma";
+file -r -ns "Monitor" -dr 1 -rfn "MonitorRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Monitor.ma";
+file -r -ns "Bild" -dr 1 -rfn "BildRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bild.ma";
+file -r -ns "Schreibtischunerlage" -dr 1 -rfn "SchreibtischunerlageRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischunerlage.ma";
+file -r -ns "Becher" -dr 1 -rfn "BecherRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Becher.ma";
 file -r -ns "Ordner" -dr 1 -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma";
-file -r -ns "Ordner1" -dr 1 -rfn "OrdnerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma";
-file -r -ns "Ordner2" -dr 1 -rfn "OrdnerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma";
+		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
+file -r -ns "Ordner1" -dr 1 -rfn "OrdnerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
+file -r -ns "Ordner2" -dr 1 -rfn "OrdnerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
 file -r -ns "Bleistift1" -dr 1 -rfn "BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -r -ns "Bleistift2" -dr 1 -rfn "BleistiftRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -r -ns "Bleistift3" -dr 1 -rfn "BleistiftRN3" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+file -r -ns "Bleistift2" -dr 1 -rfn "BleistiftRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+file -r -ns "Bleistift3" -dr 1 -rfn "BleistiftRN3" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
 file -r -ns "Tür2" -dr 1 -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tür2.ma";
-file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
+		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tür2.ma";
+file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Deckenlampe.ma";
 file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 06:30:12 PM|ICON|undef|INFO|undef|OBJN|72|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tisch2.ma";
-file -r -ns "bueroklammer" -dr 1 -rfn "bueroklammerRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -r -ns "bueroklammer1" -dr 1 -rfn "bueroklammerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -r -ns "bueroklammer2" -dr 1 -rfn "bueroklammerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -r -ns "Bett" -dr 1 -rfn "BettRN" -op "v=0;" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bett.ma";
+		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tisch2.ma";
+file -r -ns "bueroklammer" -dr 1 -rfn "bueroklammerRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
+file -r -ns "bueroklammer1" -dr 1 -rfn "bueroklammerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
+file -r -ns "bueroklammer2" -dr 1 -rfn "bueroklammerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
+file -r -ns "Bett" -dr 1 -rfn "BettRN" -op "v=0;" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bett.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
 		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.16 ";
 requires "stereoCamera" "10.0";
-requires "Mayatomr" "2013.0 - 3.10.1.4 ";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2015";
@@ -68,14 +67,14 @@ fileInfo "osv" "Microsoft Windows 7 Business Edition, 64-bit Windows 7 Service P
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.7519628202981004 26.63213642931693 91.426934805898242 ;
-	setAttr ".r" -type "double3" -0.6000000000000002 -2.8000000000000012 0 ;
+	setAttr ".t" -type "double3" 3.9546208029736514 39.421469049946396 4.4408815688487842 ;
+	setAttr ".r" -type "double3" -50.40000000000078 -80.000000000000611 0 ;
 	setAttr ".rpt" -type "double3" -5.0092716510069541e-015 -1.2868177596808619e-015 
 		1.6763881667712648e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 136.11621098475192;
+	setAttr ".coi" 35.111675604706065;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -648,8 +647,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 145 ".lnk";
-	setAttr -s 146 ".slnk";
+	setAttr -s 124 ".lnk";
+	setAttr -s 125 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -1070,7 +1069,7 @@ createNode reference -n "SchreibtischunerlageRN";
 		"SchreibtischunerlageRN"
 		"SchreibtischunerlageRN" 0
 		"SchreibtischunerlageRN" 2
-		2 "|Schreibtischunerlage:pCube16" "translate" " -type \"double3\" 22.558481 13.957432575771685 5.816905"
+		2 "|Schreibtischunerlage:pCube16" "translate" " -type \"double3\" 22.558481 13.957432575771685 8.4467872104377157"
 		
 		2 "|Schreibtischunerlage:pCube16" "scale" " -type \"double3\" 6.110262368473629 0.029923224926027295 12.670380947053507";
 	setAttr ".ptag" -type "string" "";
@@ -1183,7 +1182,7 @@ createNode animCurveTA -n "Camera01_rotateZ";
 	setAttr -s 2 ".kox[0:1]"  1 1;
 	setAttr -s 2 ".koy[0:1]"  0 0;
 createNode reference -n "OrdnerRN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma";
+	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"OrdnerRN"
 		"OrdnerRN" 0
@@ -1438,7 +1437,7 @@ createNode reference -n "BleistiftRN5";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Tür2RN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tür2.ma";
+	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tür2.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Tür2RN"
 		"Tür2RN" 0
@@ -1453,164 +1452,38 @@ createNode reference -n "Tür2RN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "DeckenlampeRN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
+	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Deckenlampe.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DeckenlampeRN"
 		"DeckenlampeRN" 0
-		"DeckenlampeRN" 78
+		"DeckenlampeRN" 15
 		2 "|Deckenlampe:LAMP" "translate" " -type \"double3\" 0 48.294723 0"
 		2 "|Deckenlampe:LAMP" "scale" " -type \"double3\" 0.18658996105179917 0.19929529781486485 0.11268580317464913"
 		
 		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "uvPivot" " -type \"double2\" 0 0"
 		
 		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts" " -s 74"
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[16]" " -type \"float3\" 1.1920929000000001e-007 -5.9604644999999993e-008 2.3841858000000002e-007"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[16:22]" " -type \"float3\" 1.1920929000000001e-007 -5.9604644999999993e-008 2.3841858000000002e-007 5.9604644999999993e-007 -5.9604644999999993e-008 1.7881393000000001e-007 7.1525574000000002e-007 -5.9604644999999993e-008 2.9802322000000001e-008 4.7683716000000005e-007 -1.1920929000000001e-007 5.9604644999999993e-008 -3.5762787000000001e-007 -1.1920929000000001e-007 -2.7939677000000001e-009 -1.1920929000000001e-007 -8.9406967000000001e-008 5.9604644999999993e-008 0 -5.9604644999999993e-008 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[17]" " -type \"float3\" 5.9604644999999993e-007 -5.9604644999999993e-008 1.7881393000000001e-007"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[63:68]" " -type \"float3\" 1.7881393000000001e-007 -5.9604644999999993e-008 1.7881393000000001e-007 -8.3446503e-007 -5.9604644999999993e-008 2.9802322000000001e-008 2.3841858000000002e-007 2.3841858000000002e-007 5.9604644999999993e-008 2.3841858000000002e-007 -4.7683716000000005e-007 -2.7939677000000001e-009 -2.3841858000000002e-007 4.7683716000000005e-007 5.9604644999999993e-008 0 2.3841858000000002e-007 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[18]" " -type \"float3\" 7.1525574000000002e-007 -5.9604644999999993e-008 2.9802322000000001e-008"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[377:382]" " -type \"float3\" 0 2.9802322000000001e-008 2.3841858000000002e-007 -1.1920929000000001e-007 8.9406967000000001e-008 1.7881393000000001e-007 1.1920929000000001e-007 -8.9406967000000001e-008 2.9802322000000001e-008 1.1920929000000001e-007 -2.9802322000000001e-008 5.9604644999999993e-008 3.5762787000000001e-007 -2.9802322000000001e-008 -2.7939677000000001e-009 0 -8.9406967000000001e-008 5.9604644999999993e-008"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[19]" " -type \"float3\" 4.7683716000000005e-007 -1.1920929000000001e-007 5.9604644999999993e-008"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[422:428]" " -type \"float3\" 0 4.4703483999999995e-008 2.3841858000000002e-007 3.5762787000000001e-007 0 1.7881393000000001e-007 -1.1920929000000001e-007 9.3132257000000002e-010 2.9802322000000001e-008 0 -3.7252903000000002e-009 5.9604644999999993e-008 1.1920929000000001e-007 0 -2.7939677000000001e-009 -1.1920929000000001e-007 2.2351741999999998e-008 5.9604644999999993e-008 -1.1920929000000001e-007 1.4901161000000001e-008 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[20]" " -type \"float3\" -3.5762787000000001e-007 -1.1920929000000001e-007 -2.7939677000000001e-009"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[467:473]" " -type \"float3\" -1.1920929000000001e-007 -1.4901161000000001e-008 2.3841858000000002e-007 -1.1920929000000001e-007 -2.9802322000000001e-008 1.7881393000000001e-007 -5.9604644999999993e-008 0 2.9802322000000001e-008 -5.3644179999999997e-007 8.9406967000000001e-008 5.9604644999999993e-008 3.5762787000000001e-007 -2.9802322e-007 -2.7939677000000001e-009 -8.3446503e-007 1.7881393000000001e-007 5.9604644999999993e-008 4.7683716000000005e-007 3.5762787000000001e-007 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[21]" " -type \"float3\" -1.1920929000000001e-007 -8.9406967000000001e-008 5.9604644999999993e-008"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[512:518]" " -type \"float3\" 5.9604644999999993e-008 5.9604644999999993e-008 2.3841858000000002e-007 -5.9604644999999993e-008 2.9802322000000001e-008 1.7881393000000001e-007 0 -1.7881393000000001e-007 2.9802322000000001e-008 -1.7881393000000001e-007 -5.9604644999999993e-008 5.9604644999999993e-008 2.3841858000000002e-007 2.3841858000000002e-007 -2.7939677000000001e-009 -5.9604644999999993e-008 0 5.9604644999999993e-008 -3.5762787000000001e-007 -5.9604644999999993e-008 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[22]" " -type \"float3\" 0 -5.9604644999999993e-008 -2.3841858000000002e-007"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[557:563]" " -type \"float3\" 1.8626450999999999e-009 2.9802322000000001e-008 2.3841858000000002e-007 1.8626450999999999e-009 4.1723251000000004e-007 1.7881393000000001e-007 1.8626450999999999e-009 2.3841858000000002e-007 2.9802322000000001e-008 1.8626450999999999e-009 -1.1920929000000001e-007 5.9604644999999993e-008 1.8626450999999999e-009 -1.7881393000000001e-007 -2.7939677000000001e-009 1.8626450999999999e-009 -1.1920929000000001e-007 5.9604644999999993e-008 1.8626450999999999e-009 -1.1920929000000001e-007 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[63]" " -type \"float3\" 1.7881393000000001e-007 -5.9604644999999993e-008 1.7881393000000001e-007"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[602:608]" " -type \"float3\" 1.1920929000000001e-007 -5.9604644999999993e-008 2.3841858000000002e-007 8.9406967000000001e-008 2.9802322000000001e-008 1.7881393000000001e-007 -5.9604644999999993e-008 0 2.9802322000000001e-008 -1.1920929000000001e-007 0 5.9604644999999993e-008 2.9802322e-007 5.9604644999999993e-008 -2.7939677000000001e-009 4.1723251000000004e-007 0 5.9604644999999993e-008 -3.5762787000000001e-007 -5.9604644999999993e-008 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[64]" " -type \"float3\" -8.3446503e-007 -5.9604644999999993e-008 2.9802322000000001e-008"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[647:653]" " -type \"float3\" -5.9604644999999993e-008 -2.9802322000000001e-008 2.3841858000000002e-007 0 1.4901161e-007 1.7881393000000001e-007 -2.3841858000000002e-007 -8.9406967000000001e-008 2.9802322000000001e-008 -1.1920929000000001e-007 -2.9802322000000001e-008 5.9604644999999993e-008 -2.3841858000000002e-007 0 -2.7939677000000001e-009 2.3841858000000002e-007 0 5.9604644999999993e-008 -2.3841858000000002e-007 3.5762787000000001e-007 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[65]" " -type \"float3\" 2.3841858000000002e-007 2.3841858000000002e-007 5.9604644999999993e-008"
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[692:698]" " -type \"float3\" -5.9604644999999993e-008 -1.4901161000000001e-008 2.3841858000000002e-007 1.7881393000000001e-007 -7.4505806000000003e-009 1.7881393000000001e-007 -8.3446503e-007 -3.7252903000000002e-009 2.9802322000000001e-008 2.3841858000000002e-007 -3.7252903000000002e-009 5.9604644999999993e-008 0 0 -2.7939677000000001e-009 -2.3841858000000002e-007 -1.4901161000000001e-008 5.9604644999999993e-008 0 -4.4703483999999995e-008 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[66]" " -type \"float3\" 2.3841858000000002e-007 -4.7683716000000005e-007 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[67]" " -type \"float3\" -2.3841858000000002e-007 4.7683716000000005e-007 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[68]" " -type \"float3\" 0 2.3841858000000002e-007 -2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[377]" " -type \"float3\" 0 2.9802322000000001e-008 2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[378]" " -type \"float3\" -1.1920929000000001e-007 8.9406967000000001e-008 1.7881393000000001e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[379]" " -type \"float3\" 1.1920929000000001e-007 -8.9406967000000001e-008 2.9802322000000001e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[380]" " -type \"float3\" 1.1920929000000001e-007 -2.9802322000000001e-008 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[381]" " -type \"float3\" 3.5762787000000001e-007 -2.9802322000000001e-008 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[382]" " -type \"float3\" 0 -8.9406967000000001e-008 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[422]" " -type \"float3\" 0 4.4703483999999995e-008 2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[423]" " -type \"float3\" 3.5762787000000001e-007 0 1.7881393000000001e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[424]" " -type \"float3\" -1.1920929000000001e-007 9.3132257000000002e-010 2.9802322000000001e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[425]" " -type \"float3\" 0 -3.7252903000000002e-009 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[426]" " -type \"float3\" 1.1920929000000001e-007 0 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[427]" " -type \"float3\" -1.1920929000000001e-007 2.2351741999999998e-008 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[428]" " -type \"float3\" -1.1920929000000001e-007 1.4901161000000001e-008 -2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[467]" " -type \"float3\" -1.1920929000000001e-007 -1.4901161000000001e-008 2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[468]" " -type \"float3\" -1.1920929000000001e-007 -2.9802322000000001e-008 1.7881393000000001e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[469]" " -type \"float3\" -5.9604644999999993e-008 0 2.9802322000000001e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[470]" " -type \"float3\" -5.3644179999999997e-007 8.9406967000000001e-008 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[471]" " -type \"float3\" 3.5762787000000001e-007 -2.9802322e-007 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[472]" " -type \"float3\" -8.3446503e-007 1.7881393000000001e-007 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[473]" " -type \"float3\" 4.7683716000000005e-007 3.5762787000000001e-007 -2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[512]" " -type \"float3\" 5.9604644999999993e-008 5.9604644999999993e-008 2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[513]" " -type \"float3\" -5.9604644999999993e-008 2.9802322000000001e-008 1.7881393000000001e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[514]" " -type \"float3\" 0 -1.7881393000000001e-007 2.9802322000000001e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[515]" " -type \"float3\" -1.7881393000000001e-007 -5.9604644999999993e-008 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[516]" " -type \"float3\" 2.3841858000000002e-007 2.3841858000000002e-007 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[517]" " -type \"float3\" -5.9604644999999993e-008 0 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[518]" " -type \"float3\" -3.5762787000000001e-007 -5.9604644999999993e-008 -2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[557]" " -type \"float3\" 1.8626450999999999e-009 2.9802322000000001e-008 2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[558]" " -type \"float3\" 1.8626450999999999e-009 4.1723251000000004e-007 1.7881393000000001e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[559]" " -type \"float3\" 1.8626450999999999e-009 2.3841858000000002e-007 2.9802322000000001e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[560]" " -type \"float3\" 1.8626450999999999e-009 -1.1920929000000001e-007 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[561]" " -type \"float3\" 1.8626450999999999e-009 -1.7881393000000001e-007 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[562]" " -type \"float3\" 1.8626450999999999e-009 -1.1920929000000001e-007 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[563]" " -type \"float3\" 1.8626450999999999e-009 -1.1920929000000001e-007 -2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[602]" " -type \"float3\" 1.1920929000000001e-007 -5.9604644999999993e-008 2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[603]" " -type \"float3\" 8.9406967000000001e-008 2.9802322000000001e-008 1.7881393000000001e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[604]" " -type \"float3\" -5.9604644999999993e-008 0 2.9802322000000001e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[605]" " -type \"float3\" -1.1920929000000001e-007 0 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[606]" " -type \"float3\" 2.9802322e-007 5.9604644999999993e-008 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[607]" " -type \"float3\" 4.1723251000000004e-007 0 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[608]" " -type \"float3\" -3.5762787000000001e-007 -5.9604644999999993e-008 -2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[647]" " -type \"float3\" -5.9604644999999993e-008 -2.9802322000000001e-008 2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[648]" " -type \"float3\" 0 1.4901161e-007 1.7881393000000001e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[649]" " -type \"float3\" -2.3841858000000002e-007 -8.9406967000000001e-008 2.9802322000000001e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[650]" " -type \"float3\" -1.1920929000000001e-007 -2.9802322000000001e-008 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[651]" " -type \"float3\" -2.3841858000000002e-007 0 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[652]" " -type \"float3\" 2.3841858000000002e-007 0 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[653]" " -type \"float3\" -2.3841858000000002e-007 3.5762787000000001e-007 -2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[692]" " -type \"float3\" -5.9604644999999993e-008 -1.4901161000000001e-008 2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[693]" " -type \"float3\" 1.7881393000000001e-007 -7.4505806000000003e-009 1.7881393000000001e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[694]" " -type \"float3\" -8.3446503e-007 -3.7252903000000002e-009 2.9802322000000001e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[695]" " -type \"float3\" 2.3841858000000002e-007 -3.7252903000000002e-009 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[696]" " -type \"float3\" 0 0 -2.7939677000000001e-009"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[697]" " -type \"float3\" -2.3841858000000002e-007 -1.4901161000000001e-008 5.9604644999999993e-008"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[698]" " -type \"float3\" 0 -4.4703483999999995e-008 -2.3841858000000002e-007"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[723]" " -type \"float3\" 0 0 -1.1444091999999999e-005"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[724]" " -type \"float3\" 0 0 -1.1444091999999999e-005"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[725]" " -type \"float3\" 0 0 -1.1444091999999999e-005"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[726]" " -type \"float3\" 0 0 1.1444091999999999e-005"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[727]" " -type \"float3\" 0 0 1.1444091999999999e-005"
-		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pnts[728]" " -type \"float3\" 0 0 1.1444091999999999e-005";
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[723:728]" " -type \"float3\" 0 0 -1.1444091999999999e-005 0 0 -1.1444091999999999e-005 0 0 -1.1444091999999999e-005 0 0 1.1444091999999999e-005 0 0 1.1444091999999999e-005 0 0 1.1444091999999999e-005";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode phong -n "m3";
@@ -1718,7 +1591,7 @@ createNode file -n "MapFBXASC032FBXASC0358";
 	setAttr ".ftn" -type "string" "C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_01.jpg";
 createNode place2dTexture -n "place2dTexture8";
 createNode reference -n "Tisch2RN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tisch2.ma";
+	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tisch2.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Tisch2RN"
 		"Tisch2RN" 0
@@ -1730,7 +1603,7 @@ createNode reference -n "Tisch2RN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bueroklammerRN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
+	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bueroklammerRN"
 		"bueroklammerRN" 0
@@ -1765,7 +1638,7 @@ createNode reference -n "bueroklammerRN2";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BettRN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bett.ma";
+	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bett.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BettRN"
 		"BettRN" 0
@@ -1842,7 +1715,6 @@ select -ne :lightList1;
 	setAttr -s 4 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 53 ".tx";
-select -ne :lambert1;
 select -ne :initialShadingGroup;
 	setAttr -s 21 ".dsm";
 	setAttr ".ro" yes;
