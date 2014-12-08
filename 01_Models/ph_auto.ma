@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: ph_auto.ma
-//Last modified: Mon, Dec 08, 2014 04:21:14 PM
+//Last modified: Mon, Dec 08, 2014 04:25:23 PM
 //Codeset: 1252
 requires maya "2015";
 currentUnit -l centimeter -a degree -t film;
@@ -15354,7 +15354,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".st" 6;
 createNode phong -n "phong1";
 	setAttr ".dc" 0.36752137541770935;
-	setAttr ".c" -type "float3" 0.11966125 0.11966125 0.11966125 ;
+	setAttr ".c" -type "float3" 0.34187838 0.34187838 0.34187838 ;
 	setAttr ".ambc" -type "float3" 0.0085450523 0.0085450523 0.0085450523 ;
 	setAttr ".tc" 0.025641025975346565;
 	setAttr ".rfl" 0.21367521584033966;
