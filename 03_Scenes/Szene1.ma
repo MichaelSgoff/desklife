@@ -1,63 +1,63 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Mon, Dec 08, 2014 12:57:13 PM
+//Last modified: Mon, Dec 08, 2014 02:10:05 PM
 //Codeset: 1252
-file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma";
-file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma";
-file -rdi 1 -ns "Stuhl" -rfn "StuhlRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma";
-file -rdi 1 -ns "Monitor" -rfn "MonitorRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma";
-file -rdi 1 -ns "Bild" -rfn "BildRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma";
-file -rdi 1 -ns "Schreibtischunerlage" -rfn "SchreibtischunerlageRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma";
-file -rdi 1 -ns "Becher" -rfn "BecherRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma";
+file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
+file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
+file -rdi 1 -ns "Stuhl" -rfn "StuhlRN" "C:/GIT/desklife/01_Models/Stuhl.ma";
+file -rdi 1 -ns "Monitor" -rfn "MonitorRN" "C:/GIT/desklife/01_Models/Monitor.ma";
+file -rdi 1 -ns "Bild" -rfn "BildRN" "C:/GIT/desklife/01_Models/Bild.ma";
+file -rdi 1 -ns "Schreibtischunerlage" -rfn "SchreibtischunerlageRN" "C:/GIT/desklife/01_Models/Schreibtischunerlage.ma";
+file -rdi 1 -ns "Becher" -rfn "BecherRN" "C:/GIT/desklife/01_Models/Becher.ma";
 file -rdi 1 -ns "Ordner" -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
-file -rdi 1 -ns "Ordner1" -rfn "OrdnerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
-file -rdi 1 -ns "Ordner2" -rfn "OrdnerRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
+		 "C:/GIT/desklife/01_Models/Ordner.ma";
+file -rdi 1 -ns "Ordner1" -rfn "OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
+file -rdi 1 -ns "Ordner2" -rfn "OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 1 -ns "Bleistift1" -rfn "BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift2" -rfn "BleistiftRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift3" -rfn "BleistiftRN3" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift2" -rfn "BleistiftRN2" "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift3" -rfn "BleistiftRN3" "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -rdi 1 -ns "Tür2" -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma";
-file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
-file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:30:53 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
-file -rdi 1 -ns "bueroklammer" -rfn "bueroklammerRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -rdi 1 -ns "bueroklammer1" -rfn "bueroklammerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -rdi 1 -ns "bueroklammer2" -rfn "bueroklammerRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -rdi 1 -ns "Bett" -rfn "BettRN" -op "v=0;" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma";
-file -rdi 1 -ns "ph_auto" -rfn "ph_autoRN" -op "v=0;p=17;f=0" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma";
-file -rdi 1 -ns "car_ms" -rfn "car_msRN" -op "v=0;p=17;f=0" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma";
-file -r -ns "Raum" -dr 1 -rfn "RaumRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma";
-file -r -ns "Schreibtischlampe" -dr 1 -rfn "SchreibtischlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma";
-file -r -ns "Stuhl" -dr 1 -rfn "StuhlRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma";
-file -r -ns "Monitor" -dr 1 -rfn "MonitorRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma";
-file -r -ns "Bild" -dr 1 -rfn "BildRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma";
-file -r -ns "Schreibtischunerlage" -dr 1 -rfn "SchreibtischunerlageRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma";
-file -r -ns "Becher" -dr 1 -rfn "BecherRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma";
+		 "C:/GIT/desklife/01_Models/Tür2.ma";
+file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
+file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:32:24 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Tisch2.ma";
+file -rdi 1 -ns "bueroklammer" -rfn "bueroklammerRN" "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -rdi 1 -ns "bueroklammer1" -rfn "bueroklammerRN1" "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -rdi 1 -ns "bueroklammer2" -rfn "bueroklammerRN2" "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -rdi 1 -ns "Bett" -rfn "BettRN" -op "v=0;" "C:/GIT/desklife/01_Models/Bett.ma";
+file -rdi 1 -ns "ph_auto" -rfn "ph_autoRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/ph_auto.ma";
+file -rdi 1 -ns "car_ms" -rfn "car_msRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/car ms.ma";
+file -r -ns "Raum" -dr 1 -rfn "RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
+file -r -ns "Schreibtischlampe" -dr 1 -rfn "SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
+file -r -ns "Stuhl" -dr 1 -rfn "StuhlRN" "C:/GIT/desklife/01_Models/Stuhl.ma";
+file -r -ns "Monitor" -dr 1 -rfn "MonitorRN" "C:/GIT/desklife/01_Models/Monitor.ma";
+file -r -ns "Bild" -dr 1 -rfn "BildRN" "C:/GIT/desklife/01_Models/Bild.ma";
+file -r -ns "Schreibtischunerlage" -dr 1 -rfn "SchreibtischunerlageRN" "C:/GIT/desklife/01_Models/Schreibtischunerlage.ma";
+file -r -ns "Becher" -dr 1 -rfn "BecherRN" "C:/GIT/desklife/01_Models/Becher.ma";
 file -r -ns "Ordner" -dr 1 -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
-file -r -ns "Ordner1" -dr 1 -rfn "OrdnerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
-file -r -ns "Ordner2" -dr 1 -rfn "OrdnerRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
+		 "C:/GIT/desklife/01_Models/Ordner.ma";
+file -r -ns "Ordner1" -dr 1 -rfn "OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
+file -r -ns "Ordner2" -dr 1 -rfn "OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -r -ns "Bleistift1" -dr 1 -rfn "BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -r -ns "Bleistift2" -dr 1 -rfn "BleistiftRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -r -ns "Bleistift3" -dr 1 -rfn "BleistiftRN3" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
-file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -r -ns "Bleistift2" -dr 1 -rfn "BleistiftRN2" "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -r -ns "Bleistift3" -dr 1 -rfn "BleistiftRN3" "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -r -ns "Tür2" -dr 1 -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma";
-file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
-file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:30:53 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
-file -r -ns "bueroklammer" -dr 1 -rfn "bueroklammerRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -r -ns "bueroklammer1" -dr 1 -rfn "bueroklammerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -r -ns "bueroklammer2" -dr 1 -rfn "bueroklammerRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
-file -r -ns "Bett" -dr 1 -rfn "BettRN" -op "v=0;" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma";
-file -r -ns "ph_auto" -dr 1 -rfn "ph_autoRN" -op "v=0;p=17;f=0" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma";
-file -r -ns "car_ms" -dr 1 -rfn "car_msRN" -op "v=0;p=17;f=0" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma";
+		 "C:/GIT/desklife/01_Models/Tür2.ma";
+file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
+file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:32:24 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Tisch2.ma";
+file -r -ns "bueroklammer" -dr 1 -rfn "bueroklammerRN" "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -r -ns "bueroklammer1" -dr 1 -rfn "bueroklammerRN1" "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -r -ns "bueroklammer2" -dr 1 -rfn "bueroklammerRN2" "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -r -ns "Bett" -dr 1 -rfn "BettRN" -op "v=0;" "C:/GIT/desklife/01_Models/Bett.ma";
+file -r -ns "ph_auto" -dr 1 -rfn "ph_autoRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/ph_auto.ma";
+file -r -ns "car_ms" -dr 1 -rfn "car_msRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/car ms.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
 		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
@@ -72,13 +72,13 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.150175534583489 20.484586725771987 4.9513831627835074 ;
-	setAttr ".r" -type "double3" -11.399999999982599 -93.999999999997101 0 ;
+	setAttr ".t" -type "double3" -2.9403260575630541 24.019296247804409 23.995483383665984 ;
+	setAttr ".r" -type "double3" -11.399999999981523 -9.9999999999970477 0 ;
 	setAttr ".rpt" -type "double3" 1.529534785121491e-015 1.9740648859503619e-015 2.9536237057634065e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 9.5699555581894309;
+	setAttr ".coi" 26.439524654063757;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -892,7 +892,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Texture Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"blendShapePanel\" (localizedPanelLabel(\"Blend Shape\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tblendShapePanel -unParent -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tblendShapePanel -edit -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n"
-		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n"
 		+ "            stereoCameraView -e \n                -camera \"camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n"
 		+ "                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n"
@@ -979,7 +979,7 @@ createNode reference -n "SchreibtischlampeRN";
 		"translate" " -type \"double3\" 0.704324 0 -0.00163108"
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:pole_vector" 
 		"translate" " -type \"double3\" -0.548258 1.852858 -1.458566"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 25.94637490035425 19.497168903929076 15.047051778428102"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.357279230303465 20.184971023176633 16.359107651276442"
 		
 		2 "|Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
 		2 "|Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
@@ -1027,24 +1027,22 @@ createNode reference -n "StuhlRN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "MonitorRN";
-	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Monitor.ma";
 	setAttr -s 2 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"MonitorRN"
-		"MonitorRN" 0
-		"MonitorRN" 8
+		"MonitorRN" 1
+		3 "Monitor:monitor:Mat.message" ":defaultShaderList1.shaders" "-na"
+		"MonitorRN" 7
 		2 "|Monitor:monitor:LCDFBXASC032Display" "translate" " -type \"double3\" 27.506573 17.084037 8.139008"
 		
 		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateAxis" " -type \"double3\" 0 -89.999999999999986 0"
 		
 		2 "Monitor:monitor:mia_physicalsky1" "on" " 0"
-		3 "Monitor:monitor:Mat.outColor" "Monitor:monitor:StandSG.surfaceShader" 
-		""
-		3 "Monitor:monitor:Mat.message" "Monitor:monitor:materialInfo1.material" 
-		""
-		3 "Monitor:monitor:Mat.message" ":defaultShaderList1.shaders" "-na"
+		3 "Monitor:lambert8.message" "Monitor:monitor:materialInfo1.material" ""
+		3 "Monitor:lambert8.outColor" "Monitor:monitor:StandSG.surfaceShader" ""
 		5 4 "MonitorRN" "Monitor:monitor:StandSG.surfaceShader" "MonitorRN.placeHolderList[1]" 
 		""
 		5 4 "MonitorRN" "Monitor:monitor:materialInfo1.material" "MonitorRN.placeHolderList[2]" 
@@ -1190,7 +1188,7 @@ createNode animCurveTA -n "Camera01_rotateZ";
 	setAttr -s 2 ".kox[0:1]"  1 1;
 	setAttr -s 2 ".koy[0:1]"  0 0;
 createNode reference -n "OrdnerRN";
-	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Ordner.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"OrdnerRN"
 		"OrdnerRN" 0
@@ -1448,7 +1446,7 @@ createNode reference -n "BleistiftRN5";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Tür2RN";
-	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Tür2.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Tür2RN"
 		"Tür2RN" 0
@@ -1465,7 +1463,7 @@ createNode reference -n "Tür2RN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "DeckenlampeRN";
-	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DeckenlampeRN"
 		"DeckenlampeRN" 0
@@ -1606,7 +1604,7 @@ createNode file -n "MapFBXASC032FBXASC0358";
 	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/bett/cells_01.jpg";
 createNode place2dTexture -n "place2dTexture8";
 createNode reference -n "Tisch2RN";
-	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Tisch2.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Tisch2RN"
 		"Tisch2RN" 0
@@ -1624,7 +1622,7 @@ createNode reference -n "Tisch2RN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bueroklammerRN";
-	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/bueroklammer.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bueroklammerRN"
 		"bueroklammerRN" 0
@@ -1665,11 +1663,10 @@ createNode reference -n "bueroklammerRN2";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BettRN";
-	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Bett.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BettRN"
-		"BettRN" 0
-		"BettRN" 32
+		"BettRN" 12
 		2 "|Bett:o2" "translate" " -type \"double3\" 26.37279845481363 4.4105076516749779 -26.398562283263995"
 		
 		2 "|Bett:o2" "rotate" " -type \"double3\" -89.999999999998579 -92.554880592958042 0"
@@ -1694,6 +1691,7 @@ createNode reference -n "BettRN";
 		
 		2 "|Bett:o8" "scale" " -type \"double3\" 0.013392343827901342 0.017026924873240215 0.017026924873240215"
 		
+		"BettRN" 20
 		2 "|Bett:o9" "translate" " -type \"double3\" 26.37279845481363 4.4105076516749779 -26.398562283263995"
 		
 		2 "|Bett:o9" "rotate" " -type \"double3\" -89.999999999998579 -92.554880592958042 0"
@@ -1745,19 +1743,20 @@ createNode reference -n "ph_autoRN";
 		"ph_autoRN"
 		"ph_autoRN" 0
 		"ph_autoRN" 2
-		2 "|ph_auto:group1" "translate" " -type \"double3\" 23.713366450820047 13.848515135182499 1.0991196599103379"
+		2 "|ph_auto:group1" "translate" " -type \"double3\" 23.713366450820047 13.848515135182499 1.3489000773395277"
 		
 		2 "|ph_auto:group1" "scale" " -type \"double3\" 0.053684248629956272 0.053684248629956272 0.053684248629956272";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "car_msRN";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/car ms.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"car_msRN"
 		"car_msRN" 0
 		"car_msRN" 7
 		2 "|car_ms:Alles" "translate" " -type \"double3\" 0 0 0.33557647471273455"
 		
-		2 "|car_ms:group1" "translate" " -type \"double3\" 22.73486891313966 13.814715071183977 0.89185871040856979"
+		2 "|car_ms:group1" "translate" " -type \"double3\" 22.46823512271116 13.814715071183977 0.89185871040856979"
 		
 		2 "|car_ms:group1" "rotate" " -type \"double3\" 0 90 0"
 		2 "|car_ms:group1" "scale" " -type \"double3\" 0.064180779278468075 0.064180779278468075 0.064180779278468075"
@@ -1797,7 +1796,7 @@ select -ne :renderPartition;
 	setAttr -s 138 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 136 ".s";
+	setAttr -s 137 ".s";
 select -ne :postProcessList1;
 	setAttr -s 3 ".p";
 select -ne :defaultRenderUtilityList1;
@@ -1808,7 +1807,6 @@ select -ne :lightList1;
 	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 58 ".tx";
-select -ne :lambert1;
 select -ne :initialShadingGroup;
 	setAttr -s 26 ".dsm";
 	setAttr ".ro" yes;
@@ -2057,6 +2055,7 @@ connectAttr "place2dTexture8.ofs" "MapFBXASC032FBXASC0358.fs";
 connectAttr "sharedReferenceNode.sr" "Tisch2RN.sr";
 connectAttr "sharedReferenceNode.sr" "bueroklammerRN.sr";
 connectAttr "sharedReferenceNode.sr" "BettRN.sr";
+connectAttr "sharedReferenceNode.sr" "car_msRN.sr";
 connectAttr "CarpetaFBXASC032LefortSG.pa" ":renderPartition.st" -na;
 connectAttr "CarpetaFBXASC032LefortSG1.pa" ":renderPartition.st" -na;
 connectAttr "o2SG.pa" ":renderPartition.st" -na;
@@ -2102,6 +2101,6 @@ connectAttr "Box02Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Box03Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
-applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"RaumRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma\" 3496213655 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma\" \"FileRef\"\n1\n\"SchreibtischlampeRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" 1754744902 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" \"FileRef\"\n2\n\"StuhlRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma\" 1490291708 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma\" \"FileRef\"\n3\n\"MonitorRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma\" 3977924147 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma\" \"FileRef\"\n4\n\"BildRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma\" 1259755597 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma\" \"FileRef\"\n5\n\"SchreibtischunerlageRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" 1990308374 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" \"FileRef\"\n6\n\"BecherRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma\" 31634674 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma\" \"FileRef\"\n7\n\"OrdnerRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n8\n\"OrdnerRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n9\n\"OrdnerRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n10\n\"BleistiftRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n11\n\"BleistiftRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n12\n\"BleistiftRN3\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n13\n\"BleistiftRN4\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n14\n\"BleistiftRN5\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n15\n\"Tür2RN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma\" 855969748 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma\" \"FileRef\"\n16\n\"DeckenlampeRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" 145367839 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" \"FileRef\"\n17\n\"Tisch2RN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma\" 3876219591 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma\" \"FileRef\"\n18\n\"bueroklammerRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n19\n\"bueroklammerRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n20\n\"bueroklammerRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n21\n\"BettRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma\" 1012732906 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma\" \"FileRef\"\n22\n\"ph_autoRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma\" 283233666 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma\" \"FileRef\"\n23\n\"car_msRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma\" 3125550903 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma\" \"FileRef\"\n24\n\"MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/ordner.jpg\" 3862159993 \"C:/GIT/desklife/02_Textures/ordner.jpg\" \"sourceImages\"\n25\n\"Bett2_MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/cells_05.jpg\" 100957266 \"\" \"sourceImages\"\n26\n\"MapFBXASC032FBXASC0352\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n27\n\"MapFBXASC032FBXASC0353\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n28\n\"MapFBXASC032FBXASC0354\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\n29\n\"MapFBXASC032FBXASC0355\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" 1216197705 \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" \"sourceImages\"\n30\n\"MapFBXASC032FBXASC0356\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n31\n\"MapFBXASC032FBXASC0357\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n32\n\"MapFBXASC032FBXASC0358\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
+applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"RaumRN\" \"\" \"C:/GIT/desklife/01_Models/Raum.ma\" 324924542 \"C:/GIT/desklife/01_Models/Raum.ma\" \"FileRef\"\n1\n\"SchreibtischlampeRN\" \"\" \"C:/GIT/desklife/01_Models/Schreibtischlampe.ma\" 2919440033 \"C:/GIT/desklife/01_Models/Schreibtischlampe.ma\" \"FileRef\"\n2\n\"StuhlRN\" \"\" \"C:/GIT/desklife/01_Models/Stuhl.ma\" 2176937768 \"C:/GIT/desklife/01_Models/Stuhl.ma\" \"FileRef\"\n3\n\"MonitorRN\" \"\" \"C:/GIT/desklife/01_Models/Monitor.ma\" 1116811900 \"C:/GIT/desklife/01_Models/Monitor.ma\" \"FileRef\"\n4\n\"BildRN\" \"\" \"C:/GIT/desklife/01_Models/Bild.ma\" 2284343460 \"C:/GIT/desklife/01_Models/Bild.ma\" \"FileRef\"\n5\n\"SchreibtischunerlageRN\" \"\" \"C:/GIT/desklife/01_Models/Schreibtischunerlage.ma\" 3247430010 \"C:/GIT/desklife/01_Models/Schreibtischunerlage.ma\" \"FileRef\"\n6\n\"BecherRN\" \"\" \"C:/GIT/desklife/01_Models/Becher.ma\" 2156246875 \"C:/GIT/desklife/01_Models/Becher.ma\" \"FileRef\"\n7\n\"OrdnerRN\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n8\n\"OrdnerRN1\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n9\n\"OrdnerRN2\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n10\n\"BleistiftRN1\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n11\n\"BleistiftRN2\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n12\n\"BleistiftRN3\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n13\n\"BleistiftRN4\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n14\n\"BleistiftRN5\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n15\n\"Tür2RN\" \"\" \"C:/GIT/desklife/01_Models/Tür2.ma\" 4030400317 \"C:/GIT/desklife/01_Models/Tür2.ma\" \"FileRef\"\n16\n\"DeckenlampeRN\" \"\" \"C:/GIT/desklife/01_Models/Deckenlampe.ma\" 136840633 \"C:/GIT/desklife/01_Models/Deckenlampe.ma\" \"FileRef\"\n17\n\"Tisch2RN\" \"\" \"C:/GIT/desklife/01_Models/Tisch2.ma\" 1718446446 \"C:/GIT/desklife/01_Models/Tisch2.ma\" \"FileRef\"\n18\n\"bueroklammerRN\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n19\n\"bueroklammerRN1\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n20\n\"bueroklammerRN2\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n21\n\"BettRN\" \"\" \"C:/GIT/desklife/01_Models/Bett.ma\" 4284685059 \"C:/GIT/desklife/01_Models/Bett.ma\" \"FileRef\"\n22\n\"ph_autoRN\" \"\" \"C:/GIT/desklife/01_Models/ph_auto.ma\" 3211440589 \"C:/GIT/desklife/01_Models/ph_auto.ma\" \"FileRef\"\n23\n\"car_msRN\" \"\" \"C:/GIT/desklife/01_Models/car ms.ma\" 992681118 \"C:/GIT/desklife/01_Models/car ms.ma\" \"FileRef\"\n24\n\"MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/ordner.jpg\" 3862159993 \"C:/GIT/desklife/02_Textures/ordner.jpg\" \"sourceImages\"\n25\n\"Bett2_MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/cells_05.jpg\" 100957266 \"\" \"sourceImages\"\n26\n\"MapFBXASC032FBXASC0352\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n27\n\"MapFBXASC032FBXASC0353\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n28\n\"MapFBXASC032FBXASC0354\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\n29\n\"MapFBXASC032FBXASC0355\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" 1216197705 \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" \"sourceImages\"\n30\n\"MapFBXASC032FBXASC0356\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n31\n\"MapFBXASC032FBXASC0357\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n32\n\"MapFBXASC032FBXASC0358\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
 // End of Szene1.ma
