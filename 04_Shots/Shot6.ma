@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Shot6.ma
-//Last modified: Mon, Dec 08, 2014 04:25:28 PM
+//Last modified: Mon, Dec 08, 2014 04:29:33 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -100,12 +100,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode transform -n "shot5";
+	setAttr ".t" -type "double3" -7.9208918292451234 35.412263204945823 8.517424540149424 ;
+	setAttr -av ".tx";
+	setAttr -av ".ty";
+	setAttr -av ".tz";
+	setAttr ".r" -type "double3" -35.333780816465257 -88.915958831026785 -1.6811467839621061e-013 ;
+	setAttr -av ".rx";
+	setAttr -av ".ry";
+	setAttr -av ".rz";
 createNode camera -n "shotShape5" -p "shot5";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.4173 0.9449 ;
 	setAttr ".ff" 0;
-	setAttr ".coi" 10.487822278859978;
+	setAttr ".coi" 34.323085985410422;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
