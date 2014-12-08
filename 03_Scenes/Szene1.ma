@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Mon, Dec 08, 2014 02:10:05 PM
+//Last modified: Mon, Dec 08, 2014 04:22:34 PM
 //Codeset: 1252
 file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
 file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
@@ -13,16 +13,20 @@ file -rdi 1 -ns "Ordner" -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CH
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 1 -ns "Ordner1" -rfn "OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 1 -ns "Ordner2" -rfn "OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
-file -rdi 1 -ns "Bleistift1" -rfn "BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 1 -ns "Bleistift1" -rfn "BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift2" -rfn "BleistiftRN2" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift3" -rfn "BleistiftRN3" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift2" -rfn "BleistiftRN2" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift3" -rfn "BleistiftRN3" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -rdi 1 -ns "Tür2" -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Tür2.ma";
 file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
-file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:32:24 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:38:14 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Tisch2.ma";
 file -rdi 1 -ns "bueroklammer" -rfn "bueroklammerRN" "C:/GIT/desklife/01_Models/bueroklammer.ma";
 file -rdi 1 -ns "bueroklammer1" -rfn "bueroklammerRN1" "C:/GIT/desklife/01_Models/bueroklammer.ma";
@@ -41,16 +45,20 @@ file -r -ns "Ordner" -dr 1 -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -r -ns "Ordner1" -dr 1 -rfn "OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -r -ns "Ordner2" -dr 1 -rfn "OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
-file -r -ns "Bleistift1" -dr 1 -rfn "BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -r -ns "Bleistift1" -dr 1 -rfn "BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -r -ns "Bleistift2" -dr 1 -rfn "BleistiftRN2" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -r -ns "Bleistift3" -dr 1 -rfn "BleistiftRN3" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -r -ns "Bleistift2" -dr 1 -rfn "BleistiftRN2" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -r -ns "Bleistift3" -dr 1 -rfn "BleistiftRN3" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -r -ns "Tür2" -dr 1 -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Tür2.ma";
 file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
-file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:32:24 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:38:14 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Tisch2.ma";
 file -r -ns "bueroklammer" -dr 1 -rfn "bueroklammerRN" "C:/GIT/desklife/01_Models/bueroklammer.ma";
 file -r -ns "bueroklammer1" -dr 1 -rfn "bueroklammerRN1" "C:/GIT/desklife/01_Models/bueroklammer.ma";
@@ -72,17 +80,17 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.9403260575630541 24.019296247804409 23.995483383665984 ;
-	setAttr ".r" -type "double3" -11.399999999981523 -9.9999999999970477 0 ;
+	setAttr ".t" -type "double3" -1.9792755351410958 24.71270003908371 66.594618283028709 ;
+	setAttr ".r" -type "double3" -5.399999999986929 -1.6000000000000005 -1.2428887560791943e-017 ;
 	setAttr ".rpt" -type "double3" 1.529534785121491e-015 1.9740648859503619e-015 2.9536237057634065e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 26.439524654063757;
+	setAttr ".coi" 63.576739460462207;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 22.74443097966433 14.136519154444951 0.81346485181015638 ;
+	setAttr ".tp" -type "double3" 0 35.053284894841468 0.077071200000000006 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	setAttr ".v" no;
@@ -479,6 +487,7 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 	setAttr ".rfrr" 1;
 	setAttr ".maxr" 2;
 	setAttr ".shrd" 2;
+	setAttr ".miSamplesQualityR" 0.24843750894069672;
 	setAttr -s 48 ".stringOptions";
 	setAttr ".stringOptions[0].name" -type "string" "rast motion factor";
 	setAttr ".stringOptions[0].value" -type "string" "1.0";
@@ -627,8 +636,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 149 ".lnk";
-	setAttr -s 150 ".slnk";
+	setAttr -s 248 ".lnk";
+	setAttr -s 249 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -892,7 +901,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Texture Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"blendShapePanel\" (localizedPanelLabel(\"Blend Shape\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tblendShapePanel -unParent -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tblendShapePanel -edit -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n"
-		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n"
 		+ "            stereoCameraView -e \n                -camera \"camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n"
 		+ "                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n"
@@ -912,7 +921,7 @@ createNode reference -n "RaumRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"RaumRN"
 		"RaumRN" 0
-		"RaumRN" 8
+		"RaumRN" 9
 		2 "|Raum:Raum|Raum:pCube1" "scale" " -type \"double3\" 1.0879992777038427 1 1"
 		
 		2 "|Raum:Raum|Raum:pCube2" "scale" " -type \"double3\" 1.0775674194745641 1 1"
@@ -923,6 +932,7 @@ createNode reference -n "RaumRN";
 		
 		2 "|Raum:Raum|Raum:pCube6" "translate" " -type \"double3\" -12.956033484705339 11.995311215081957 -0.0042960317618323529"
 		
+		2 "Raum:weiß" "transparency" " -type \"float3\" 0 0 0"
 		2 "Raum:lambert6" "transparency" " -type \"float3\" 0 0 0"
 		2 "Raum:file1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/white_wall.png\""
 		
@@ -933,7 +943,7 @@ createNode reference -n "SchreibtischlampeRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SchreibtischlampeRN"
 		"SchreibtischlampeRN" 0
-		"SchreibtischlampeRN" 41
+		"SchreibtischlampeRN" 56
 		2 "|Schreibtischlampe:lampe:LAMP_controller" "rotate" " -type \"double3\" -0.993369 -100.263373 0"
 		
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:lamp_rotator" 
@@ -979,7 +989,7 @@ createNode reference -n "SchreibtischlampeRN";
 		"translate" " -type \"double3\" 0.704324 0 -0.00163108"
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:pole_vector" 
 		"translate" " -type \"double3\" -0.548258 1.852858 -1.458566"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.357279230303465 20.184971023176633 16.359107651276442"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.357279230303465 19.593395518341691 15.173803144460209"
 		
 		2 "|Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
 		2 "|Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
@@ -992,17 +1002,32 @@ createNode reference -n "SchreibtischlampeRN";
 		2 "|Schreibtischlampe:lampe:lamp_spot" "scale" " -type \"double3\" 0.51969 0.51969 0.51969"
 		
 		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"intensity" " 2.4060149192810059"
+		"color" " -type \"float3\" 0.94117647000000004 0.78768861000000001 0.64590544000000005"
+		
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"intensity" " 1.0833333730697632"
 		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
 		"useRayTraceShadows" " 1"
 		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
 		"shadowRays" " 34"
 		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
 		"lightRadius" " 0.61206901073455811"
-		2 "|Schreibtischlampe:lampe:pointLight1" "translate" " -type \"double3\" 0 34.998218 0.077071200000000006"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"coneAngle" " 81.000572974557869"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"penumbraAngle" " -1.6666666635622587"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"dropoff" " 8.4999999841675162"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"fogSpread" " 0"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"fogIntensity" " 0"
+		2 "|Schreibtischlampe:lampe:pointLight1" "translate" " -type \"double3\" 0 34.431193695350629 0.077071200000000006"
 		
 		2 "|Schreibtischlampe:lampe:pointLight1|Schreibtischlampe:lampe:pointLightShape1" 
-		"intensity" " 0.3759399950504303"
+		"color" " -type \"float3\" 1 0.88308549000000003 0.73000001999999997"
+		2 "|Schreibtischlampe:lampe:pointLight1|Schreibtischlampe:lampe:pointLightShape1" 
+		"intensity" " 0.22556391358375549"
 		2 "|Schreibtischlampe:lampe:pointLight1|Schreibtischlampe:lampe:pointLightShape1" 
 		"useRayTraceShadows" " 1"
 		2 "|Schreibtischlampe:lampe:pointLight1|Schreibtischlampe:lampe:pointLightShape1" 
@@ -1011,9 +1036,20 @@ createNode reference -n "SchreibtischlampeRN";
 		"lightRadius" " 0.67826098203659058"
 		2 "|Schreibtischlampe:lampe:pointLight1|Schreibtischlampe:lampe:pointLightShape1" 
 		"useOnlySingleDmap" " 0"
-		2 "Schreibtischlampe:lampe:bulb" "incandescence" " -type \"float3\" 0.87179399000000002 0.87179399000000002 0.87179399000000002"
+		2 "Schreibtischlampe:lampe:bulb" "diffuse" " 0.69230771064758301"
+		2 "Schreibtischlampe:lampe:bulb" "color" " -type \"float3\" 1 0.75596249000000004 0.43137255000000002"
 		
-		2 "Schreibtischlampe:lampe:bulb" "glowIntensity" " 0.59829097986221313";
+		2 "Schreibtischlampe:lampe:bulb" "transparency" " -type \"float3\" 0.41879909999999998 0.41879909999999998 0.41879909999999998"
+		
+		2 "Schreibtischlampe:lampe:bulb" "ambientColor" " -type \"float3\" 0.60683602000000003 0.49533838000000002 0.33029678000000001"
+		
+		2 "Schreibtischlampe:lampe:bulb" "incandescence" " -type \"float3\" 0 0 0"
+		
+		2 "Schreibtischlampe:lampe:bulb" "translucence" " 0.25641027092933655"
+		2 "Schreibtischlampe:lampe:bulb" "glowIntensity" " 0.085470087826251984"
+		2 "Schreibtischlampe:lampe:bulb" "hideSource" " 0"
+		2 "Schreibtischlampe:lampe:bulb" "reflectivity" " 0.40170940756797791"
+		2 "Schreibtischlampe:lampe:bulb" "cosinePower" " 39.692306518554688";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "StuhlRN";
@@ -1035,9 +1071,12 @@ createNode reference -n "MonitorRN";
 		"MonitorRN"
 		"MonitorRN" 1
 		3 "Monitor:monitor:Mat.message" ":defaultShaderList1.shaders" "-na"
-		"MonitorRN" 7
+		"MonitorRN" 9
 		2 "|Monitor:monitor:LCDFBXASC032Display" "translate" " -type \"double3\" 27.506573 17.084037 8.139008"
 		
+		2 "|Monitor:monitor:LCDFBXASC032Display" "rotate" " -type \"double3\" 0 0 0"
+		
+		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateY" " -av"
 		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateAxis" " -type \"double3\" 0 -89.999999999999986 0"
 		
 		2 "Monitor:monitor:mia_physicalsky1" "on" " 0"
@@ -1245,7 +1284,9 @@ createNode reference -n "OrdnerRN2";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BleistiftRN1";
-	setAttr ".fn[0]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{1}";
+	setAttr -s 2 ".fn";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Bleistift.ma";
+	setAttr ".fn[1]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{1}";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BleistiftRN1"
 		"BleistiftRN1" 0
@@ -1285,7 +1326,9 @@ createNode reference -n "BleistiftRN1";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BleistiftRN2";
-	setAttr ".fn[0]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{2}";
+	setAttr -s 2 ".fn";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Bleistift.ma{1}";
+	setAttr ".fn[1]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{2}";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BleistiftRN2"
 		"BleistiftRN2" 0
@@ -1325,7 +1368,9 @@ createNode reference -n "BleistiftRN2";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BleistiftRN3";
-	setAttr ".fn[0]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{3}";
+	setAttr -s 2 ".fn";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Bleistift.ma{2}";
+	setAttr ".fn[1]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{3}";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BleistiftRN3"
 		"BleistiftRN3" 0
@@ -1365,7 +1410,9 @@ createNode reference -n "BleistiftRN3";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BleistiftRN4";
-	setAttr ".fn[0]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{4}";
+	setAttr -s 2 ".fn";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Bleistift.ma{3}";
+	setAttr ".fn[1]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{4}";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BleistiftRN4"
 		"BleistiftRN4" 0
@@ -1405,7 +1452,9 @@ createNode reference -n "BleistiftRN4";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BleistiftRN5";
-	setAttr ".fn[0]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{5}";
+	setAttr -s 2 ".fn";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Bleistift.ma{4}";
+	setAttr ".fn[1]" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma{5}";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BleistiftRN5"
 		"BleistiftRN5" 0
@@ -1467,7 +1516,7 @@ createNode reference -n "DeckenlampeRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DeckenlampeRN"
 		"DeckenlampeRN" 0
-		"DeckenlampeRN" 16
+		"DeckenlampeRN" 23
 		2 "|Deckenlampe:LAMP" "translate" " -type \"double3\" 0 48.294723 0"
 		2 "|Deckenlampe:LAMP" "scale" " -type \"double3\" 0.18658996105179917 0.19929529781486485 0.11268580317464913"
 		
@@ -1496,7 +1545,18 @@ createNode reference -n "DeckenlampeRN";
 		
 		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[723:728]" " -type \"float3\" 0 0 -1.1444091999999999e-005 0 0 -1.1444091999999999e-005 0 0 -1.1444091999999999e-005 0 0 1.1444091999999999e-005 0 0 1.1444091999999999e-005 0 0 1.1444091999999999e-005"
 		
-		2 "Deckenlampe:bett_MapFBXASC032FBXASC0354" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_01.jpg\"";
+		2 "Deckenlampe:bett_MapFBXASC032FBXASC0354" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_01.jpg\""
+		
+		2 "Deckenlampe:deckenlampe_Paint" "diffuse" " 0.64957267045974731"
+		2 "Deckenlampe:lambert2" "diffuse" " 1"
+		2 "Deckenlampe:lambert2" "color" " -type \"float3\" 0.87217515999999995 0.71393912999999998 0.36432441999999998"
+		
+		2 "Deckenlampe:lambert2" "transparency" " -type \"float3\" 0.51879149999999996 0.51879149999999996 0.51879149999999996"
+		
+		2 "Deckenlampe:lambert2" "ambientColor" " -type \"float3\" 0.66916913 0.51276416000000002 0.39818418"
+		
+		2 "Deckenlampe:lambert2" "incandescence" " -type \"float3\" 0 0 0"
+		2 "Deckenlampe:lambert2" "glowIntensity" " 0.33082705736160278";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode phong -n "m3";
@@ -1739,6 +1799,7 @@ createNode polyCube -n "polyCube1";
 	setAttr ".d" 1.1265728210127408;
 	setAttr ".cuv" 4;
 createNode reference -n "ph_autoRN";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/ph_auto.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ph_autoRN"
 		"ph_autoRN" 0
@@ -1790,29 +1851,31 @@ createNode lambert -n "lambert2";
 	setAttr ".c" -type "float3" 0.075181201 0.075181201 0.075181201 ;
 	setAttr ".ambc" -type "float3" 0.099999987 0.099999987 0.099999987 ;
 select -ne :time1;
-	setAttr ".o" 1;
-	setAttr ".unw" 1;
+	setAttr ".o" 2;
+	setAttr ".unw" 2;
 select -ne :renderPartition;
-	setAttr -s 138 ".st";
+	setAttr -s 139 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 137 ".s";
+	setAttr -s 122 ".s";
 select -ne :postProcessList1;
 	setAttr -s 3 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 69 ".u";
+	setAttr -s 74 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 25 ".r";
 select -ne :lightList1;
 	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 58 ".tx";
+	setAttr -s 63 ".tx";
+select -ne :lambert1;
 select -ne :initialShadingGroup;
 	setAttr -s 26 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :initialMaterialInfo;
+	setAttr -s 6 ".t";
 select -ne :defaultRenderGlobals;
 	setAttr ".edl" no;
 	setAttr ".ren" -type "string" "mentalRay";
@@ -2055,6 +2118,7 @@ connectAttr "place2dTexture8.ofs" "MapFBXASC032FBXASC0358.fs";
 connectAttr "sharedReferenceNode.sr" "Tisch2RN.sr";
 connectAttr "sharedReferenceNode.sr" "bueroklammerRN.sr";
 connectAttr "sharedReferenceNode.sr" "BettRN.sr";
+connectAttr "sharedReferenceNode.sr" "ph_autoRN.sr";
 connectAttr "sharedReferenceNode.sr" "car_msRN.sr";
 connectAttr "CarpetaFBXASC032LefortSG.pa" ":renderPartition.st" -na;
 connectAttr "CarpetaFBXASC032LefortSG1.pa" ":renderPartition.st" -na;
