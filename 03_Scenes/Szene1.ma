@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Mon, Dec 08, 2014 12:01:09 PM
+//Last modified: Mon, Dec 08, 2014 12:57:13 PM
 //Codeset: 1252
 file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma";
 file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma";
@@ -22,7 +22,7 @@ file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" "C:/Users/fdai3747/Desktop/Abga
 file -rdi 1 -ns "Tür2" -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma";
 file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
-file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 06:30:12 PM|ICON|undef|INFO|undef|OBJN|72|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:30:53 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
 file -rdi 1 -ns "bueroklammer" -rfn "bueroklammerRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
 file -rdi 1 -ns "bueroklammer1" -rfn "bueroklammerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
@@ -50,7 +50,7 @@ file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" "C:/Users/fdai3747/Desktop/Ab
 file -r -ns "Tür2" -dr 1 -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma";
 file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
-file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 06:30:12 PM|ICON|undef|INFO|undef|OBJN|72|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:30:53 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
 file -r -ns "bueroklammer" -dr 1 -rfn "bueroklammerRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
 file -r -ns "bueroklammer1" -dr 1 -rfn "bueroklammerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
@@ -62,6 +62,7 @@ requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
 		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
 requires "stereoCamera" "10.0";
+requires "OpenEXRLoader" "2012";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2015";
@@ -71,13 +72,13 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 16.660678560601557 17.375738108058787 3.1731969000118618 ;
-	setAttr ".r" -type "double3" -26.400000000000144 -68.799999999999827 8.7951841345887411e-015 ;
+	setAttr ".t" -type "double3" 10.150175534583489 20.484586725771987 4.9513831627835074 ;
+	setAttr ".r" -type "double3" -11.399999999982599 -93.999999999997101 0 ;
 	setAttr ".rpt" -type "double3" 1.529534785121491e-015 1.9740648859503619e-015 2.9536237057634065e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 7.285116214942188;
+	setAttr ".coi" 9.5699555581894309;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -626,8 +627,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 138 ".lnk";
-	setAttr -s 139 ".slnk";
+	setAttr -s 149 ".lnk";
+	setAttr -s 150 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -857,10 +858,10 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 1\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n"
 		+ "            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 0\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n"
 		+ "            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n"
-		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n"
+		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"all\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n"
 		+ "                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 1\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -rendererName \"base_OpenGL_Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n"
 		+ "                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n"
-		+ "                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n"
+		+ "                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"all\" \n            -displayAppearance \"smoothShaded\" \n"
 		+ "            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 1\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -maxConstantTransparency 1\n            -rendererName \"base_OpenGL_Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n"
 		+ "            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showReferenceNodes 1\n                -showReferenceMembers 1\n"
@@ -900,8 +901,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n"
 		+ "                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n"
 		+ "                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 1\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"base_OpenGL_Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 1\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"base_OpenGL_Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"all\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 1\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"base_OpenGL_Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"all\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 1\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"base_OpenGL_Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -911,7 +912,7 @@ createNode reference -n "RaumRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"RaumRN"
 		"RaumRN" 0
-		"RaumRN" 7
+		"RaumRN" 8
 		2 "|Raum:Raum|Raum:pCube1" "scale" " -type \"double3\" 1.0879992777038427 1 1"
 		
 		2 "|Raum:Raum|Raum:pCube2" "scale" " -type \"double3\" 1.0775674194745641 1 1"
@@ -922,9 +923,10 @@ createNode reference -n "RaumRN";
 		
 		2 "|Raum:Raum|Raum:pCube6" "translate" " -type \"double3\" -12.956033484705339 11.995311215081957 -0.0042960317618323529"
 		
-		2 "Raum:file1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/white_wall.png\""
+		2 "Raum:lambert6" "transparency" " -type \"float3\" 0 0 0"
+		2 "Raum:file1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/white_wall.png\""
 		
-		2 "Raum:file2" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Pacific_Birch/Pacific Birch_DIFFUSE.jpg\"";
+		2 "Raum:file2" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/Pacific_Birch/Pacific Birch_DIFFUSE.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "SchreibtischlampeRN";
@@ -977,7 +979,7 @@ createNode reference -n "SchreibtischlampeRN";
 		"translate" " -type \"double3\" 0.704324 0 -0.00163108"
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:pole_vector" 
 		"translate" " -type \"double3\" -0.548258 1.852858 -1.458566"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.357279230303465 20.184971023176633 16.359107651276442"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 25.94637490035425 19.497168903929076 15.047051778428102"
 		
 		2 "|Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
 		2 "|Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
@@ -1025,15 +1027,28 @@ createNode reference -n "StuhlRN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "MonitorRN";
+	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma";
+	setAttr -s 2 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"MonitorRN"
 		"MonitorRN" 0
-		"MonitorRN" 3
+		"MonitorRN" 8
 		2 "|Monitor:monitor:LCDFBXASC032Display" "translate" " -type \"double3\" 27.506573 17.084037 8.139008"
 		
 		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateAxis" " -type \"double3\" 0 -89.999999999999986 0"
 		
-		2 "Monitor:monitor:mia_physicalsky1" "on" " 0";
+		2 "Monitor:monitor:mia_physicalsky1" "on" " 0"
+		3 "Monitor:monitor:Mat.outColor" "Monitor:monitor:StandSG.surfaceShader" 
+		""
+		3 "Monitor:monitor:Mat.message" "Monitor:monitor:materialInfo1.material" 
+		""
+		3 "Monitor:monitor:Mat.message" ":defaultShaderList1.shaders" "-na"
+		5 4 "MonitorRN" "Monitor:monitor:StandSG.surfaceShader" "MonitorRN.placeHolderList[1]" 
+		""
+		5 4 "MonitorRN" "Monitor:monitor:materialInfo1.material" "MonitorRN.placeHolderList[2]" 
+		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "sharedReferenceNode";
@@ -1050,7 +1065,7 @@ createNode reference -n "BildRN";
 		2 "|Bild:group1|Bild:pCube1" "rotate" " -type \"double3\" 0 0 0"
 		2 "|Bild:group1|Bild:pPlane1" "translate" " -type \"double3\" -0.356146 0.0295447 -0.043613399999999997"
 		
-		2 "Bild:file1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/20141205_121809.jpg\""
+		2 "Bild:file1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/20141205_121809.jpg\""
 		
 		2 "Bild:place2dTexture1" "rotateFrame" " 90";
 	setAttr ".ptag" -type "string" "";
@@ -1064,7 +1079,7 @@ createNode reference -n "SchreibtischunerlageRN";
 		
 		2 "|Schreibtischunerlage:pCube16" "scale" " -type \"double3\" 6.110262368473629 0.029923224926027295 12.670380947053507"
 		
-		2 "Schreibtischunerlage:file3" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Unterlage.png\"";
+		2 "Schreibtischunerlage:file3" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/Unterlage.png\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BecherRN";
@@ -1098,7 +1113,7 @@ createNode shadingEngine -n "CarpetaFBXASC032LefortSG1";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo2";
 createNode file -n "MapFBXASC032FBXASC0351";
-	setAttr ".ftn" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/ordner.jpg";
 createNode place2dTexture -n "place2dTexture1";
 	setAttr ".re" -type "float2" 0.99999994 0.99999994 ;
 	setAttr ".of" -type "float2" 2.9802322e-008 2.9802322e-008 ;
@@ -1195,7 +1210,7 @@ createNode reference -n "OrdnerRN";
 		2 "|Ordner:CarpetaFBXASC032Lefort" "scalePivotTranslate" " -type \"double3\" -1421.9508599999999 15.641605 0"
 		
 		2 "|Ordner:Camera01|Ordner:Camera0Shape1" "renderable" " 0"
-		2 "Ordner:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg\"";
+		2 "Ordner:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/ordner.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "OrdnerRN1";
@@ -1212,7 +1227,7 @@ createNode reference -n "OrdnerRN1";
 		
 		2 "|Ordner1:CarpetaFBXASC032Lefort" "shear" " -type \"double3\" 0 0 0"
 		2 "|Ordner1:Camera01|Ordner1:Camera0Shape1" "renderable" " 0"
-		2 "Ordner1:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg\"";
+		2 "Ordner1:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/ordner.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "OrdnerRN2";
@@ -1228,7 +1243,7 @@ createNode reference -n "OrdnerRN2";
 		2 "|Ordner2:CarpetaFBXASC032Lefort" "scale" " -type \"double3\" 0.018 0.018 0.018"
 		
 		2 "|Ordner2:Camera01|Ordner2:Camera0Shape1" "renderable" " 0"
-		2 "Ordner2:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg\"";
+		2 "Ordner2:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/ordner.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BleistiftRN1";
@@ -1444,9 +1459,9 @@ createNode reference -n "Tür2RN";
 		2 "|Tür2:Frame" "scale" " -type \"double3\" 0.113072 0.113072 0.113072"
 		2 "|Tür2:Frame|Tür2:Door" "translate" " -type \"double3\" 46 0 0"
 		2 "|Tür2:Frame|Tür2:Door" "rotate" " -type \"double3\" 0 0 -39.193322"
-		2 "Tür2:file1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/door2.JPG\""
+		2 "Tür2:file1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/door2.JPG\""
 		
-		2 "Tür2:file2" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/door.JPG\"";
+		2 "Tür2:file2" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/door.JPG\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "DeckenlampeRN";
@@ -1497,7 +1512,7 @@ createNode shadingEngine -n "o2SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Bett2_materialInfo1";
 createNode file -n "Bett2_MapFBXASC032FBXASC0351";
-	setAttr ".ftn" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_05.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/cells_05.jpg";
 createNode place2dTexture -n "Bett2_place2dTexture1";
 createNode phong -n "m2";
 	setAttr ".dc" 1;
@@ -1510,7 +1525,7 @@ createNode shadingEngine -n "o4SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Bett2_materialInfo2";
 createNode file -n "MapFBXASC032FBXASC0352";
-	setAttr ".ftn" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_06.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/bett/cells_06.jpg";
 createNode place2dTexture -n "place2dTexture2";
 createNode phong -n "m1";
 	setAttr ".dc" 1;
@@ -1523,7 +1538,7 @@ createNode shadingEngine -n "o6SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo3";
 createNode file -n "MapFBXASC032FBXASC0353";
-	setAttr ".ftn" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_04.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/bett/cells_04.jpg";
 createNode place2dTexture -n "place2dTexture3";
 createNode phong -n "m0";
 	setAttr ".dc" 1;
@@ -1536,7 +1551,7 @@ createNode shadingEngine -n "o8SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo4";
 createNode file -n "MapFBXASC032FBXASC0354";
-	setAttr ".ftn" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_01.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/bett/cells_01.jpg";
 createNode place2dTexture -n "place2dTexture4";
 createNode phong -n "m4";
 	setAttr ".dc" 1;
@@ -1549,7 +1564,7 @@ createNode shadingEngine -n "o2SG1";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo5";
 createNode file -n "MapFBXASC032FBXASC0355";
-	setAttr ".ftn" -type "string" "C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_05.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/bett/cells_05.jpg";
 createNode place2dTexture -n "place2dTexture5";
 createNode phong -n "m5";
 	setAttr ".dc" 1;
@@ -1562,7 +1577,7 @@ createNode shadingEngine -n "o4SG1";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo6";
 createNode file -n "MapFBXASC032FBXASC0356";
-	setAttr ".ftn" -type "string" "C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_06.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/bett/cells_06.jpg";
 createNode place2dTexture -n "place2dTexture6";
 createNode phong -n "m6";
 	setAttr ".dc" 1;
@@ -1575,7 +1590,7 @@ createNode shadingEngine -n "o6SG1";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo7";
 createNode file -n "MapFBXASC032FBXASC0357";
-	setAttr ".ftn" -type "string" "C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_04.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/bett/cells_04.jpg";
 createNode place2dTexture -n "place2dTexture7";
 createNode phong -n "m7";
 	setAttr ".dc" 1;
@@ -1588,7 +1603,7 @@ createNode shadingEngine -n "o8SG1";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo8";
 createNode file -n "MapFBXASC032FBXASC0358";
-	setAttr ".ftn" -type "string" "C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_01.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/bett/cells_01.jpg";
 createNode place2dTexture -n "place2dTexture8";
 createNode reference -n "Tisch2RN";
 	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
@@ -1601,11 +1616,11 @@ createNode reference -n "Tisch2RN";
 		2 "|Tisch2:group1" "rotate" " -type \"double3\" 0 270 0"
 		2 "|Tisch2:group1" "scale" " -type \"double3\" 0.052628300000000003 0.052628300000000003 0.052628300000000003"
 		
-		2 "Tisch2:MapFBXASC032FBXASC0353" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/FW_WD_M.JPG\""
+		2 "Tisch2:MapFBXASC032FBXASC0353" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/FW_WD_M.JPG\""
 		
-		2 "Tisch2:file1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/FW_WD_D.JPG\""
+		2 "Tisch2:file1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/FW_WD_D.JPG\""
 		
-		2 "Tisch2:file2" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/CHROME02.JPG\"";
+		2 "Tisch2:file2" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/CHROME02.JPG\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bueroklammerRN";
@@ -1620,7 +1635,7 @@ createNode reference -n "bueroklammerRN";
 		
 		2 "|bueroklammer:Paperclip" "scale" " -type \"double3\" 0.040380399999999997 0.040380399999999997 0.040380399999999997"
 		
-		2 "bueroklammer:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Reflection.jpg\"";
+		2 "bueroklammer:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/Reflection.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bueroklammerRN1";
@@ -1634,7 +1649,7 @@ createNode reference -n "bueroklammerRN1";
 		
 		2 "|bueroklammer1:Paperclip" "scale" " -type \"double3\" 0.035989500000000001 0.035989500000000001 0.035989500000000001"
 		
-		2 "bueroklammer1:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Reflection.jpg\"";
+		2 "bueroklammer1:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/Reflection.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bueroklammerRN2";
@@ -1646,7 +1661,7 @@ createNode reference -n "bueroklammerRN2";
 		
 		2 "|bueroklammer2:Paperclip" "scale" " -type \"double3\" 0.050709499999999998 0.050709499999999998 0.050709499999999998"
 		
-		2 "bueroklammer2:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Reflection.jpg\"";
+		2 "bueroklammer2:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/Reflection.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BettRN";
@@ -1654,7 +1669,7 @@ createNode reference -n "BettRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BettRN"
 		"BettRN" 0
-		"BettRN" 31
+		"BettRN" 32
 		2 "|Bett:o2" "translate" " -type \"double3\" 26.37279845481363 4.4105076516749779 -26.398562283263995"
 		
 		2 "|Bett:o2" "rotate" " -type \"double3\" -89.999999999998579 -92.554880592958042 0"
@@ -1703,19 +1718,21 @@ createNode reference -n "BettRN";
 		
 		2 "|Bett:o12" "scale" " -type \"double3\" 0.013392343827901342 0.017026924873240215 0.017026924873240215"
 		
-		2 "Bett:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_05.jpg\""
+		2 "Bett:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\""
 		
-		2 "Bett:MapFBXASC032FBXASC0352" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_06.jpg\""
+		2 "Bett:MapFBXASC032FBXASC0352" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\""
 		
-		2 "Bett:MapFBXASC032FBXASC0353" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_04.jpg\""
+		2 "Bett:MapFBXASC032FBXASC0353" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\""
 		
-		2 "Bett:MapFBXASC032FBXASC0354" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_01.jpg\""
+		2 "Bett:MapFBXASC032FBXASC0354" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\""
 		
-		2 "Bett:MapFBXASC032FBXASC0355" "fileTextureName" " -type \"string\" \"C:/users/Patrick/Desktop/OBJEKTE/3DS/cells_05.jpg\""
+		2 "Bett:MapFBXASC032FBXASC0355" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\""
 		
-		2 "Bett:MapFBXASC032FBXASC0356" "fileTextureName" " -type \"string\" \"C:/users/Patrick/Desktop/OBJEKTE/3DS/cells_06.jpg\""
+		2 "Bett:MapFBXASC032FBXASC0356" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\""
 		
-		2 "Bett:MapFBXASC032FBXASC0357" "fileTextureName" " -type \"string\" \"C:/users/Patrick/Desktop/OBJEKTE/3DS/cells_04.jpg\"";
+		2 "Bett:MapFBXASC032FBXASC0357" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\""
+		
+		2 "Bett:MapFBXASC032FBXASC0358" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode polyCube -n "polyCube1";
@@ -1737,13 +1754,19 @@ createNode reference -n "car_msRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"car_msRN"
 		"car_msRN" 0
-		"car_msRN" 4
+		"car_msRN" 7
 		2 "|car_ms:Alles" "translate" " -type \"double3\" 0 0 0.33557647471273455"
 		
 		2 "|car_ms:group1" "translate" " -type \"double3\" 22.73486891313966 13.814715071183977 0.89185871040856979"
 		
 		2 "|car_ms:group1" "rotate" " -type \"double3\" 0 90 0"
-		2 "|car_ms:group1" "scale" " -type \"double3\" 0.064180779278468075 0.064180779278468075 0.064180779278468075";
+		2 "|car_ms:group1" "scale" " -type \"double3\" 0.064180779278468075 0.064180779278468075 0.064180779278468075"
+		
+		2 "car_ms:karosse1:mi_car_paint_phen_x1_Flattened_Diffuse" "fileTextureName" 
+		" -type \"string\" \"C:/GIT/desklife/02_Textures/Auto Skin.png\""
+		2 "car_ms:karosse_lack:karosse:mi_car_paint_phen_x1_Flattened_Diffuse" "fileTextureName" 
+		" -type \"string\" \"C:/GIT/desklife/02_Textures/Auto Skin.png\""
+		2 "car_ms:file1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/Auto Skin.png\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode mentalrayOptions -s -n "PreviewImrRayTracyOff";
@@ -1763,6 +1786,10 @@ createNode mentalrayOptions -s -n "PreviewImrRayTracyOn";
 	setAttr ".rfrr" 2;
 	setAttr ".maxr" 3;
 	setAttr ".shrd" 1;
+createNode lambert -n "lambert2";
+	setAttr ".dc" 1;
+	setAttr ".c" -type "float3" 0.075181201 0.075181201 0.075181201 ;
+	setAttr ".ambc" -type "float3" 0.099999987 0.099999987 0.099999987 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -1778,7 +1805,7 @@ select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 25 ".r";
 select -ne :lightList1;
-	setAttr -s 3 ".l";
+	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 58 ".tx";
 select -ne :lambert1;
@@ -1800,13 +1827,15 @@ select -ne :defaultResolution;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7769999504089355;
 select -ne :defaultLightSet;
-	setAttr -s 3 ".dsm";
+	setAttr -s 2 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :defaultHardwareRenderGlobals;
 	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
 select -ne :ikSystem;
+connectAttr "lambert2.oc" "MonitorRN.phl[1]";
+connectAttr "lambert2.msg" "MonitorRN.phl[2]";
 connectAttr "Box03_translateX.o" "Box03.tx";
 connectAttr "Box03_translateY.o" "Box03.ty";
 connectAttr "Box03_translateZ.o" "Box03.tz";
@@ -2048,6 +2077,7 @@ connectAttr "m4.msg" ":defaultShaderList1.s" -na;
 connectAttr "m5.msg" ":defaultShaderList1.s" -na;
 connectAttr "m6.msg" ":defaultShaderList1.s" -na;
 connectAttr "m7.msg" ":defaultShaderList1.s" -na;
+connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "Bett2_place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
@@ -2072,6 +2102,6 @@ connectAttr "Box02Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Box03Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
-applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"RaumRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma\" 3496213655 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma\" \"FileRef\"\n1\n\"SchreibtischlampeRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" 1754744902 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" \"FileRef\"\n2\n\"StuhlRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma\" 1490291708 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma\" \"FileRef\"\n3\n\"MonitorRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma\" 3977924147 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma\" \"FileRef\"\n4\n\"BildRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma\" 1259755597 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma\" \"FileRef\"\n5\n\"SchreibtischunerlageRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" 1990308374 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" \"FileRef\"\n6\n\"BecherRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma\" 31634674 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma\" \"FileRef\"\n7\n\"OrdnerRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n8\n\"OrdnerRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n9\n\"OrdnerRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n10\n\"BleistiftRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n11\n\"BleistiftRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n12\n\"BleistiftRN3\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n13\n\"BleistiftRN4\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n14\n\"BleistiftRN5\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n15\n\"Tür2RN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma\" 855969748 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma\" \"FileRef\"\n16\n\"DeckenlampeRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" 145367839 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" \"FileRef\"\n17\n\"Tisch2RN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma\" 3876219591 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma\" \"FileRef\"\n18\n\"bueroklammerRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n19\n\"bueroklammerRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n20\n\"bueroklammerRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n21\n\"BettRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma\" 1012732906 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma\" \"FileRef\"\n22\n\"ph_autoRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma\" 283233666 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma\" \"FileRef\"\n23\n\"car_msRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma\" 3125550903 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma\" \"FileRef\"\n24\n\"MapFBXASC032FBXASC0351\" \"fileTextureName\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg\" 1440541779 \"\" \"sourceImages\"\n25\n\"Bett2_MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_05.jpg\" 2890240681 \"\" \"sourceImages\"\n26\n\"MapFBXASC032FBXASC0352\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_06.jpg\" 3957713017 \"\" \"sourceImages\"\n27\n\"MapFBXASC032FBXASC0353\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_04.jpg\" 2435169049 \"\" \"sourceImages\"\n28\n\"MapFBXASC032FBXASC0354\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_01.jpg\" 1506096233 \"\" \"sourceImages\"\n29\n\"MapFBXASC032FBXASC0355\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_05.jpg\" 829875263 \"\" \"sourceImages\"\n30\n\"MapFBXASC032FBXASC0356\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_06.jpg\" 1993776879 \"\" \"sourceImages\"\n31\n\"MapFBXASC032FBXASC0357\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_04.jpg\" 202821007 \"\" \"sourceImages\"\n32\n\"MapFBXASC032FBXASC0358\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_01.jpg\" 3304473343 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
+applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"RaumRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma\" 3496213655 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma\" \"FileRef\"\n1\n\"SchreibtischlampeRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" 1754744902 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" \"FileRef\"\n2\n\"StuhlRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma\" 1490291708 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma\" \"FileRef\"\n3\n\"MonitorRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma\" 3977924147 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma\" \"FileRef\"\n4\n\"BildRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma\" 1259755597 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma\" \"FileRef\"\n5\n\"SchreibtischunerlageRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" 1990308374 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" \"FileRef\"\n6\n\"BecherRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma\" 31634674 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma\" \"FileRef\"\n7\n\"OrdnerRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n8\n\"OrdnerRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n9\n\"OrdnerRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n10\n\"BleistiftRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n11\n\"BleistiftRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n12\n\"BleistiftRN3\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n13\n\"BleistiftRN4\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n14\n\"BleistiftRN5\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n15\n\"Tür2RN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma\" 855969748 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma\" \"FileRef\"\n16\n\"DeckenlampeRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" 145367839 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" \"FileRef\"\n17\n\"Tisch2RN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma\" 3876219591 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma\" \"FileRef\"\n18\n\"bueroklammerRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n19\n\"bueroklammerRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n20\n\"bueroklammerRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n21\n\"BettRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma\" 1012732906 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma\" \"FileRef\"\n22\n\"ph_autoRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma\" 283233666 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma\" \"FileRef\"\n23\n\"car_msRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma\" 3125550903 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma\" \"FileRef\"\n24\n\"MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/ordner.jpg\" 3862159993 \"C:/GIT/desklife/02_Textures/ordner.jpg\" \"sourceImages\"\n25\n\"Bett2_MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/cells_05.jpg\" 100957266 \"\" \"sourceImages\"\n26\n\"MapFBXASC032FBXASC0352\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n27\n\"MapFBXASC032FBXASC0353\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n28\n\"MapFBXASC032FBXASC0354\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\n29\n\"MapFBXASC032FBXASC0355\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" 1216197705 \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" \"sourceImages\"\n30\n\"MapFBXASC032FBXASC0356\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n31\n\"MapFBXASC032FBXASC0357\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n32\n\"MapFBXASC032FBXASC0358\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
 // End of Szene1.ma
