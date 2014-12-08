@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Shot7.ma
-//Last modified: Mon, Dec 08, 2014 02:09:28 PM
+//Last modified: Mon, Dec 08, 2014 02:16:03 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -279,8 +279,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 568 ".lnk";
-	setAttr -s 572 ".slnk";
+	setAttr -s 138 ".lnk";
+	setAttr -s 139 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -290,8 +290,8 @@ createNode reference -n "Szene1RN";
 	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
-		"Szene1:BleistiftRN1" 0
 		"Szene1:RaumRN" 0
+		"Szene1:BleistiftRN1" 0
 		"Szene1:OrdnerRN" 0
 		"Szene1:ph_autoRN" 0
 		"Szene1RN" 0
