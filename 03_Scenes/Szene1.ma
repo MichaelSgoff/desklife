@@ -1,84 +1,87 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Sun, Dec 07, 2014 08:48:31 PM
+//Last modified: Mon, Dec 08, 2014 12:01:09 PM
 //Codeset: 1252
-file -rdi 1 -ns "Raum" -rfn "RaumRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Raum.ma";
-file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischlampe.ma";
-file -rdi 1 -ns "Stuhl" -rfn "StuhlRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Stuhl.ma";
-file -rdi 1 -ns "Monitor" -rfn "MonitorRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Monitor.ma";
-file -rdi 1 -ns "Bild" -rfn "BildRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bild.ma";
-file -rdi 1 -ns "Schreibtischunerlage" -rfn "SchreibtischunerlageRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischunerlage.ma";
-file -rdi 1 -ns "Becher" -rfn "BecherRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Becher.ma";
+file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma";
+file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma";
+file -rdi 1 -ns "Stuhl" -rfn "StuhlRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma";
+file -rdi 1 -ns "Monitor" -rfn "MonitorRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma";
+file -rdi 1 -ns "Bild" -rfn "BildRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma";
+file -rdi 1 -ns "Schreibtischunerlage" -rfn "SchreibtischunerlageRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma";
+file -rdi 1 -ns "Becher" -rfn "BecherRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma";
 file -rdi 1 -ns "Ordner" -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
-file -rdi 1 -ns "Ordner1" -rfn "OrdnerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
-file -rdi 1 -ns "Ordner2" -rfn "OrdnerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
+		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
+file -rdi 1 -ns "Ordner1" -rfn "OrdnerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
+file -rdi 1 -ns "Ordner2" -rfn "OrdnerRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
 file -rdi 1 -ns "Bleistift1" -rfn "BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift2" -rfn "BleistiftRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift3" -rfn "BleistiftRN3" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
-file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift2" -rfn "BleistiftRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift3" -rfn "BleistiftRN3" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
 file -rdi 1 -ns "Tür2" -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tür2.ma";
-file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Deckenlampe.ma";
+		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma";
+file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
 file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 06:30:12 PM|ICON|undef|INFO|undef|OBJN|72|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tisch2.ma";
-file -rdi 1 -ns "bueroklammer" -rfn "bueroklammerRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
-file -rdi 1 -ns "bueroklammer1" -rfn "bueroklammerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
-file -rdi 1 -ns "bueroklammer2" -rfn "bueroklammerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
-file -rdi 1 -ns "Bett" -rfn "BettRN" -op "v=0;" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bett.ma";
-file -r -ns "Raum" -dr 1 -rfn "RaumRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Raum.ma";
-file -r -ns "Schreibtischlampe" -dr 1 -rfn "SchreibtischlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischlampe.ma";
-file -r -ns "Stuhl" -dr 1 -rfn "StuhlRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Stuhl.ma";
-file -r -ns "Monitor" -dr 1 -rfn "MonitorRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Monitor.ma";
-file -r -ns "Bild" -dr 1 -rfn "BildRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bild.ma";
-file -r -ns "Schreibtischunerlage" -dr 1 -rfn "SchreibtischunerlageRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischunerlage.ma";
-file -r -ns "Becher" -dr 1 -rfn "BecherRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Becher.ma";
+		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
+file -rdi 1 -ns "bueroklammer" -rfn "bueroklammerRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
+file -rdi 1 -ns "bueroklammer1" -rfn "bueroklammerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
+file -rdi 1 -ns "bueroklammer2" -rfn "bueroklammerRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
+file -rdi 1 -ns "Bett" -rfn "BettRN" -op "v=0;" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma";
+file -rdi 1 -ns "ph_auto" -rfn "ph_autoRN" -op "v=0;p=17;f=0" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma";
+file -rdi 1 -ns "car_ms" -rfn "car_msRN" -op "v=0;p=17;f=0" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma";
+file -r -ns "Raum" -dr 1 -rfn "RaumRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma";
+file -r -ns "Schreibtischlampe" -dr 1 -rfn "SchreibtischlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma";
+file -r -ns "Stuhl" -dr 1 -rfn "StuhlRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma";
+file -r -ns "Monitor" -dr 1 -rfn "MonitorRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma";
+file -r -ns "Bild" -dr 1 -rfn "BildRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma";
+file -r -ns "Schreibtischunerlage" -dr 1 -rfn "SchreibtischunerlageRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma";
+file -r -ns "Becher" -dr 1 -rfn "BecherRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma";
 file -r -ns "Ordner" -dr 1 -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
-file -r -ns "Ordner1" -dr 1 -rfn "OrdnerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
-file -r -ns "Ordner2" -dr 1 -rfn "OrdnerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
+		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
+file -r -ns "Ordner1" -dr 1 -rfn "OrdnerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
+file -r -ns "Ordner2" -dr 1 -rfn "OrdnerRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
 file -r -ns "Bleistift1" -dr 1 -rfn "BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
-file -r -ns "Bleistift2" -dr 1 -rfn "BleistiftRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
-file -r -ns "Bleistift3" -dr 1 -rfn "BleistiftRN3" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
-file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
-file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bleistift.ma";
+		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+file -r -ns "Bleistift2" -dr 1 -rfn "BleistiftRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+file -r -ns "Bleistift3" -dr 1 -rfn "BleistiftRN3" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
+file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma";
 file -r -ns "Tür2" -dr 1 -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tür2.ma";
-file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Deckenlampe.ma";
+		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma";
+file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
 file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 06:30:12 PM|ICON|undef|INFO|undef|OBJN|72|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
-		 "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tisch2.ma";
-file -r -ns "bueroklammer" -dr 1 -rfn "bueroklammerRN" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
-file -r -ns "bueroklammer1" -dr 1 -rfn "bueroklammerRN1" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
-file -r -ns "bueroklammer2" -dr 1 -rfn "bueroklammerRN2" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
-file -r -ns "Bett" -dr 1 -rfn "BettRN" -op "v=0;" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bett.ma";
+		 "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
+file -r -ns "bueroklammer" -dr 1 -rfn "bueroklammerRN" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
+file -r -ns "bueroklammer1" -dr 1 -rfn "bueroklammerRN1" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
+file -r -ns "bueroklammer2" -dr 1 -rfn "bueroklammerRN2" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
+file -r -ns "Bett" -dr 1 -rfn "BettRN" -op "v=0;" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma";
+file -r -ns "ph_auto" -dr 1 -rfn "ph_autoRN" -op "v=0;p=17;f=0" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma";
+file -r -ns "car_ms" -dr 1 -rfn "car_msRN" -op "v=0;p=17;f=0" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
-		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.16 ";
+		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2015";
 fileInfo "version" "2015";
-fileInfo "cutIdentifier" "201405190330-916664";
-fileInfo "osv" "Microsoft Windows 7 Business Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
+fileInfo "cutIdentifier" "201410051530-933320";
+fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.9546208029736514 39.421469049946396 4.4408815688487842 ;
-	setAttr ".r" -type "double3" -50.40000000000078 -80.000000000000611 0 ;
-	setAttr ".rpt" -type "double3" -5.0092716510069541e-015 -1.2868177596808619e-015 
-		1.6763881667712648e-015 ;
+	setAttr ".t" -type "double3" 16.660678560601557 17.375738108058787 3.1731969000118618 ;
+	setAttr ".r" -type "double3" -26.400000000000144 -68.799999999999827 8.7951841345887411e-015 ;
+	setAttr ".rpt" -type "double3" 1.529534785121491e-015 1.9740648859503619e-015 2.9536237057634065e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 35.111675604706065;
+	setAttr ".coi" 7.285116214942188;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.66396791713510672 29.572194201408333 -44.723206404173482 ;
+	setAttr ".tp" -type "double3" 22.74443097966433 14.136519154444951 0.81346485181015638 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	setAttr ".v" no;
@@ -425,30 +428,6 @@ createNode mesh -n "Box03Shape" -p "Box03";
 	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "Sky01";
-	addAttr -is true -ci true -h true -k true -sn "MaxHandle" -ln "MaxHandle" -smn 
-		0 -smx 0 -at "long";
-	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.7930000305175779 444.52387695312507 48.32693786621094 ;
-	setAttr ".r" -type "double3" -90 0 0 ;
-	setAttr ".s" -type "double3" 0.1 0.1 0.1 ;
-	setAttr -k on ".MaxHandle" 7;
-createNode pointLight -n "Sky01Shape" -p "Sky01";
-	addAttr -ci true -sn "EnableNearAttenuation" -ln "EnableNearAttenuation" -min 0 
-		-max 1 -at "bool";
-	addAttr -ci true -sn "NearAttenuationStart" -ln "NearAttenuationStart" -at "double";
-	addAttr -ci true -sn "NearAttenuationEnd" -ln "NearAttenuationEnd" -at "double";
-	addAttr -ci true -sn "EnableFarAttenuation" -ln "EnableFarAttenuation" -min 0 -max 
-		1 -at "bool";
-	addAttr -ci true -sn "FarAttenuationStart" -ln "FarAttenuationStart" -at "double";
-	addAttr -ci true -sn "FarAttenuationEnd" -ln "FarAttenuationEnd" -at "double";
-	addAttr -ci true -sn "DecayStart" -ln "DecayStart" -at "double";
-	setAttr -k off ".v" no;
-	setAttr ".cl" -type "float3" 0.86666673 0.86666673 0.86666673 ;
-	setAttr ".in" 0.5;
-	setAttr ".urs" no;
-	setAttr ".rdl" 1;
-	setAttr ".dms" yes;
 createNode transform -n "Camera01";
 	addAttr -is true -ci true -h true -k true -sn "MaxHandle" -ln "MaxHandle" -smn 
 		0 -smx 0 -at "long";
@@ -482,7 +461,7 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode mentalrayItemsList -s -n "mentalrayItemsList";
-	setAttr -s 17 ".opt";
+	setAttr -s 19 ".opt";
 createNode mentalrayGlobals -s -n "mentalrayGlobals";
 	addAttr -s false -ci true -h true -sn "sunAndSkyShader" -ln "sunAndSkyShader" -at "message";
 	setAttr ".rvb" 3;
@@ -647,8 +626,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 124 ".lnk";
-	setAttr -s 125 ".slnk";
+	setAttr -s 138 ".lnk";
+	setAttr -s 139 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -912,7 +891,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Texture Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"blendShapePanel\" (localizedPanelLabel(\"Blend Shape\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tblendShapePanel -unParent -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tblendShapePanel -edit -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n"
-		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n"
 		+ "            stereoCameraView -e \n                -camera \"camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n"
 		+ "                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n"
@@ -932,14 +911,20 @@ createNode reference -n "RaumRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"RaumRN"
 		"RaumRN" 0
-		"RaumRN" 4
+		"RaumRN" 7
 		2 "|Raum:Raum|Raum:pCube1" "scale" " -type \"double3\" 1.0879992777038427 1 1"
 		
 		2 "|Raum:Raum|Raum:pCube2" "scale" " -type \"double3\" 1.0775674194745641 1 1"
 		
 		2 "|Raum:Raum|Raum:pCube5" "translate" " -type \"double3\" 0.26346073115244767 11.734168757878196 -11.178509401886046"
 		
-		2 "|Raum:Raum|Raum:pCube6" "translate" " -type \"double3\" -12.956033484705339 11.995311215081957 -0.0042960317618323529";
+		2 "|Raum:Raum|Raum:pCube5" "scale" " -type \"double3\" 1 1 1.1484270540741031"
+		
+		2 "|Raum:Raum|Raum:pCube6" "translate" " -type \"double3\" -12.956033484705339 11.995311215081957 -0.0042960317618323529"
+		
+		2 "Raum:file1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/white_wall.png\""
+		
+		2 "Raum:file2" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Pacific_Birch/Pacific Birch_DIFFUSE.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "SchreibtischlampeRN";
@@ -1043,8 +1028,12 @@ createNode reference -n "MonitorRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"MonitorRN"
 		"MonitorRN" 0
-		"MonitorRN" 1
-		2 "|Monitor:monitor:LCDFBXASC032Display" "translate" " -type \"double3\" 27.506573 17.084037 8.139008";
+		"MonitorRN" 3
+		2 "|Monitor:monitor:LCDFBXASC032Display" "translate" " -type \"double3\" 27.506573 17.084037 8.139008"
+		
+		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateAxis" " -type \"double3\" 0 -89.999999999999986 0"
+		
+		2 "Monitor:monitor:mia_physicalsky1" "on" " 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "sharedReferenceNode";
@@ -1054,12 +1043,14 @@ createNode reference -n "BildRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BildRN"
 		"BildRN" 0
-		"BildRN" 5
+		"BildRN" 6
 		2 "|Bild:group1" "translate" " -type \"double3\" -15.96142761326205 25.697207430118862 -41.302603999999995"
 		
 		2 "|Bild:group1" "rotate" " -type \"double3\" 0 270 0"
 		2 "|Bild:group1|Bild:pCube1" "rotate" " -type \"double3\" 0 0 0"
 		2 "|Bild:group1|Bild:pPlane1" "translate" " -type \"double3\" -0.356146 0.0295447 -0.043613399999999997"
+		
+		2 "Bild:file1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/20141205_121809.jpg\""
 		
 		2 "Bild:place2dTexture1" "rotateFrame" " 90";
 	setAttr ".ptag" -type "string" "";
@@ -1068,10 +1059,12 @@ createNode reference -n "SchreibtischunerlageRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SchreibtischunerlageRN"
 		"SchreibtischunerlageRN" 0
-		"SchreibtischunerlageRN" 2
+		"SchreibtischunerlageRN" 3
 		2 "|Schreibtischunerlage:pCube16" "translate" " -type \"double3\" 22.558481 13.957432575771685 8.4467872104377157"
 		
-		2 "|Schreibtischunerlage:pCube16" "scale" " -type \"double3\" 6.110262368473629 0.029923224926027295 12.670380947053507";
+		2 "|Schreibtischunerlage:pCube16" "scale" " -type \"double3\" 6.110262368473629 0.029923224926027295 12.670380947053507"
+		
+		2 "Schreibtischunerlage:file3" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Unterlage.png\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BecherRN";
@@ -1105,7 +1098,7 @@ createNode shadingEngine -n "CarpetaFBXASC032LefortSG1";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo2";
 createNode file -n "MapFBXASC032FBXASC0351";
-	setAttr ".ftn" -type "string" "C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/ordner.jpg";
+	setAttr ".ftn" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg";
 createNode place2dTexture -n "place2dTexture1";
 	setAttr ".re" -type "float2" 0.99999994 0.99999994 ;
 	setAttr ".of" -type "float2" 2.9802322e-008 2.9802322e-008 ;
@@ -1182,11 +1175,11 @@ createNode animCurveTA -n "Camera01_rotateZ";
 	setAttr -s 2 ".kox[0:1]"  1 1;
 	setAttr -s 2 ".koy[0:1]"  0 0;
 createNode reference -n "OrdnerRN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Ordner.ma";
+	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"OrdnerRN"
 		"OrdnerRN" 0
-		"OrdnerRN" 8
+		"OrdnerRN" 9
 		2 "|Ordner:CarpetaFBXASC032Lefort" "translate" " -type \"double3\" 25.706179 13.981362980020176 -1.887484"
 		
 		2 "|Ordner:CarpetaFBXASC032Lefort" "rotate" " -type \"double3\" -90 0.630234 0"
@@ -1201,7 +1194,8 @@ createNode reference -n "OrdnerRN";
 		
 		2 "|Ordner:CarpetaFBXASC032Lefort" "scalePivotTranslate" " -type \"double3\" -1421.9508599999999 15.641605 0"
 		
-		2 "|Ordner:Camera01|Ordner:Camera0Shape1" "renderable" " 0";
+		2 "|Ordner:Camera01|Ordner:Camera0Shape1" "renderable" " 0"
+		2 "Ordner:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "OrdnerRN1";
@@ -1209,7 +1203,7 @@ createNode reference -n "OrdnerRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"OrdnerRN1"
 		"OrdnerRN1" 0
-		"OrdnerRN1" 5
+		"OrdnerRN1" 6
 		2 "|Ordner1:CarpetaFBXASC032Lefort" "translate" " -type \"double3\" 25.7346 13.928376754654092 -3.523854"
 		
 		2 "|Ordner1:CarpetaFBXASC032Lefort" "rotate" " -type \"double3\" -90 0.722998 0"
@@ -1217,7 +1211,8 @@ createNode reference -n "OrdnerRN1";
 		2 "|Ordner1:CarpetaFBXASC032Lefort" "scale" " -type \"double3\" 0.018 0.018 0.018"
 		
 		2 "|Ordner1:CarpetaFBXASC032Lefort" "shear" " -type \"double3\" 0 0 0"
-		2 "|Ordner1:Camera01|Ordner1:Camera0Shape1" "renderable" " 0";
+		2 "|Ordner1:Camera01|Ordner1:Camera0Shape1" "renderable" " 0"
+		2 "Ordner1:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "OrdnerRN2";
@@ -1225,14 +1220,15 @@ createNode reference -n "OrdnerRN2";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"OrdnerRN2"
 		"OrdnerRN2" 0
-		"OrdnerRN2" 4
+		"OrdnerRN2" 5
 		2 "|Ordner2:CarpetaFBXASC032Lefort" "translate" " -type \"double3\" 25.577561 13.885062 -5.367163"
 		
 		2 "|Ordner2:CarpetaFBXASC032Lefort" "rotate" " -type \"double3\" -90 3.446487 0"
 		
 		2 "|Ordner2:CarpetaFBXASC032Lefort" "scale" " -type \"double3\" 0.018 0.018 0.018"
 		
-		2 "|Ordner2:Camera01|Ordner2:Camera0Shape1" "renderable" " 0";
+		2 "|Ordner2:Camera01|Ordner2:Camera0Shape1" "renderable" " 0"
+		2 "Ordner2:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BleistiftRN1";
@@ -1437,26 +1433,28 @@ createNode reference -n "BleistiftRN5";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Tür2RN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tür2.ma";
+	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Tür2RN"
 		"Tür2RN" 0
-		"Tür2RN" 6
+		"Tür2RN" 7
 		2 "|Tür2:Frame" "translate" " -type \"double3\" -30.786184838204754 3.6639481821147371 -4.91244"
 		
 		2 "|Tür2:Frame" "rotate" " -type \"double3\" 270 270 0"
 		2 "|Tür2:Frame" "scale" " -type \"double3\" 0.113072 0.113072 0.113072"
 		2 "|Tür2:Frame|Tür2:Door" "translate" " -type \"double3\" 46 0 0"
 		2 "|Tür2:Frame|Tür2:Door" "rotate" " -type \"double3\" 0 0 -39.193322"
-		2 "Tür2:file1" "fileTextureName" " -type \"string\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/door2.JPG\"";
+		2 "Tür2:file1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/door2.JPG\""
+		
+		2 "Tür2:file2" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/door.JPG\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "DeckenlampeRN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Deckenlampe.ma";
+	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DeckenlampeRN"
 		"DeckenlampeRN" 0
-		"DeckenlampeRN" 15
+		"DeckenlampeRN" 16
 		2 "|Deckenlampe:LAMP" "translate" " -type \"double3\" 0 48.294723 0"
 		2 "|Deckenlampe:LAMP" "scale" " -type \"double3\" 0.18658996105179917 0.19929529781486485 0.11268580317464913"
 		
@@ -1483,7 +1481,9 @@ createNode reference -n "DeckenlampeRN";
 		
 		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[692:698]" " -type \"float3\" -5.9604644999999993e-008 -1.4901161000000001e-008 2.3841858000000002e-007 1.7881393000000001e-007 -7.4505806000000003e-009 1.7881393000000001e-007 -8.3446503e-007 -3.7252903000000002e-009 2.9802322000000001e-008 2.3841858000000002e-007 -3.7252903000000002e-009 5.9604644999999993e-008 0 0 -2.7939677000000001e-009 -2.3841858000000002e-007 -1.4901161000000001e-008 5.9604644999999993e-008 0 -4.4703483999999995e-008 -2.3841858000000002e-007"
 		
-		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[723:728]" " -type \"float3\" 0 0 -1.1444091999999999e-005 0 0 -1.1444091999999999e-005 0 0 -1.1444091999999999e-005 0 0 1.1444091999999999e-005 0 0 1.1444091999999999e-005 0 0 1.1444091999999999e-005";
+		2 "|Deckenlampe:LAMP|Deckenlampe:LAMPShape" "pt[723:728]" " -type \"float3\" 0 0 -1.1444091999999999e-005 0 0 -1.1444091999999999e-005 0 0 -1.1444091999999999e-005 0 0 1.1444091999999999e-005 0 0 1.1444091999999999e-005 0 0 1.1444091999999999e-005"
+		
+		2 "Deckenlampe:bett_MapFBXASC032FBXASC0354" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_01.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode phong -n "m3";
@@ -1591,58 +1591,70 @@ createNode file -n "MapFBXASC032FBXASC0358";
 	setAttr ".ftn" -type "string" "C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_01.jpg";
 createNode place2dTexture -n "place2dTexture8";
 createNode reference -n "Tisch2RN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Tisch2.ma";
+	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Tisch2RN"
 		"Tisch2RN" 0
-		"Tisch2RN" 3
+		"Tisch2RN" 6
 		2 "|Tisch2:group1" "translate" " -type \"double3\" 21.574779 3.591469 7.00139"
 		
 		2 "|Tisch2:group1" "rotate" " -type \"double3\" 0 270 0"
-		2 "|Tisch2:group1" "scale" " -type \"double3\" 0.052628300000000003 0.052628300000000003 0.052628300000000003";
+		2 "|Tisch2:group1" "scale" " -type \"double3\" 0.052628300000000003 0.052628300000000003 0.052628300000000003"
+		
+		2 "Tisch2:MapFBXASC032FBXASC0353" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/FW_WD_M.JPG\""
+		
+		2 "Tisch2:file1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/FW_WD_D.JPG\""
+		
+		2 "Tisch2:file2" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/CHROME02.JPG\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bueroklammerRN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/bueroklammer.ma";
+	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bueroklammerRN"
 		"bueroklammerRN" 0
-		"bueroklammerRN" 3
+		"bueroklammerRN" 4
 		2 "|bueroklammer:Paperclip" "translate" " -type \"double3\" 21.470642 13.992648 16.990833"
 		
 		2 "|bueroklammer:Paperclip" "rotate" " -type \"double3\" -90 91.355172 0"
 		
-		2 "|bueroklammer:Paperclip" "scale" " -type \"double3\" 0.040380399999999997 0.040380399999999997 0.040380399999999997";
+		2 "|bueroklammer:Paperclip" "scale" " -type \"double3\" 0.040380399999999997 0.040380399999999997 0.040380399999999997"
+		
+		2 "bueroklammer:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Reflection.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bueroklammerRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bueroklammerRN1"
 		"bueroklammerRN1" 0
-		"bueroklammerRN1" 3
+		"bueroklammerRN1" 4
 		2 "|bueroklammer1:Paperclip" "translate" " -type \"double3\" 21.637039 13.956774 16.524654"
 		
 		2 "|bueroklammer1:Paperclip" "rotate" " -type \"double3\" -90 77.309346 0"
 		
-		2 "|bueroklammer1:Paperclip" "scale" " -type \"double3\" 0.035989500000000001 0.035989500000000001 0.035989500000000001";
+		2 "|bueroklammer1:Paperclip" "scale" " -type \"double3\" 0.035989500000000001 0.035989500000000001 0.035989500000000001"
+		
+		2 "bueroklammer1:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Reflection.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bueroklammerRN2";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bueroklammerRN2"
 		"bueroklammerRN2" 0
-		"bueroklammerRN2" 2
+		"bueroklammerRN2" 3
 		2 "|bueroklammer2:Paperclip" "translate" " -type \"double3\" 22.638873 14.000687 16.616778"
 		
-		2 "|bueroklammer2:Paperclip" "scale" " -type \"double3\" 0.050709499999999998 0.050709499999999998 0.050709499999999998";
+		2 "|bueroklammer2:Paperclip" "scale" " -type \"double3\" 0.050709499999999998 0.050709499999999998 0.050709499999999998"
+		
+		2 "bueroklammer2:Metal_ncl1_1" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/Reflection.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "BettRN";
-	setAttr ".fn[0]" -type "string" "Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Bett.ma";
+	setAttr ".fn[0]" -type "string" "C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BettRN"
 		"BettRN" 0
-		"BettRN" 24
+		"BettRN" 31
 		2 "|Bett:o2" "translate" " -type \"double3\" 26.37279845481363 4.4105076516749779 -26.398562283263995"
 		
 		2 "|Bett:o2" "rotate" " -type \"double3\" -89.999999999998579 -92.554880592958042 0"
@@ -1689,7 +1701,21 @@ createNode reference -n "BettRN";
 		
 		2 "|Bett:o12" "rotate" " -type \"double3\" -89.999999999998579 -92.554880592958042 0"
 		
-		2 "|Bett:o12" "scale" " -type \"double3\" 0.013392343827901342 0.017026924873240215 0.017026924873240215";
+		2 "|Bett:o12" "scale" " -type \"double3\" 0.013392343827901342 0.017026924873240215 0.017026924873240215"
+		
+		2 "Bett:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_05.jpg\""
+		
+		2 "Bett:MapFBXASC032FBXASC0352" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_06.jpg\""
+		
+		2 "Bett:MapFBXASC032FBXASC0353" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_04.jpg\""
+		
+		2 "Bett:MapFBXASC032FBXASC0354" "fileTextureName" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/bett/cells_01.jpg\""
+		
+		2 "Bett:MapFBXASC032FBXASC0355" "fileTextureName" " -type \"string\" \"C:/users/Patrick/Desktop/OBJEKTE/3DS/cells_05.jpg\""
+		
+		2 "Bett:MapFBXASC032FBXASC0356" "fileTextureName" " -type \"string\" \"C:/users/Patrick/Desktop/OBJEKTE/3DS/cells_06.jpg\""
+		
+		2 "Bett:MapFBXASC032FBXASC0357" "fileTextureName" " -type \"string\" \"C:/users/Patrick/Desktop/OBJEKTE/3DS/cells_04.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode polyCube -n "polyCube1";
@@ -1697,31 +1723,73 @@ createNode polyCube -n "polyCube1";
 	setAttr ".h" 0.26148699835346223;
 	setAttr ".d" 1.1265728210127408;
 	setAttr ".cuv" 4;
+createNode reference -n "ph_autoRN";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"ph_autoRN"
+		"ph_autoRN" 0
+		"ph_autoRN" 2
+		2 "|ph_auto:group1" "translate" " -type \"double3\" 23.713366450820047 13.848515135182499 1.0991196599103379"
+		
+		2 "|ph_auto:group1" "scale" " -type \"double3\" 0.053684248629956272 0.053684248629956272 0.053684248629956272";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "car_msRN";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"car_msRN"
+		"car_msRN" 0
+		"car_msRN" 4
+		2 "|car_ms:Alles" "translate" " -type \"double3\" 0 0 0.33557647471273455"
+		
+		2 "|car_ms:group1" "translate" " -type \"double3\" 22.73486891313966 13.814715071183977 0.89185871040856979"
+		
+		2 "|car_ms:group1" "rotate" " -type \"double3\" 0 90 0"
+		2 "|car_ms:group1" "scale" " -type \"double3\" 0.064180779278468075 0.064180779278468075 0.064180779278468075";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode mentalrayOptions -s -n "PreviewImrRayTracyOff";
+	setAttr ".minsp" 0;
+	setAttr ".fil" 1;
+	setAttr ".scan" 1;
+	setAttr ".ray" no;
+	setAttr ".rflr" 1;
+	setAttr ".rfrr" 1;
+	setAttr ".maxr" 1;
+	setAttr ".shrd" 2;
+createNode mentalrayOptions -s -n "PreviewImrRayTracyOn";
+	setAttr ".minsp" 0;
+	setAttr ".fil" 1;
+	setAttr ".scan" 1;
+	setAttr ".rflr" 1;
+	setAttr ".rfrr" 2;
+	setAttr ".maxr" 3;
+	setAttr ".shrd" 1;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
 select -ne :renderPartition;
-	setAttr -s 124 ".st";
+	setAttr -s 138 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 124 ".s";
+	setAttr -s 136 ".s";
 select -ne :postProcessList1;
 	setAttr -s 3 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 60 ".u";
+	setAttr -s 69 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 23 ".r";
+	setAttr -s 25 ".r";
 select -ne :lightList1;
-	setAttr -s 4 ".l";
+	setAttr -s 3 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 53 ".tx";
+	setAttr -s 58 ".tx";
+select -ne :lambert1;
 select -ne :initialShadingGroup;
-	setAttr -s 21 ".dsm";
+	setAttr -s 26 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :initialMaterialInfo;
 select -ne :defaultRenderGlobals;
+	setAttr ".edl" no;
 	setAttr ".ren" -type "string" "mentalRay";
 	setAttr ".outf" 32;
 	setAttr ".imfkey" -type "string" "png";
@@ -1732,7 +1800,7 @@ select -ne :defaultResolution;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7769999504089355;
 select -ne :defaultLightSet;
-	setAttr -s 4 ".dsm";
+	setAttr -s 3 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
@@ -1990,7 +2058,6 @@ connectAttr "place2dTexture6.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture7.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture8.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "Sky01Shape.ltd" ":lightList1.l" -na;
 connectAttr "MapFBXASC032FBXASC0351.msg" ":defaultTextureList1.tx" -na;
 connectAttr "Bett2_MapFBXASC032FBXASC0351.msg" ":defaultTextureList1.tx" -na;
 connectAttr "MapFBXASC032FBXASC0352.msg" ":defaultTextureList1.tx" -na;
@@ -2004,8 +2071,7 @@ connectAttr "Line01Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Box02Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Box03Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "Sky01.iog" ":defaultLightSet.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
-applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"RaumRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Raum.ma\" 1276235804 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Raum.ma\" \"FileRef\"\n1\n\"SchreibtischlampeRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" 1339475934 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" \"FileRef\"\n2\n\"StuhlRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Stuhl.ma\" 572662648 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Stuhl.ma\" \"FileRef\"\n3\n\"MonitorRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Monitor.ma\" 2269167984 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Monitor.ma\" \"FileRef\"\n4\n\"BildRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bild.ma\" 3613684934 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bild.ma\" \"FileRef\"\n5\n\"SchreibtischunerlageRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" 945925883 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" \"FileRef\"\n6\n\"BecherRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Becher.ma\" 3947693539 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Becher.ma\" \"FileRef\"\n7\n\"OrdnerRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2139227925 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n8\n\"OrdnerRN1\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2139227925 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n9\n\"OrdnerRN2\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2139227925 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n10\n\"BleistiftRN1\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 1135389401 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n11\n\"BleistiftRN2\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 1135389401 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n12\n\"BleistiftRN3\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 1135389401 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n13\n\"BleistiftRN4\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 1135389401 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n14\n\"BleistiftRN5\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 1135389401 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n15\n\"Tür2RN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tür2.ma\" 2943820639 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tür2.ma\" \"FileRef\"\n16\n\"DeckenlampeRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" 2253501929 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" \"FileRef\"\n17\n\"Tisch2RN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tisch2.ma\" 228973526 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Tisch2.ma\" \"FileRef\"\n18\n\"bueroklammerRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 675423632 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n19\n\"bueroklammerRN1\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 675423632 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n20\n\"bueroklammerRN2\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 675423632 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n21\n\"BettRN\" \"\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bett.ma\" 2687450977 \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht/01_Models/Bett.ma\" \"FileRef\"\n22\n\"|Sky01|Sky01Shape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\n23\n\"MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/ordner.jpg\" 3362655235 \"\" \"sourceImages\"\n24\n\"Bett2_MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_05.jpg\" 2890240681 \"\" \"sourceImages\"\n25\n\"MapFBXASC032FBXASC0352\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_06.jpg\" 3957713017 \"\" \"sourceImages\"\n26\n\"MapFBXASC032FBXASC0353\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_04.jpg\" 2435169049 \"\" \"sourceImages\"\n27\n\"MapFBXASC032FBXASC0354\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_01.jpg\" 1506096233 \"\" \"sourceImages\"\n28\n\"MapFBXASC032FBXASC0355\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_05.jpg\" 829875263 \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_05.jpg\" \"sourceImages\"\n29\n\"MapFBXASC032FBXASC0356\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_06.jpg\" 1993776879 \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_06.jpg\" \"sourceImages\"\n30\n\"MapFBXASC032FBXASC0357\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_04.jpg\" 202821007 \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_04.jpg\" \"sourceImages\"\n31\n\"MapFBXASC032FBXASC0358\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_01.jpg\" 3304473343 \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_01.jpg\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
+applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"RaumRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma\" 3496213655 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Raum.ma\" \"FileRef\"\n1\n\"SchreibtischlampeRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" 1754744902 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischlampe.ma\" \"FileRef\"\n2\n\"StuhlRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma\" 1490291708 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Stuhl.ma\" \"FileRef\"\n3\n\"MonitorRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma\" 3977924147 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Monitor.ma\" \"FileRef\"\n4\n\"BildRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma\" 1259755597 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bild.ma\" \"FileRef\"\n5\n\"SchreibtischunerlageRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" 1990308374 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Schreibtischunerlage.ma\" \"FileRef\"\n6\n\"BecherRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma\" 31634674 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Becher.ma\" \"FileRef\"\n7\n\"OrdnerRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n8\n\"OrdnerRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n9\n\"OrdnerRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" 2502800900 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Ordner.ma\" \"FileRef\"\n10\n\"BleistiftRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n11\n\"BleistiftRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n12\n\"BleistiftRN3\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n13\n\"BleistiftRN4\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n14\n\"BleistiftRN5\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" 3858711284 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bleistift.ma\" \"FileRef\"\n15\n\"Tür2RN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma\" 855969748 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tür2.ma\" \"FileRef\"\n16\n\"DeckenlampeRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" 145367839 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Deckenlampe.ma\" \"FileRef\"\n17\n\"Tisch2RN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma\" 3876219591 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Tisch2.ma\" \"FileRef\"\n18\n\"bueroklammerRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n19\n\"bueroklammerRN1\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n20\n\"bueroklammerRN2\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" 2081589551 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/bueroklammer.ma\" \"FileRef\"\n21\n\"BettRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma\" 1012732906 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/Bett.ma\" \"FileRef\"\n22\n\"ph_autoRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma\" 283233666 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/ph_auto.ma\" \"FileRef\"\n23\n\"car_msRN\" \"\" \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma\" 3125550903 \"C:/Users/fdai3747/Desktop/Abgabe 3 - Licht/01_Models/car ms.ma\" \"FileRef\"\n24\n\"MapFBXASC032FBXASC0351\" \"fileTextureName\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//02_Textures/ordner.jpg\" 1440541779 \"\" \"sourceImages\"\n25\n\"Bett2_MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_05.jpg\" 2890240681 \"\" \"sourceImages\"\n26\n\"MapFBXASC032FBXASC0352\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_06.jpg\" 3957713017 \"\" \"sourceImages\"\n27\n\"MapFBXASC032FBXASC0353\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_04.jpg\" 2435169049 \"\" \"sourceImages\"\n28\n\"MapFBXASC032FBXASC0354\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/bett/cells_01.jpg\" 1506096233 \"\" \"sourceImages\"\n29\n\"MapFBXASC032FBXASC0355\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_05.jpg\" 829875263 \"\" \"sourceImages\"\n30\n\"MapFBXASC032FBXASC0356\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_06.jpg\" 1993776879 \"\" \"sourceImages\"\n31\n\"MapFBXASC032FBXASC0357\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_04.jpg\" 202821007 \"\" \"sourceImages\"\n32\n\"MapFBXASC032FBXASC0358\" \"fileTextureName\" \"C:/Users/Patrick/Desktop/OBJEKTE/3DS/cells_01.jpg\" 3304473343 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
 // End of Szene1.ma
