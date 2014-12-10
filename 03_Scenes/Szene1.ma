@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Wed, Dec 10, 2014 03:47:44 PM
+//Last modified: Wed, Dec 10, 2014 04:10:17 PM
 //Codeset: 1252
 file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
 file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
@@ -82,17 +82,19 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -18.765857896154955 21.113804547704767 43.968358139722746 ;
-	setAttr ".r" -type "double3" -11.399999999999993 -41.6 0 ;
-	setAttr ".rpt" -type "double3" 1.8147315404806e-015 1.8670000849380616e-015 2.319117705265365e-015 ;
+	setAttr ".t" -type "double3" -24.157285395357626 22.751189025866704 50.040869078640618 ;
+	setAttr ".r" -type "double3" -11.399999999999928 -41.60000000000003 -1.0207743684426311e-013 ;
+	setAttr ".rp" -type "double3" -5.3290705182007514e-015 0 7.1054273576010019e-015 ;
+	setAttr ".rpt" -type "double3" -1.4656758449847582e-015 3.2714399586985568e-015 
+		-3.1158218824379382e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 44.884739098561752;
+	setAttr ".coi" 53.168693921698406;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 19.035444544699143 7.3473093104496936 20.011361553200938 ;
+	setAttr ".tp" -type "double3" 10.446374888440097 12.242006393872083 11.065828492258866 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	setAttr ".v" no;
@@ -642,8 +644,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 140 ".lnk";
-	setAttr -s 141 ".slnk";
+	setAttr -s 157 ".lnk";
+	setAttr -s 160 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -950,41 +952,8 @@ createNode reference -n "SchreibtischlampeRN";
 	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SchreibtischlampeRN"
-		"SchreibtischlampeRN" 19
-		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.357279230303465 19.593395518341691 15.173803144460209"
-		
-		2 "|Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "translateZ" " -av"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "rotate" " -type \"double3\" 188.15979999838348 203.71524021093657 61.201858829346989"
-		
-		2 "|Schreibtischlampe:lampe:lamp_spot" "rotateX" " -av"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "rotateY" " -av"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "rotateZ" " -av"
-		2 "|Schreibtischlampe:lampe:lamp_spot" "scale" " -type \"double3\" 0.51969 0.51969 0.51969"
-		
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"color" " -type \"float3\" 0.94117647000000004 0.78768861000000001 0.64590544000000005"
-		
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"intensity" " 1.0833333730697632"
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"useRayTraceShadows" " 1"
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"shadowRays" " 34"
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"lightRadius" " 0.61206901073455811"
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"coneAngle" " 81.000572974557869"
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"penumbraAngle" " -1.6666666635622587"
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"dropoff" " 8.4999999841675162"
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"fogSpread" " 0"
-		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
-		"fogIntensity" " 0"
-		"SchreibtischlampeRN" 40
+		"SchreibtischlampeRN" 0
+		"SchreibtischlampeRN" 59
 		2 "|Schreibtischlampe:lampe:LAMP_controller" "rotate" " -type \"double3\" -0.993369 -100.263373 0"
 		
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:lamp_rotator" 
@@ -1033,6 +1002,39 @@ createNode reference -n "SchreibtischlampeRN";
 		"translate" " -type \"double3\" 0.704324 0 -0.00163108"
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:pole_vector" 
 		"translate" " -type \"double3\" -0.548258 1.852858 -1.458566"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 25.37165428376661 20.184971011045096 16.359107652324646"
+		
+		2 "|Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "translateZ" " -av"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "rotate" " -type \"double3\" 188.15979999838348 203.71524021093654 61.201858829346961"
+		
+		2 "|Schreibtischlampe:lampe:lamp_spot" "rotateX" " -av"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "rotateY" " -av"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "rotateZ" " -av"
+		2 "|Schreibtischlampe:lampe:lamp_spot" "scale" " -type \"double3\" 0.51969 0.51969 0.51969"
+		
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"color" " -type \"float3\" 0.94117647000000004 0.78768861000000001 0.64590544000000005"
+		
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"intensity" " 1.0833333730697632"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"useRayTraceShadows" " 1"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"shadowRays" " 34"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"lightRadius" " 0.61206901073455811"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"coneAngle" " 81.000572974557869"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"penumbraAngle" " -1.6666666635622587"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"dropoff" " 8.4999999841675162"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"fogSpread" " 0"
+		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
+		"fogIntensity" " 0"
 		2 "|Schreibtischlampe:lampe:pointLight1" "translate" " -type \"double3\" 0 34.431193695350629 0.077071200000000006"
 		
 		2 "|Schreibtischlampe:lampe:pointLight1|Schreibtischlampe:lampe:pointLightShape1" 
@@ -1096,8 +1098,8 @@ createNode reference -n "MonitorRN";
 		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateAxis" " -type \"double3\" 0 -89.999999999999986 0"
 		
 		2 "Monitor:monitor:mia_physicalsky1" "on" " 0"
-		3 "Monitor:lambert8.outColor" "Monitor:monitor:StandSG.surfaceShader" ""
 		3 "Monitor:lambert8.message" "Monitor:monitor:materialInfo1.material" ""
+		3 "Monitor:lambert8.outColor" "Monitor:monitor:StandSG.surfaceShader" ""
 		5 4 "MonitorRN" "Monitor:monitor:StandSG.surfaceShader" "MonitorRN.placeHolderList[1]" 
 		""
 		5 4 "MonitorRN" "Monitor:monitor:materialInfo1.material" "MonitorRN.placeHolderList[2]" 
@@ -1884,12 +1886,12 @@ createNode reference -n "computerRN";
 		
 		2 "computer:FBXASC0481FBXASC032FBXASC045FBXASC032Default" "reflectivity" 
 		" 0.30769231915473938"
+		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.outColor" "computer:obj_04SG.surfaceShader" 
+		""
 		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.message" "computer:materialInfo2.material" 
 		""
 		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.message" ":defaultShaderList1.shaders" 
 		"-na"
-		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.outColor" "computer:obj_04SG.surfaceShader" 
-		""
 		5 4 "computerRN" "computer:obj_04SG.surfaceShader" "computerRN.placeHolderList[1]" 
 		""
 		5 4 "computerRN" "computer:materialInfo2.material" "computerRN.placeHolderList[2]" 
@@ -1915,11 +1917,11 @@ select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 26 ".r";
 select -ne :lightList1;
+	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 63 ".tx";
-select -ne :lambert1;
 select -ne :initialShadingGroup;
-	setAttr -s 25 ".dsm";
+	setAttr -s 26 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -1937,6 +1939,7 @@ select -ne :defaultResolution;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7769999504089355;
 select -ne :defaultLightSet;
+	setAttr -s 2 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
