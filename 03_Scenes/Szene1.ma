@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Mon, Dec 08, 2014 04:22:34 PM
+//Last modified: Wed, Dec 10, 2014 02:13:24 PM
 //Codeset: 1252
 file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
 file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
@@ -9,7 +9,7 @@ file -rdi 1 -ns "Monitor" -rfn "MonitorRN" "C:/GIT/desklife/01_Models/Monitor.ma
 file -rdi 1 -ns "Bild" -rfn "BildRN" "C:/GIT/desklife/01_Models/Bild.ma";
 file -rdi 1 -ns "Schreibtischunerlage" -rfn "SchreibtischunerlageRN" "C:/GIT/desklife/01_Models/Schreibtischunerlage.ma";
 file -rdi 1 -ns "Becher" -rfn "BecherRN" "C:/GIT/desklife/01_Models/Becher.ma";
-file -rdi 1 -ns "Ordner" -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 1 -ns "Ordner" -rfn "OrdnerRN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:50:23 PM|ICON|undef|INFO|undef|OBJN|49|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 1 -ns "Ordner1" -rfn "OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 1 -ns "Ordner2" -rfn "OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
@@ -23,7 +23,7 @@ file -rdi 1 -ns "Bleistift4" -rfn "BleistiftRN4" -op "VERS|2015|UVER|undef|MADE|
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -rdi 1 -ns "Bleistift5" -rfn "BleistiftRN5" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 1 -ns "Tür2" -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 1 -ns "Tür2" -rfn "Tür2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:44:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Tür2.ma";
 file -rdi 1 -ns "Deckenlampe" -rfn "DeckenlampeRN" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
 file -rdi 1 -ns "Tisch2" -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:38:14 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
@@ -41,7 +41,7 @@ file -r -ns "Monitor" -dr 1 -rfn "MonitorRN" "C:/GIT/desklife/01_Models/Monitor.
 file -r -ns "Bild" -dr 1 -rfn "BildRN" "C:/GIT/desklife/01_Models/Bild.ma";
 file -r -ns "Schreibtischunerlage" -dr 1 -rfn "SchreibtischunerlageRN" "C:/GIT/desklife/01_Models/Schreibtischunerlage.ma";
 file -r -ns "Becher" -dr 1 -rfn "BecherRN" "C:/GIT/desklife/01_Models/Becher.ma";
-file -r -ns "Ordner" -dr 1 -rfn "OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -r -ns "Ordner" -dr 1 -rfn "OrdnerRN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:50:23 PM|ICON|undef|INFO|undef|OBJN|49|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -r -ns "Ordner1" -dr 1 -rfn "OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -r -ns "Ordner2" -dr 1 -rfn "OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
@@ -55,7 +55,7 @@ file -r -ns "Bleistift4" -dr 1 -rfn "BleistiftRN4" -op "VERS|2015|UVER|undef|MAD
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -r -ns "Bleistift5" -dr 1 -rfn "BleistiftRN5" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -r -ns "Tür2" -dr 1 -rfn "Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -r -ns "Tür2" -dr 1 -rfn "Tür2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:44:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Tür2.ma";
 file -r -ns "Deckenlampe" -dr 1 -rfn "DeckenlampeRN" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
 file -r -ns "Tisch2" -dr 1 -rfn "Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:38:14 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
@@ -80,13 +80,13 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.9792755351410958 24.71270003908371 66.594618283028709 ;
-	setAttr ".r" -type "double3" -5.399999999986929 -1.6000000000000005 -1.2428887560791943e-017 ;
+	setAttr ".t" -type "double3" 7.0371794810388444 26.695033423084475 128.41871939198933 ;
+	setAttr ".r" -type "double3" -2.4000000000000092 7.6000000000001329 2.5068294876236517e-017 ;
 	setAttr ".rpt" -type "double3" 1.529534785121491e-015 1.9740648859503619e-015 2.9536237057634065e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 63.576739460462207;
+	setAttr ".coi" 125.1778244110687;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -636,8 +636,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 248 ".lnk";
-	setAttr -s 249 ".slnk";
+	setAttr -s 146 ".lnk";
+	setAttr -s 148 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -940,55 +940,10 @@ createNode reference -n "RaumRN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "SchreibtischlampeRN";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SchreibtischlampeRN"
-		"SchreibtischlampeRN" 0
-		"SchreibtischlampeRN" 56
-		2 "|Schreibtischlampe:lampe:LAMP_controller" "rotate" " -type \"double3\" -0.993369 -100.263373 0"
-		
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:lamp_rotator" 
-		"translate" " -type \"double3\" 0.032209700000000001 -0.855896 1.123594"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:lamp_rotator" 
-		"rotate" " -type \"double3\" 76.392402 -20.387366 -59.599764"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1" 
-		"translate" " -type \"double3\" 0.089886 -0.132884 0.498451"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2" 
-		"translate" " -type \"double3\" 0.435095 -0.0046594999999999996 0.022574400000000001"
-		
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2" 
-		"rotate" " -type \"double3\" 12.473262584613495 16.229629092938787 9.3528071441457978"
-		
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
-		"translate" " -type \"double3\" 1.373523 0.0119501 -0.026267499999999999"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
-		"rotate" " -type \"double3\" -0.11993501757102822 -75.527987834882566 -1.2816924997457322"
-		
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
-		"segmentScaleCompensate" " 1"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
-		"translate" " -type \"double3\" 1.349462 -0.0022044600000000001 -0.035114800000000002"
-		
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
-		"rotate" " -type \"double3\" 19.884469523864222 -69.318254941027604 -25.818147209047037"
-		
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
-		"rotateX" " -av"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
-		"rotateY" " -av"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
-		"rotateZ" " -av"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
-		"segmentScaleCompensate" " 1"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4|Schreibtischlampe:lampe:joint5" 
-		"translate" " -type \"double3\" 0.590678 0 0"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4|Schreibtischlampe:lampe:lamp_cone" 
-		"translate" " -type \"double3\" 0.802229 0.0017433399999999999 0"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:upper_stand" 
-		"translate" " -type \"double3\" 0.704324 0 -0.00163108"
-		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:pole_vector" 
-		"translate" " -type \"double3\" -0.548258 1.852858 -1.458566"
+		"SchreibtischlampeRN" 19
 		2 "|Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.357279230303465 19.593395518341691 15.173803144460209"
 		
 		2 "|Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
@@ -1022,6 +977,55 @@ createNode reference -n "SchreibtischlampeRN";
 		"fogSpread" " 0"
 		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
 		"fogIntensity" " 0"
+		"SchreibtischlampeRN" 38
+		2 "|Schreibtischlampe:lampe:LAMP_controller" "rotate" " -type \"double3\" -0.993369 -100.263373 0"
+		
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:lamp_rotator" 
+		"translate" " -type \"double3\" 0.032209700000000001 -0.855896 1.123594"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:lamp_rotator" 
+		"rotate" " -type \"double3\" 76.392402 -20.387366 -59.599764"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:lamp_rotator|Schreibtischlampe:group1|Schreibtischlampe:lampe:ikHandle1" 
+		"translate" " -type \"double3\" 0.17376292818039474 3.615528277764688 0.028229311977895577"
+		
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1" 
+		"translate" " -type \"double3\" 0.089886 -0.132884 0.498451"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2" 
+		"translate" " -type \"double3\" 0.435095 -0.0046594999999999996 0.022574400000000001"
+		
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2" 
+		"rotate" " -type \"double3\" 11.669227780120059 1.7188674452636423 6.4386732900533206"
+		
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
+		"translate" " -type \"double3\" 1.373523 0.0119501 -0.026267499999999999"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
+		"rotate" " -type \"double3\" -0.094577998952402931 -64.538152547099799 -1.010713254170871"
+		
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
+		"segmentScaleCompensate" " 1"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
+		"translate" " -type \"double3\" 1.349462 -0.0022044600000000001 -0.035114800000000002"
+		
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
+		"rotate" " -type \"double3\" 19.890925812014522 -69.820417738220641 -22.019206340652616"
+		
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
+		"rotateX" " -av"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
+		"rotateY" " -av"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
+		"rotateZ" " -av"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
+		"segmentScaleCompensate" " 1"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4|Schreibtischlampe:lampe:joint5" 
+		"translate" " -type \"double3\" 0.590678 0 0"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4|Schreibtischlampe:lampe:lamp_cone" 
+		"translate" " -type \"double3\" 0.802229 0.0017433399999999999 0"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:upper_stand" 
+		"translate" " -type \"double3\" 0.704324 0 -0.00163108"
+		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:pole_vector" 
+		"translate" " -type \"double3\" -0.548258 1.852858 -1.458566"
 		2 "|Schreibtischlampe:lampe:pointLight1" "translate" " -type \"double3\" 0 34.431193695350629 0.077071200000000006"
 		
 		2 "|Schreibtischlampe:lampe:pointLight1|Schreibtischlampe:lampe:pointLightShape1" 
@@ -1071,12 +1075,14 @@ createNode reference -n "MonitorRN";
 		"MonitorRN"
 		"MonitorRN" 1
 		3 "Monitor:monitor:Mat.message" ":defaultShaderList1.shaders" "-na"
-		"MonitorRN" 9
+		"MonitorRN" 11
 		2 "|Monitor:monitor:LCDFBXASC032Display" "translate" " -type \"double3\" 27.506573 17.084037 8.139008"
 		
 		2 "|Monitor:monitor:LCDFBXASC032Display" "rotate" " -type \"double3\" 0 0 0"
 		
 		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateY" " -av"
+		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateX" " -av"
+		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateZ" " -av"
 		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateAxis" " -type \"double3\" 0 -89.999999999999986 0"
 		
 		2 "Monitor:monitor:mia_physicalsky1" "on" " 0"
@@ -1865,12 +1871,10 @@ select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 25 ".r";
 select -ne :lightList1;
-	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 63 ".tx";
-select -ne :lambert1;
 select -ne :initialShadingGroup;
-	setAttr -s 26 ".dsm";
+	setAttr -s 25 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -1888,7 +1892,6 @@ select -ne :defaultResolution;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7769999504089355;
 select -ne :defaultLightSet;
-	setAttr -s 2 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
