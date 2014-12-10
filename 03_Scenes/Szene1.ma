@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Wed, Dec 10, 2014 03:04:26 PM
+//Last modified: Wed, Dec 10, 2014 03:47:44 PM
 //Codeset: 1252
 file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
 file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
@@ -82,17 +82,17 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.71451990744900229 26.982333427861597 58.025751590772778 ;
-	setAttr ".r" -type "double3" -11.400000000000036 0.40000000000009805 -4.3485205739423663e-017 ;
-	setAttr ".rpt" -type "double3" 1.529534785121491e-015 1.9740648859503619e-015 2.9536237057634065e-015 ;
+	setAttr ".t" -type "double3" -18.765857896154955 21.113804547704767 43.968358139722746 ;
+	setAttr ".r" -type "double3" -11.399999999999993 -41.6 0 ;
+	setAttr ".rpt" -type "double3" 1.8147315404806e-015 1.8670000849380616e-015 2.319117705265365e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 53.67115783627338;
+	setAttr ".coi" 44.884739098561752;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 35.053284894841468 0.077071200000000006 ;
+	setAttr ".tp" -type "double3" 19.035444544699143 7.3473093104496936 20.011361553200938 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	setAttr ".v" no;
@@ -472,8 +472,9 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "group2";
-	setAttr ".t" -type "double3" 0 4.1323515685823349 0 ;
-	setAttr ".s" -type "double3" 0.21530728527151508 0.21530728527151508 0.21530728527151508 ;
+	setAttr ".t" -type "double3" 23.126738178743924 3.5913798298662156 20.620359952660536 ;
+	setAttr ".r" -type "double3" 0 -90 0 ;
+	setAttr ".s" -type "double3" 0.15236501117931175 0.15236501117931175 0.15236501117931175 ;
 createNode mentalrayItemsList -s -n "mentalrayItemsList";
 	setAttr -s 19 ".opt";
 createNode mentalrayGlobals -s -n "mentalrayGlobals";
@@ -926,7 +927,7 @@ createNode reference -n "RaumRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"RaumRN"
 		"RaumRN" 0
-		"RaumRN" 9
+		"RaumRN" 10
 		2 "|Raum:Raum|Raum:pCube1" "scale" " -type \"double3\" 1.0879992777038427 1 1"
 		
 		2 "|Raum:Raum|Raum:pCube2" "scale" " -type \"double3\" 1.0775674194745641 1 1"
@@ -941,6 +942,7 @@ createNode reference -n "RaumRN";
 		2 "Raum:lambert6" "transparency" " -type \"float3\" 0 0 0"
 		2 "Raum:file1" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/white_wall.png\""
 		
+		2 "Raum:phong1" "reflectivity" " 0.010999999940395355"
 		2 "Raum:file2" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/Pacific_Birch/Pacific Birch_DIFFUSE.jpg\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -982,7 +984,7 @@ createNode reference -n "SchreibtischlampeRN";
 		"fogSpread" " 0"
 		2 "|Schreibtischlampe:lampe:lamp_spot|Schreibtischlampe:lampe:lamp_spotShape" 
 		"fogIntensity" " 0"
-		"SchreibtischlampeRN" 38
+		"SchreibtischlampeRN" 40
 		2 "|Schreibtischlampe:lampe:LAMP_controller" "rotate" " -type \"double3\" -0.993369 -100.263373 0"
 		
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:lamp_rotator" 
@@ -1058,7 +1060,10 @@ createNode reference -n "SchreibtischlampeRN";
 		2 "Schreibtischlampe:lampe:bulb" "glowIntensity" " 0.085470087826251984"
 		2 "Schreibtischlampe:lampe:bulb" "hideSource" " 0"
 		2 "Schreibtischlampe:lampe:bulb" "reflectivity" " 0.40170940756797791"
-		2 "Schreibtischlampe:lampe:bulb" "cosinePower" " 39.692306518554688";
+		2 "Schreibtischlampe:lampe:bulb" "cosinePower" " 39.692306518554688"
+		2 "Schreibtischlampe:lampe:lamp_joint_balls" "reflectivity" " 0.19658119976520538"
+		
+		2 "Schreibtischlampe:lampe:stand" "reflectivity" " 0.17094017565250397";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "StuhlRN";
@@ -1868,19 +1873,23 @@ createNode reference -n "computerRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"computerRN"
 		"computerRN" 0
-		"computerRN" 11
+		"computerRN" 13
 		0 "|computer:obj_01" "|group2" "-s -r "
 		0 "|computer:obj_02" "|group2" "-s -r "
 		0 "|computer:obj_03" "|group2" "-s -r "
 		0 "|computer:obj_04" "|group2" "-s -r "
 		0 "|computer:obj_05" "|group2" "-s -r "
 		0 "|computer:obj_06" "|group2" "-s -r "
+		2 "|group2|computer:obj_04" "rotate" " -type \"double3\" 2.5044780654876659e-006 0 0"
+		
+		2 "computer:FBXASC0481FBXASC032FBXASC045FBXASC032Default" "reflectivity" 
+		" 0.30769231915473938"
 		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.message" "computer:materialInfo2.material" 
-		""
-		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.outColor" "computer:obj_04SG.surfaceShader" 
 		""
 		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.message" ":defaultShaderList1.shaders" 
 		"-na"
+		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.outColor" "computer:obj_04SG.surfaceShader" 
+		""
 		5 4 "computerRN" "computer:obj_04SG.surfaceShader" "computerRN.placeHolderList[1]" 
 		""
 		5 4 "computerRN" "computer:materialInfo2.material" "computerRN.placeHolderList[2]" 
