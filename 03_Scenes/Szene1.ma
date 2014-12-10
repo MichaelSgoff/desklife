@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Szene1.ma
-//Last modified: Wed, Dec 10, 2014 02:13:24 PM
+//Last modified: Wed, Dec 10, 2014 03:04:26 PM
 //Codeset: 1252
 file -rdi 1 -ns "Raum" -rfn "RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
 file -rdi 1 -ns "Schreibtischlampe" -rfn "SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
@@ -34,6 +34,7 @@ file -rdi 1 -ns "bueroklammer2" -rfn "bueroklammerRN2" "C:/GIT/desklife/01_Model
 file -rdi 1 -ns "Bett" -rfn "BettRN" -op "v=0;" "C:/GIT/desklife/01_Models/Bett.ma";
 file -rdi 1 -ns "ph_auto" -rfn "ph_autoRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/ph_auto.ma";
 file -rdi 1 -ns "car_ms" -rfn "car_msRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/car ms.ma";
+file -rdi 1 -ns "computer" -rfn "computerRN" -op "v=0;" "C:/GIT/desklife/01_Models/computer.ma";
 file -r -ns "Raum" -dr 1 -rfn "RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
 file -r -ns "Schreibtischlampe" -dr 1 -rfn "SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
 file -r -ns "Stuhl" -dr 1 -rfn "StuhlRN" "C:/GIT/desklife/01_Models/Stuhl.ma";
@@ -66,6 +67,7 @@ file -r -ns "bueroklammer2" -dr 1 -rfn "bueroklammerRN2" "C:/GIT/desklife/01_Mod
 file -r -ns "Bett" -dr 1 -rfn "BettRN" -op "v=0;" "C:/GIT/desklife/01_Models/Bett.ma";
 file -r -ns "ph_auto" -dr 1 -rfn "ph_autoRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/ph_auto.ma";
 file -r -ns "car_ms" -dr 1 -rfn "car_msRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/car ms.ma";
+file -r -ns "computer" -dr 1 -rfn "computerRN" -op "v=0;" "C:/GIT/desklife/01_Models/computer.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
 		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
@@ -80,13 +82,13 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.0371794810388444 26.695033423084475 128.41871939198933 ;
-	setAttr ".r" -type "double3" -2.4000000000000092 7.6000000000001329 2.5068294876236517e-017 ;
+	setAttr ".t" -type "double3" -0.71451990744900229 26.982333427861597 58.025751590772778 ;
+	setAttr ".r" -type "double3" -11.400000000000036 0.40000000000009805 -4.3485205739423663e-017 ;
 	setAttr ".rpt" -type "double3" 1.529534785121491e-015 1.9740648859503619e-015 2.9536237057634065e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 125.1778244110687;
+	setAttr ".coi" 53.67115783627338;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -469,6 +471,9 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "group2";
+	setAttr ".t" -type "double3" 0 4.1323515685823349 0 ;
+	setAttr ".s" -type "double3" 0.21530728527151508 0.21530728527151508 0.21530728527151508 ;
 createNode mentalrayItemsList -s -n "mentalrayItemsList";
 	setAttr -s 19 ".opt";
 createNode mentalrayGlobals -s -n "mentalrayGlobals";
@@ -636,8 +641,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 146 ".lnk";
-	setAttr -s 148 ".slnk";
+	setAttr -s 140 ".lnk";
+	setAttr -s 141 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -993,12 +998,12 @@ createNode reference -n "SchreibtischlampeRN";
 		"translate" " -type \"double3\" 0.435095 -0.0046594999999999996 0.022574400000000001"
 		
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2" 
-		"rotate" " -type \"double3\" 11.669227780120059 1.7188674452636423 6.4386732900533206"
+		"rotate" " -type \"double3\" 11.669227782528646 1.7188676225904609 6.4386733264137304"
 		
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
 		"translate" " -type \"double3\" 1.373523 0.0119501 -0.026267499999999999"
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
-		"rotate" " -type \"double3\" -0.094577998952402931 -64.538152547099799 -1.010713254170871"
+		"rotate" " -type \"double3\" -0.094577999797912288 -64.538152913547009 -1.0107132632064557"
 		
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3" 
 		"scale" " -type \"double3\" 1 1 1"
@@ -1008,7 +1013,7 @@ createNode reference -n "SchreibtischlampeRN";
 		"translate" " -type \"double3\" 1.349462 -0.0022044600000000001 -0.035114800000000002"
 		
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
-		"rotate" " -type \"double3\" 19.890925812014522 -69.820417738220641 -22.019206340652616"
+		"rotate" " -type \"double3\" 19.890925808112542 -69.82041772791716 -22.019206151554833"
 		
 		2 "|Schreibtischlampe:lampe:LAMP_controller|Schreibtischlampe:lampe:joint1|Schreibtischlampe:lampe:joint2|Schreibtischlampe:lampe:joint3|Schreibtischlampe:lampe:joint4" 
 		"rotateX" " -av"
@@ -1086,8 +1091,8 @@ createNode reference -n "MonitorRN";
 		2 "|Monitor:monitor:LCDFBXASC032Display" "rotateAxis" " -type \"double3\" 0 -89.999999999999986 0"
 		
 		2 "Monitor:monitor:mia_physicalsky1" "on" " 0"
-		3 "Monitor:lambert8.message" "Monitor:monitor:materialInfo1.material" ""
 		3 "Monitor:lambert8.outColor" "Monitor:monitor:StandSG.surfaceShader" ""
+		3 "Monitor:lambert8.message" "Monitor:monitor:materialInfo1.material" ""
 		5 4 "MonitorRN" "Monitor:monitor:StandSG.surfaceShader" "MonitorRN.placeHolderList[1]" 
 		""
 		5 4 "MonitorRN" "Monitor:monitor:materialInfo1.material" "MonitorRN.placeHolderList[2]" 
@@ -1856,23 +1861,54 @@ createNode lambert -n "lambert2";
 	setAttr ".dc" 1;
 	setAttr ".c" -type "float3" 0.075181201 0.075181201 0.075181201 ;
 	setAttr ".ambc" -type "float3" 0.099999987 0.099999987 0.099999987 ;
+createNode reference -n "computerRN";
+	setAttr -s 2 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"computerRN"
+		"computerRN" 0
+		"computerRN" 11
+		0 "|computer:obj_01" "|group2" "-s -r "
+		0 "|computer:obj_02" "|group2" "-s -r "
+		0 "|computer:obj_03" "|group2" "-s -r "
+		0 "|computer:obj_04" "|group2" "-s -r "
+		0 "|computer:obj_05" "|group2" "-s -r "
+		0 "|computer:obj_06" "|group2" "-s -r "
+		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.message" "computer:materialInfo2.material" 
+		""
+		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.outColor" "computer:obj_04SG.surfaceShader" 
+		""
+		3 "computer:FBXASC0488FBXASC032FBXASC045FBXASC032Default.message" ":defaultShaderList1.shaders" 
+		"-na"
+		5 4 "computerRN" "computer:obj_04SG.surfaceShader" "computerRN.placeHolderList[1]" 
+		""
+		5 4 "computerRN" "computer:materialInfo2.material" "computerRN.placeHolderList[2]" 
+		"";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode lambert -n "lambert3";
+	setAttr ".dc" 1;
+	setAttr ".c" -type "float3" 0.06666667 0.06666667 0.06666667 ;
+	setAttr ".ambc" -type "float3" 0.06666667 0.06666667 0.06666667 ;
 select -ne :time1;
 	setAttr ".o" 2;
 	setAttr ".unw" 2;
 select -ne :renderPartition;
-	setAttr -s 139 ".st";
+	setAttr -s 141 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 122 ".s";
+	setAttr -s 124 ".s";
 select -ne :postProcessList1;
 	setAttr -s 3 ".p";
 select -ne :defaultRenderUtilityList1;
 	setAttr -s 74 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 25 ".r";
+	setAttr -s 26 ".r";
 select -ne :lightList1;
 select -ne :defaultTextureList1;
 	setAttr -s 63 ".tx";
+select -ne :lambert1;
 select -ne :initialShadingGroup;
 	setAttr -s 25 ".dsm";
 	setAttr ".ro" yes;
@@ -1900,6 +1936,8 @@ select -ne :defaultHardwareRenderGlobals;
 select -ne :ikSystem;
 connectAttr "lambert2.oc" "MonitorRN.phl[1]";
 connectAttr "lambert2.msg" "MonitorRN.phl[2]";
+connectAttr "lambert3.oc" "computerRN.phl[1]";
+connectAttr "lambert3.msg" "computerRN.phl[2]";
 connectAttr "Box03_translateX.o" "Box03.tx";
 connectAttr "Box03_translateY.o" "Box03.ty";
 connectAttr "Box03_translateZ.o" "Box03.tz";
@@ -2144,6 +2182,7 @@ connectAttr "m5.msg" ":defaultShaderList1.s" -na;
 connectAttr "m6.msg" ":defaultShaderList1.s" -na;
 connectAttr "m7.msg" ":defaultShaderList1.s" -na;
 connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
+connectAttr "lambert3.msg" ":defaultShaderList1.s" -na;
 connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "Bett2_place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
@@ -2168,6 +2207,6 @@ connectAttr "Box02Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Box03Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
-applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"RaumRN\" \"\" \"C:/GIT/desklife/01_Models/Raum.ma\" 324924542 \"C:/GIT/desklife/01_Models/Raum.ma\" \"FileRef\"\n1\n\"SchreibtischlampeRN\" \"\" \"C:/GIT/desklife/01_Models/Schreibtischlampe.ma\" 2919440033 \"C:/GIT/desklife/01_Models/Schreibtischlampe.ma\" \"FileRef\"\n2\n\"StuhlRN\" \"\" \"C:/GIT/desklife/01_Models/Stuhl.ma\" 2176937768 \"C:/GIT/desklife/01_Models/Stuhl.ma\" \"FileRef\"\n3\n\"MonitorRN\" \"\" \"C:/GIT/desklife/01_Models/Monitor.ma\" 1116811900 \"C:/GIT/desklife/01_Models/Monitor.ma\" \"FileRef\"\n4\n\"BildRN\" \"\" \"C:/GIT/desklife/01_Models/Bild.ma\" 2284343460 \"C:/GIT/desklife/01_Models/Bild.ma\" \"FileRef\"\n5\n\"SchreibtischunerlageRN\" \"\" \"C:/GIT/desklife/01_Models/Schreibtischunerlage.ma\" 3247430010 \"C:/GIT/desklife/01_Models/Schreibtischunerlage.ma\" \"FileRef\"\n6\n\"BecherRN\" \"\" \"C:/GIT/desklife/01_Models/Becher.ma\" 2156246875 \"C:/GIT/desklife/01_Models/Becher.ma\" \"FileRef\"\n7\n\"OrdnerRN\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n8\n\"OrdnerRN1\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n9\n\"OrdnerRN2\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n10\n\"BleistiftRN1\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n11\n\"BleistiftRN2\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n12\n\"BleistiftRN3\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n13\n\"BleistiftRN4\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n14\n\"BleistiftRN5\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n15\n\"Tür2RN\" \"\" \"C:/GIT/desklife/01_Models/Tür2.ma\" 4030400317 \"C:/GIT/desklife/01_Models/Tür2.ma\" \"FileRef\"\n16\n\"DeckenlampeRN\" \"\" \"C:/GIT/desklife/01_Models/Deckenlampe.ma\" 136840633 \"C:/GIT/desklife/01_Models/Deckenlampe.ma\" \"FileRef\"\n17\n\"Tisch2RN\" \"\" \"C:/GIT/desklife/01_Models/Tisch2.ma\" 1718446446 \"C:/GIT/desklife/01_Models/Tisch2.ma\" \"FileRef\"\n18\n\"bueroklammerRN\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n19\n\"bueroklammerRN1\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n20\n\"bueroklammerRN2\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n21\n\"BettRN\" \"\" \"C:/GIT/desklife/01_Models/Bett.ma\" 4284685059 \"C:/GIT/desklife/01_Models/Bett.ma\" \"FileRef\"\n22\n\"ph_autoRN\" \"\" \"C:/GIT/desklife/01_Models/ph_auto.ma\" 3211440589 \"C:/GIT/desklife/01_Models/ph_auto.ma\" \"FileRef\"\n23\n\"car_msRN\" \"\" \"C:/GIT/desklife/01_Models/car ms.ma\" 992681118 \"C:/GIT/desklife/01_Models/car ms.ma\" \"FileRef\"\n24\n\"MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/ordner.jpg\" 3862159993 \"C:/GIT/desklife/02_Textures/ordner.jpg\" \"sourceImages\"\n25\n\"Bett2_MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/cells_05.jpg\" 100957266 \"\" \"sourceImages\"\n26\n\"MapFBXASC032FBXASC0352\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n27\n\"MapFBXASC032FBXASC0353\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n28\n\"MapFBXASC032FBXASC0354\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\n29\n\"MapFBXASC032FBXASC0355\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" 1216197705 \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" \"sourceImages\"\n30\n\"MapFBXASC032FBXASC0356\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n31\n\"MapFBXASC032FBXASC0357\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n32\n\"MapFBXASC032FBXASC0358\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
+applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"RaumRN\" \"\" \"C:/GIT/desklife/01_Models/Raum.ma\" 324924542 \"C:/GIT/desklife/01_Models/Raum.ma\" \"FileRef\"\n1\n\"SchreibtischlampeRN\" \"\" \"C:/GIT/desklife/01_Models/Schreibtischlampe.ma\" 2919440033 \"C:/GIT/desklife/01_Models/Schreibtischlampe.ma\" \"FileRef\"\n2\n\"StuhlRN\" \"\" \"C:/GIT/desklife/01_Models/Stuhl.ma\" 2176937768 \"C:/GIT/desklife/01_Models/Stuhl.ma\" \"FileRef\"\n3\n\"MonitorRN\" \"\" \"C:/GIT/desklife/01_Models/Monitor.ma\" 1116811900 \"C:/GIT/desklife/01_Models/Monitor.ma\" \"FileRef\"\n4\n\"BildRN\" \"\" \"C:/GIT/desklife/01_Models/Bild.ma\" 2284343460 \"C:/GIT/desklife/01_Models/Bild.ma\" \"FileRef\"\n5\n\"SchreibtischunerlageRN\" \"\" \"C:/GIT/desklife/01_Models/Schreibtischunerlage.ma\" 3247430010 \"C:/GIT/desklife/01_Models/Schreibtischunerlage.ma\" \"FileRef\"\n6\n\"BecherRN\" \"\" \"C:/GIT/desklife/01_Models/Becher.ma\" 2156246875 \"C:/GIT/desklife/01_Models/Becher.ma\" \"FileRef\"\n7\n\"OrdnerRN\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n8\n\"OrdnerRN1\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n9\n\"OrdnerRN2\" \"\" \"C:/GIT/desklife/01_Models/Ordner.ma\" 340440493 \"C:/GIT/desklife/01_Models/Ordner.ma\" \"FileRef\"\n10\n\"BleistiftRN1\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n11\n\"BleistiftRN2\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n12\n\"BleistiftRN3\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n13\n\"BleistiftRN4\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n14\n\"BleistiftRN5\" \"\" \"C:/GIT/desklife/01_Models/Bleistift.ma\" 3417146274 \"C:/GIT/desklife/01_Models/Bleistift.ma\" \"FileRef\"\n15\n\"Tür2RN\" \"\" \"C:/GIT/desklife/01_Models/Tür2.ma\" 4030400317 \"C:/GIT/desklife/01_Models/Tür2.ma\" \"FileRef\"\n16\n\"DeckenlampeRN\" \"\" \"C:/GIT/desklife/01_Models/Deckenlampe.ma\" 136840633 \"C:/GIT/desklife/01_Models/Deckenlampe.ma\" \"FileRef\"\n17\n\"Tisch2RN\" \"\" \"C:/GIT/desklife/01_Models/Tisch2.ma\" 1718446446 \"C:/GIT/desklife/01_Models/Tisch2.ma\" \"FileRef\"\n18\n\"bueroklammerRN\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n19\n\"bueroklammerRN1\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n20\n\"bueroklammerRN2\" \"\" \"C:/GIT/desklife/01_Models/bueroklammer.ma\" 1135021524 \"C:/GIT/desklife/01_Models/bueroklammer.ma\" \"FileRef\"\n21\n\"BettRN\" \"\" \"C:/GIT/desklife/01_Models/Bett.ma\" 4284685059 \"C:/GIT/desklife/01_Models/Bett.ma\" \"FileRef\"\n22\n\"ph_autoRN\" \"\" \"C:/GIT/desklife/01_Models/ph_auto.ma\" 3211440589 \"C:/GIT/desklife/01_Models/ph_auto.ma\" \"FileRef\"\n23\n\"car_msRN\" \"\" \"C:/GIT/desklife/01_Models/car ms.ma\" 992681118 \"C:/GIT/desklife/01_Models/car ms.ma\" \"FileRef\"\n24\n\"computerRN\" \"\" \"C:/GIT/desklife/01_Models/computer.ma\" 2109857411 \"C:/GIT/desklife/01_Models/computer.ma\" \"FileRef\"\n25\n\"MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/ordner.jpg\" 3862159993 \"C:/GIT/desklife/02_Textures/ordner.jpg\" \"sourceImages\"\n26\n\"Bett2_MapFBXASC032FBXASC0351\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/cells_05.jpg\" 100957266 \"\" \"sourceImages\"\n27\n\"MapFBXASC032FBXASC0352\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n28\n\"MapFBXASC032FBXASC0353\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n29\n\"MapFBXASC032FBXASC0354\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\n30\n\"MapFBXASC032FBXASC0355\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" 1216197705 \"C:/GIT/desklife/02_Textures/bett/cells_05.jpg\" \"sourceImages\"\n31\n\"MapFBXASC032FBXASC0356\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" 266194585 \"C:/GIT/desklife/02_Textures/bett/cells_06.jpg\" \"sourceImages\"\n32\n\"MapFBXASC032FBXASC0357\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" 1964875257 \"C:/GIT/desklife/02_Textures/bett/cells_04.jpg\" \"sourceImages\"\n33\n\"MapFBXASC032FBXASC0358\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" 3187479177 \"C:/GIT/desklife/02_Textures/bett/cells_01.jpg\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
 // End of Szene1.ma
