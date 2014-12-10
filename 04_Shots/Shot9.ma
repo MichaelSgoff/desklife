@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Shot9.ma
-//Last modified: Mon, Dec 08, 2014 05:16:23 PM
+//Last modified: Wed, Dec 10, 2014 05:47:54 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -11,20 +11,24 @@ file -rdi 2 -ns "Bild" -rfn "Szene1:BildRN" "C:/GIT/desklife/01_Models/Bild.ma";
 file -rdi 2 -ns "Schreibtischunerlage" -rfn "Szene1:SchreibtischunerlageRN"
 		 "C:/GIT/desklife/01_Models/Schreibtischunerlage.ma";
 file -rdi 2 -ns "Becher" -rfn "Szene1:BecherRN" "C:/GIT/desklife/01_Models/Becher.ma";
-file -rdi 2 -ns "Ordner" -rfn "Szene1:OrdnerRN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 07:11:25 PM|ICON|undef|INFO|undef|OBJN|98|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 2 -ns "Ordner" -rfn "Szene1:OrdnerRN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:50:23 PM|ICON|undef|INFO|undef|OBJN|49|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner1" -rfn "Szene1:OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner2" -rfn "Szene1:OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
-file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 04:17:17 PM|ICON|undef|INFO|undef|OBJN|50|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 2 -ns "Bleistift1" -dr 1 -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 2 -ns "Bleistift2" -rfn "Szene1:BleistiftRN2" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 2 -ns "Bleistift3" -rfn "Szene1:BleistiftRN3" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 2 -ns "Bleistift4" -rfn "Szene1:BleistiftRN4" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 2 -ns "Bleistift5" -rfn "Szene1:BleistiftRN5" "C:/GIT/desklife/01_Models/Bleistift.ma";
-file -rdi 2 -ns "Tür2" -rfn "Szene1:Tür2RN" -op "VERS|2013|UVER|undef|MADE|undef|CHNG|Fri, Dec 05, 2014 05:12:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 2 -ns "Bleistift2" -dr 1 -rfn "Szene1:BleistiftRN2" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 2 -ns "Bleistift3" -dr 1 -rfn "Szene1:BleistiftRN3" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 2 -ns "Bleistift4" -dr 1 -rfn "Szene1:BleistiftRN4" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 2 -ns "Bleistift5" -dr 1 -rfn "Szene1:BleistiftRN5" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 2 -ns "Tür2" -rfn "Szene1:Tür2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:44:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Tür2.ma";
 file -rdi 2 -ns "Deckenlampe" -rfn "Szene1:DeckenlampeRN" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
-file -rdi 2 -ns "Tisch2" -rfn "Szene1:Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 12:32:24 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 2 -ns "Tisch2" -rfn "Szene1:Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:38:14 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Tisch2.ma";
 file -rdi 2 -ns "bueroklammer" -rfn "Szene1:bueroklammerRN" "C:/GIT/desklife/01_Models/bueroklammer.ma";
 file -rdi 2 -ns "bueroklammer1" -rfn "Szene1:bueroklammerRN1" "C:/GIT/desklife/01_Models/bueroklammer.ma";
@@ -32,7 +36,52 @@ file -rdi 2 -ns "bueroklammer2" -rfn "Szene1:bueroklammerRN2" "C:/GIT/desklife/0
 file -rdi 2 -ns "Bett" -rfn "Szene1:BettRN" -op "v=0;" "C:/GIT/desklife/01_Models/Bett.ma";
 file -rdi 2 -ns "ph_auto" -rfn "Szene1:ph_autoRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/ph_auto.ma";
 file -rdi 2 -ns "car_ms" -rfn "Szene1:car_msRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/car ms.ma";
+file -rdi 2 -ns "computer" -dr 1 -rfn "Szene1:computerRN" -op "v=0;" "C:/GIT/desklife/01_Models/computer.ma";
+file -rdi 1 -ns "Stifte_Tor" -rfn "Stifte_TorRN" -op "v=0;" "C:/GIT/desklife/01_Models/Stifte Tor.ma";
+file -rdi 2 -ns "Szene1" -rfn "Stifte_Tor:Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
+file -rdi 3 -ns "Raum" -dr 1 -rfn "Stifte_Tor:Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
+file -rdi 3 -ns "Schreibtischlampe" -dr 1 -rfn "Stifte_Tor:Szene1:SchreibtischlampeRN"
+		 "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
+file -rdi 3 -ns "Stuhl" -dr 1 -rfn "Stifte_Tor:Szene1:StuhlRN" "C:/GIT/desklife/01_Models/Stuhl.ma";
+file -rdi 3 -ns "Monitor" -dr 1 -rfn "Stifte_Tor:Szene1:MonitorRN" "C:/GIT/desklife/01_Models/Monitor.ma";
+file -rdi 3 -ns "Bild" -dr 1 -rfn "Stifte_Tor:Szene1:BildRN" "C:/GIT/desklife/01_Models/Bild.ma";
+file -rdi 3 -ns "Schreibtischunerlage" -dr 1 -rfn "Stifte_Tor:Szene1:SchreibtischunerlageRN"
+		 "C:/GIT/desklife/01_Models/Schreibtischunerlage.ma";
+file -rdi 3 -ns "Becher" -dr 1 -rfn "Stifte_Tor:Szene1:BecherRN" "C:/GIT/desklife/01_Models/Becher.ma";
+file -rdi 3 -ns "Ordner" -dr 1 -rfn "Stifte_Tor:Szene1:OrdnerRN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:50:23 PM|ICON|undef|INFO|undef|OBJN|49|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Ordner.ma";
+file -rdi 3 -ns "Ordner1" -dr 1 -rfn "Stifte_Tor:Szene1:OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
+file -rdi 3 -ns "Ordner2" -dr 1 -rfn "Stifte_Tor:Szene1:OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
+file -rdi 3 -ns "Bleistift1" -rfn "Stifte_Tor:Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Wed, Dec 10, 2014 05:05:03 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 3 -ns "Bleistift2" -rfn "Stifte_Tor:Szene1:BleistiftRN2" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 3 -ns "Bleistift3" -rfn "Stifte_Tor:Szene1:BleistiftRN3" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 3 -ns "Bleistift4" -rfn "Stifte_Tor:Szene1:BleistiftRN4" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 3 -ns "Bleistift5" -rfn "Stifte_Tor:Szene1:BleistiftRN5" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Bleistift.ma";
+file -rdi 3 -ns "Tür2" -dr 1 -rfn "Stifte_Tor:Szene1:Tür2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:44:23 PM|ICON|undef|INFO|undef|OBJN|40|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Tür2.ma";
+file -rdi 3 -ns "Deckenlampe" -dr 1 -rfn "Stifte_Tor:Szene1:DeckenlampeRN" "C:/GIT/desklife/01_Models/Deckenlampe.ma";
+file -rdi 3 -ns "Tisch2" -dr 1 -rfn "Stifte_Tor:Szene1:Tisch2RN" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:38:14 PM|ICON|undef|INFO|undef|OBJN|70|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+		 "C:/GIT/desklife/01_Models/Tisch2.ma";
+file -rdi 3 -ns "bueroklammer" -dr 1 -rfn "Stifte_Tor:Szene1:bueroklammerRN"
+		 "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -rdi 3 -ns "bueroklammer1" -dr 1 -rfn "Stifte_Tor:Szene1:bueroklammerRN1"
+		 "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -rdi 3 -ns "bueroklammer2" -dr 1 -rfn "Stifte_Tor:Szene1:bueroklammerRN2"
+		 "C:/GIT/desklife/01_Models/bueroklammer.ma";
+file -rdi 3 -ns "Bett" -dr 1 -rfn "Stifte_Tor:Szene1:BettRN" -op "v=0;" "C:/GIT/desklife/01_Models/Bett.ma";
+file -rdi 3 -ns "ph_auto" -dr 1 -rfn "Stifte_Tor:Szene1:ph_autoRN" -op "v=0;p=17;f=0"
+		 "C:/GIT/desklife/01_Models/ph_auto.ma";
+file -rdi 3 -ns "car_ms" -dr 1 -rfn "Stifte_Tor:Szene1:car_msRN" -op "v=0;p=17;f=0"
+		 "C:/GIT/desklife/01_Models/car ms.ma";
+file -rdi 3 -ns "computer" -dr 1 -rfn "Stifte_Tor:Szene1:computerRN" -op "v=0;"
+		 "C:/GIT/desklife/01_Models/computer.ma";
 file -r -ns "Szene1" -dr 1 -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
+file -r -ns "Stifte_Tor" -dr 1 -rfn "Stifte_TorRN" -op "v=0;" "C:/GIT/desklife/01_Models/Stifte Tor.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
 		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
@@ -47,13 +96,13 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.6639770390274418 31.05549150013529 10.156962278445688 ;
-	setAttr ".r" -type "double3" -50.138352729586742 -70.199999999995754 9.3894261355791437e-015 ;
+	setAttr ".t" -type "double3" 5.6384503049870434 26.673240746038505 13.890192365599518 ;
+	setAttr ".r" -type "double3" -38.138352729608663 -66.200000000000543 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 20.703853848472725;
+	setAttr ".coi" 26.561397342278745;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -112,12 +161,11 @@ createNode camera -n "shotShape6" -p "shot6";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
 createNode lookAt -n "Szene1:camera1_group";
+	setAttr ".t" -type "double3" 0 0.034723070086313257 0 ;
 	setAttr ".a" -type "double3" 0 0 -1 ;
-	setAttr ".db" 8.9010587583181611;
+	setAttr ".db" 3.6623577220528389;
 	setAttr ".tws" -3.3066511133632061e-006;
 createNode transform -n "Szene1:camera1_aim" -p "Szene1:camera1_group";
-	setAttr ".t" -type "double3" 26.749054860676249 14.191302170227553 2.9363431696879108 ;
-	setAttr -av ".ty";
 	setAttr ".drp" yes;
 createNode locator -n "Szene1:camera1_aimShape" -p "Szene1:camera1_aim";
 	setAttr -k off ".v" no;
@@ -842,6 +890,7 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 	setAttr ".rfrr" 1;
 	setAttr ".maxr" 2;
 	setAttr ".shrd" 2;
+	setAttr ".miSamplesQualityR" 1.109375;
 	setAttr -s 48 ".stringOptions";
 	setAttr ".stringOptions[0].name" -type "string" "rast motion factor";
 	setAttr ".stringOptions[0].value" -type "string" "1.0";
@@ -934,7 +983,7 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 	setAttr ".stringOptions[29].value" -type "string" "true";
 	setAttr ".stringOptions[29].type" -type "string" "boolean";
 	setAttr ".stringOptions[30].name" -type "string" "samples quality";
-	setAttr ".stringOptions[30].value" -type "string" "0.25 0.25 0.25 0.25";
+	setAttr ".stringOptions[30].value" -type "string" "1.11 1.11 1.11 1.11";
 	setAttr ".stringOptions[30].type" -type "string" "color";
 	setAttr ".stringOptions[31].name" -type "string" "samples min";
 	setAttr ".stringOptions[31].value" -type "string" "1.0";
@@ -990,8 +1039,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 138 ".lnk";
-	setAttr -s 139 ".slnk";
+	setAttr -s 179 ".lnk";
+	setAttr -s 180 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -1063,8 +1112,8 @@ createNode reference -n "Szene1RN";
 	setAttr ".phl[61]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
-		"Szene1:BleistiftRN1" 0
 		"Szene1:RaumRN" 0
+		"Szene1:BleistiftRN1" 0
 		"Szene1:OrdnerRN" 0
 		"Szene1:ph_autoRN" 0
 		"Szene1RN" 0
@@ -1079,7 +1128,9 @@ createNode reference -n "Szene1RN";
 		"Szene1:BildRN" 0
 		"Szene1:BleistiftRN2" 0
 		"Szene1:OrdnerRN1" 0
-		"Szene1:BleistiftRN5" 0
+		"Szene1:BleistiftRN5" 1
+		2 "Szene1:Bleistift5:FBXASC0482FBXASC032FBXASC045FBXASC032Default" "ambientColor" 
+		" -type \"float3\" 0 0 0"
 		"Szene1:bueroklammerRN" 0
 		"Szene1:StuhlRN" 0
 		"Szene1:BleistiftRN3" 0
@@ -1087,16 +1138,18 @@ createNode reference -n "Szene1RN";
 		"Szene1:Tisch2RN" 0
 		"Szene1:DeckenlampeRN" 0
 		"Szene1:car_msRN" 0
-		"Szene1:BleistiftRN4" 0
-		"Szene1:SchreibtischlampeRN" 51
+		"Szene1:BleistiftRN4" 1
+		2 "Szene1:Bleistift4:FBXASC0482FBXASC032FBXASC045FBXASC032Default" "ambientColor" 
+		" -type \"float3\" 0 0 0"
+		"Szene1:SchreibtischlampeRN" 55
 		1 |Szene1:Schreibtischlampe:lampe:lamp_spot "blendSpotLight1orient1" "blendSpotLight1orient1" 
 		" -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
 		1 |Szene1:Schreibtischlampe:lampe:lamp_spot "blendSpotLight1point1" "blendSpotLight1point1" 
 		" -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
-		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator|Szene1:Schreibtischlampe:lampe:ikHandle1" 
+		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator|Szene1:Schreibtischlampe:group1|Szene1:Schreibtischlampe:lampe:ikHandle1" 
 		"translate" " -type \"double3\" 0.12055164233921722 3.2239864897507768 -0.2699740709594991"
 		
-		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator|Szene1:Schreibtischlampe:lampe:ikHandle1" 
+		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator|Szene1:Schreibtischlampe:group1|Szene1:Schreibtischlampe:lampe:ikHandle1" 
 		"rotate" " -type \"double3\" 21.39564224795059 -9.2072654322758485 -0.8401533606390823"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1" 
@@ -1141,6 +1194,14 @@ createNode reference -n "Szene1RN";
 		"visibleFraction" " 0"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot|Szene1:Schreibtischlampe:lampe:directedDiscShape1" 
 		"visibleFraction" " 0"
+		2 "|Szene1:Schreibtischlampe:lampe:pointLight1|Szene1:Schreibtischlampe:lampe:pointLightShape1" 
+		"useRayTraceShadows" " 0"
+		2 "|Szene1:Schreibtischlampe:lampe:pointLight1|Szene1:Schreibtischlampe:lampe:pointLightShape1" 
+		"useDepthMapShadows" " 1"
+		2 "|Szene1:Schreibtischlampe:lampe:pointLight1|Szene1:Schreibtischlampe:lampe:pointLightShape1" 
+		"dmapFilterSize" " 5"
+		2 "|Szene1:Schreibtischlampe:lampe:pointLight1|Szene1:Schreibtischlampe:lampe:pointLightShape1" 
+		"useOnlySingleDmap" " 0"
 		3 "|Szene1:Schreibtischlampe:lampe:lamp_spot|Szene1:Schreibtischlampe:lampe:spotLight1_orientConstraint1.constraintRotateX" 
 		"|Szene1:Schreibtischlampe:lampe:lamp_spot.rotateX" ""
 		3 "|Szene1:Schreibtischlampe:lampe:lamp_spot|Szene1:Schreibtischlampe:lampe:spotLight1_orientConstraint1.constraintRotateY" 
@@ -1153,25 +1214,25 @@ createNode reference -n "Szene1RN";
 		"|Szene1:Schreibtischlampe:lampe:lamp_spot.translateY" ""
 		3 "|Szene1:Schreibtischlampe:lampe:lamp_spot|Szene1:Schreibtischlampe:lampe:spotLight1_pointConstraint1.constraintTranslateZ" 
 		"|Szene1:Schreibtischlampe:lampe:lamp_spot.translateZ" ""
-		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.rotateX" "Szene1RN.placeHolderList[2]" 
-		""
-		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.rotateY" "Szene1RN.placeHolderList[3]" 
-		""
-		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.rotateZ" "Szene1RN.placeHolderList[4]" 
-		""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.translateX" 
-		"Szene1RN.placeHolderList[5]" ""
+		"Szene1RN.placeHolderList[2]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.translateY" 
-		"Szene1RN.placeHolderList[6]" ""
+		"Szene1RN.placeHolderList[3]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.translateZ" 
-		"Szene1RN.placeHolderList[7]" ""
+		"Szene1RN.placeHolderList[4]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.rotateX" "Szene1RN.placeHolderList[5]" 
+		""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.rotateY" "Szene1RN.placeHolderList[6]" 
+		""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.rotateZ" "Szene1RN.placeHolderList[7]" 
+		""
 		5 3 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.blendSpotLight1orient1" 
 		"Szene1RN.placeHolderList[8]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.blendSpotLight1orient1" 
 		"Szene1RN.placeHolderList[9]" ""
-		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.visibility" 
-		"Szene1RN.placeHolderList[10]" ""
 		5 3 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.blendSpotLight1point1" 
+		"Szene1RN.placeHolderList[10]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.visibility" 
 		"Szene1RN.placeHolderList[11]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:lamp_spot.scaleX" "Szene1RN.placeHolderList[12]" 
 		""
@@ -1210,104 +1271,11 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Monitor:monitor:LCDFBXASC032Display|Szene1:Monitor:monitor:Screen" 
 		"rotateAxis" " -type \"double3\" 0 0 0"
-		"Szene1:OrdnerRN" 1
-		2 "|Szene1:Ordner:Camera01|Szene1:Ordner:Camera0Shape1" "renderable" " 0"
-		
-		"Szene1:OrdnerRN1" 1
-		2 "|Szene1:Ordner1:Camera01|Szene1:Ordner1:Camera0Shape1" "renderable" " 0"
-		
-		"Szene1:ph_autoRN" 18
-		2 "|Szene1:ph_auto:group1" "translate" " -type \"double3\" 27.277252642120107 13.848515135182499 2.5419675322550823"
-		
-		2 "|Szene1:ph_auto:group1" "translateX" " -av"
-		2 "|Szene1:ph_auto:group1" "translateY" " -av"
-		2 "|Szene1:ph_auto:group1" "translateZ" " -av"
-		2 "|Szene1:ph_auto:group1" "rotate" " -type \"double3\" 0 -268.08060939818216 0"
-		
-		2 "|Szene1:ph_auto:group1" "rotateX" " -av"
-		2 "|Szene1:ph_auto:group1" "rotateY" " -av"
-		2 "|Szene1:ph_auto:group1" "rotateZ" " -av"
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.rotateX" "Szene1RN.placeHolderList[21]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.rotateY" "Szene1RN.placeHolderList[22]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.rotateZ" "Szene1RN.placeHolderList[23]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.visibility" "Szene1RN.placeHolderList[24]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.translateX" "Szene1RN.placeHolderList[25]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.translateY" "Szene1RN.placeHolderList[26]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.translateZ" "Szene1RN.placeHolderList[27]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.scaleX" "Szene1RN.placeHolderList[28]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.scaleY" "Szene1RN.placeHolderList[29]" 
-		""
-		5 4 "Szene1RN" "|Szene1:ph_auto:group1.scaleZ" "Szene1RN.placeHolderList[30]" 
-		""
-		"Szene1RN" 30
-		0 "|Szene1:camera1" "|Szene1:camera1_group" "-s -r "
-		2 "|Szene1:camera1_group|Szene1:camera1" "translate" " -type \"double3\" 17.885223573320765 14.868192345009346 3.3870777031045098"
-		
-		2 "|Szene1:camera1_group|Szene1:camera1" "translateZ" " -av"
-		2 "|Szene1:camera1_group|Szene1:camera1" "translateX" " -av"
-		2 "|Szene1:camera1_group|Szene1:camera1" "translateY" " -av"
-		2 "|Szene1:camera1_group|Szene1:camera1" "rotateX" " -av -4.3612621868541614"
-		
-		2 "|Szene1:camera1_group|Szene1:camera1" "rotateY" " -av -87.088960961684137"
-		
-		2 "|Szene1:camera1_group|Szene1:camera1" "rotateZ" " -av -6.4921782538413054e-005"
-		
-		2 "|Szene1:camera1_group|Szene1:camera1" "rotatePivot" " -type \"double3\" 0 0 0"
-		
-		2 "|Szene1:camera1_group|Szene1:camera1" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		
-		2 "|Szene1:camera1_group|Szene1:camera1|Szene1:cameraShape1" "renderable" 
-		" 1"
-		2 "|Szene1:camera1_group|Szene1:camera1|Szene1:cameraShape1" "centerOfInterest" 
-		" -av 8.9010587583181611"
-		2 "|Szene1:Camera01|Szene1:Camera0Shape1" "renderable" " 0"
-		2 "Szene1:SchreibtischunerlageRN" "fileNames[0]" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischunerlage.ma\""
-		
-		2 "Szene1:car_msRN" "fileNames[0]" " -type \"string\" \"C:/GIT/desklife/01_Models/car ms.ma\""
-		
-		5 3 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.translate" "Szene1RN.placeHolderList[47]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.translateZ" "Szene1RN.placeHolderList[48]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.translateX" "Szene1RN.placeHolderList[49]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.translateY" "Szene1RN.placeHolderList[50]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotateY" "Szene1RN.placeHolderList[51]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotateX" "Szene1RN.placeHolderList[52]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotateZ" "Szene1RN.placeHolderList[53]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.scaleX" "Szene1RN.placeHolderList[54]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.scaleY" "Szene1RN.placeHolderList[55]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.scaleZ" "Szene1RN.placeHolderList[56]" 
-		""
-		5 3 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.parentInverseMatrix" 
-		"Szene1RN.placeHolderList[57]" ""
-		5 3 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotatePivot" "Szene1RN.placeHolderList[58]" 
-		""
-		5 3 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotatePivotTranslate" 
-		"Szene1RN.placeHolderList[59]" ""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.visibility" "Szene1RN.placeHolderList[60]" 
-		""
-		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1|Szene1:cameraShape1.centerOfInterest" 
-		"Szene1RN.placeHolderList[61]" ""
-		"Szene1:BleistiftRN5" 1
-		2 "Szene1:Bleistift5:FBXASC0482FBXASC032FBXASC045FBXASC032Default" "ambientColor" 
-		" -type \"float3\" 0 0 0"
 		"Szene1:StuhlRN" 1
 		2 "|Szene1:Stuhl:bstuhl:ARMCHAIR" "translate" " -type \"double3\" -10.608080941286122 3.4035610000000003 7.3644669999999994"
+		
+		"Szene1:OrdnerRN" 1
+		2 "|Szene1:Ordner:Camera01|Szene1:Ordner:Camera0Shape1" "renderable" " 0"
 		
 		"Szene1:OrdnerRN2" 12
 		2 "|Szene1:Ordner2:Camera01" "translate" " -type \"double3\" -34.489494323730469 24.126605987548828 51.744129180908203"
@@ -1327,13 +1295,47 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Ordner2:Camera01|Szene1:Ordner2:Camera0Shape1" "centerOfInterest" 
 		" 167683757.48020279"
+		"Szene1:OrdnerRN1" 1
+		2 "|Szene1:Ordner1:Camera01|Szene1:Ordner1:Camera0Shape1" "renderable" " 0"
+		
+		"Szene1:ph_autoRN" 18
+		2 "|Szene1:ph_auto:group1" "translate" " -type \"double3\" 20.282903396326713 13.873747657459793 3.6400077251752125"
+		
+		2 "|Szene1:ph_auto:group1" "translateX" " -av"
+		2 "|Szene1:ph_auto:group1" "translateY" " -av"
+		2 "|Szene1:ph_auto:group1" "translateZ" " -av"
+		2 "|Szene1:ph_auto:group1" "rotate" " -type \"double3\" 0 -227.11299377174532 0"
+		
+		2 "|Szene1:ph_auto:group1" "rotateX" " -av"
+		2 "|Szene1:ph_auto:group1" "rotateY" " -av"
+		2 "|Szene1:ph_auto:group1" "rotateZ" " -av"
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.translateX" "Szene1RN.placeHolderList[21]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.translateY" "Szene1RN.placeHolderList[22]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.translateZ" "Szene1RN.placeHolderList[23]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.rotateX" "Szene1RN.placeHolderList[24]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.rotateY" "Szene1RN.placeHolderList[25]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.rotateZ" "Szene1RN.placeHolderList[26]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.visibility" "Szene1RN.placeHolderList[27]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.scaleX" "Szene1RN.placeHolderList[28]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.scaleY" "Szene1RN.placeHolderList[29]" 
+		""
+		5 4 "Szene1RN" "|Szene1:ph_auto:group1.scaleZ" "Szene1RN.placeHolderList[30]" 
+		""
 		"Szene1:car_msRN" 25
-		2 "|Szene1:car_ms:group1" "translate" " -type \"double3\" 26.937656476086239 13.85201590301951 3.2913827996094667"
+		2 "|Szene1:car_ms:group1" "translate" " -type \"double3\" 21.140495182080286 13.85201590301951 4.5609185834737076"
 		
 		2 "|Szene1:car_ms:group1" "translateX" " -av"
 		2 "|Szene1:car_ms:group1" "translateY" " -av"
 		2 "|Szene1:car_ms:group1" "translateZ" " -av"
-		2 "|Szene1:car_ms:group1" "rotate" " -type \"double3\" 0 -178.5068148745315 0"
+		2 "|Szene1:car_ms:group1" "rotate" " -type \"double3\" 0 -111.78061428419163 0"
 		
 		2 "|Szene1:car_ms:group1" "rotateX" " -av"
 		2 "|Szene1:car_ms:group1" "rotateY" " -av"
@@ -1342,23 +1344,23 @@ createNode reference -n "Szene1RN";
 		"rotate" " -type \"double3\" 0 21.780464677775317 0"
 		3 "|Szene1:car_ms:group1|Szene1:car_ms:transform11|Szene1:car_ms:pCylinder3|Szene1:car_ms:pCylinderShape3.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Szene1:car_ms:group1|Szene1:car_ms:transform9|Szene1:car_ms:pCylinder1|Szene1:car_ms:pCylinderShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Szene1:car_ms:group1|Szene1:car_ms:transform10|Szene1:car_ms:pCylinder2|Szene1:car_ms:pCylinderShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		5 4 "Szene1RN" "|Szene1:car_ms:group1.visibility" "Szene1RN.placeHolderList[31]" 
+		3 "|Szene1:car_ms:group1|Szene1:car_ms:transform9|Szene1:car_ms:pCylinder1|Szene1:car_ms:pCylinderShape1.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		5 4 "Szene1RN" "|Szene1:car_ms:group1.translateX" "Szene1RN.placeHolderList[31]" 
 		""
-		5 4 "Szene1RN" "|Szene1:car_ms:group1.translateX" "Szene1RN.placeHolderList[32]" 
+		5 4 "Szene1RN" "|Szene1:car_ms:group1.translateY" "Szene1RN.placeHolderList[32]" 
 		""
-		5 4 "Szene1RN" "|Szene1:car_ms:group1.translateY" "Szene1RN.placeHolderList[33]" 
+		5 4 "Szene1RN" "|Szene1:car_ms:group1.translateZ" "Szene1RN.placeHolderList[33]" 
 		""
-		5 4 "Szene1RN" "|Szene1:car_ms:group1.translateZ" "Szene1RN.placeHolderList[34]" 
+		5 4 "Szene1RN" "|Szene1:car_ms:group1.rotateX" "Szene1RN.placeHolderList[34]" 
 		""
-		5 4 "Szene1RN" "|Szene1:car_ms:group1.rotateX" "Szene1RN.placeHolderList[35]" 
+		5 4 "Szene1RN" "|Szene1:car_ms:group1.rotateY" "Szene1RN.placeHolderList[35]" 
 		""
-		5 4 "Szene1RN" "|Szene1:car_ms:group1.rotateY" "Szene1RN.placeHolderList[36]" 
+		5 4 "Szene1RN" "|Szene1:car_ms:group1.rotateZ" "Szene1RN.placeHolderList[36]" 
 		""
-		5 4 "Szene1RN" "|Szene1:car_ms:group1.rotateZ" "Szene1RN.placeHolderList[37]" 
+		5 4 "Szene1RN" "|Szene1:car_ms:group1.visibility" "Szene1RN.placeHolderList[37]" 
 		""
 		5 4 "Szene1RN" "|Szene1:car_ms:group1.scaleX" "Szene1RN.placeHolderList[38]" 
 		""
@@ -1375,9 +1377,62 @@ createNode reference -n "Szene1RN";
 		5 0 "Szene1RN" "|Szene1:car_ms:group1|Szene1:car_ms:transform9|Szene1:car_ms:pCylinder1|Szene1:car_ms:pCylinderShape1.instObjGroups" 
 		"Szene1:car_ms:phong1SG.dagSetMembers" "Szene1RN.placeHolderList[45]" "Szene1RN.placeHolderList[46]" 
 		":initialShadingGroup.dsm"
-		"Szene1:BleistiftRN4" 1
-		2 "Szene1:Bleistift4:FBXASC0482FBXASC032FBXASC045FBXASC032Default" "ambientColor" 
-		" -type \"float3\" 0 0 0";
+		"Szene1RN" 30
+		0 "|Szene1:camera1" "|Szene1:camera1_group" "-s -r "
+		2 "|Szene1:camera1_group|Szene1:camera1" "translate" " -type \"double3\" 16.492653421721453 14.600981979877922 4.6252325384755206"
+		
+		2 "|Szene1:camera1_group|Szene1:camera1" "translateX" " -av"
+		2 "|Szene1:camera1_group|Szene1:camera1" "translateY" " -av"
+		2 "|Szene1:camera1_group|Szene1:camera1" "translateZ" " -av"
+		2 "|Szene1:camera1_group|Szene1:camera1" "rotateX" " -av -6.4226603781453697"
+		
+		2 "|Szene1:camera1_group|Szene1:camera1" "rotateY" " -av -80.93348476407462"
+		
+		2 "|Szene1:camera1_group|Szene1:camera1" "rotateZ" " -av -2.0852121738273355e-005"
+		
+		2 "|Szene1:camera1_group|Szene1:camera1" "rotatePivot" " -type \"double3\" 0 0 0"
+		
+		2 "|Szene1:camera1_group|Szene1:camera1" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		2 "|Szene1:camera1_group|Szene1:camera1|Szene1:cameraShape1" "renderable" 
+		" 1"
+		2 "|Szene1:camera1_group|Szene1:camera1|Szene1:cameraShape1" "centerOfInterest" 
+		" -av 3.6623577220528389"
+		2 "|Szene1:Camera01|Szene1:Camera0Shape1" "renderable" " 0"
+		2 "Szene1:SchreibtischunerlageRN" "fileNames[0]" " -type \"string\" \"Z:/Dropbox/DeskLife/Abgabe 3 - Licht//01_Models/Schreibtischunerlage.ma\""
+		
+		2 "Szene1:car_msRN" "fileNames[0]" " -type \"string\" \"C:/GIT/desklife/01_Models/car ms.ma\""
+		
+		5 3 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.translate" "Szene1RN.placeHolderList[47]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.translateX" "Szene1RN.placeHolderList[48]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.translateY" "Szene1RN.placeHolderList[49]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.translateZ" "Szene1RN.placeHolderList[50]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotateX" "Szene1RN.placeHolderList[51]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotateY" "Szene1RN.placeHolderList[52]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotateZ" "Szene1RN.placeHolderList[53]" 
+		""
+		5 3 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotatePivot" "Szene1RN.placeHolderList[54]" 
+		""
+		5 3 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.rotatePivotTranslate" 
+		"Szene1RN.placeHolderList[55]" ""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.scaleX" "Szene1RN.placeHolderList[56]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.scaleY" "Szene1RN.placeHolderList[57]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.scaleZ" "Szene1RN.placeHolderList[58]" 
+		""
+		5 3 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.parentInverseMatrix" 
+		"Szene1RN.placeHolderList[59]" ""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1.visibility" "Szene1RN.placeHolderList[60]" 
+		""
+		5 4 "Szene1RN" "|Szene1:camera1_group|Szene1:camera1|Szene1:cameraShape1.centerOfInterest" 
+		"Szene1RN.placeHolderList[61]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode mentalrayOptions -s -n "miContourPreset";
@@ -1719,329 +1774,335 @@ createNode mentalrayOptions -s -n "PreviewImrRayTracyOn";
 createNode animCurveTU -n "group1_visibility";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 1 15 1 19 1 25 1 30 1
-		 40 1 45 1 50 1 62 1 64 1 70 1 85 1 142 1 151 1 162 1 172 1;
-	setAttr -s 16 ".kit[0:15]"  9 9 9 9 1 9 9 9 
-		1 1 9 1 9 9 9 1;
-	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 1 15 1 19 1 22 1 30 1
+		 34 1 40 1 45 1 50 1 62 1 64 1 70 1 85 1 142 1 151 1 162 1 172 1;
+	setAttr -s 17 ".kit[0:16]"  9 9 9 9 1 9 9 9 
+		9 1 1 9 1 9 9 9 1;
+	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "group1_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 22.46823512271116 15 22.46823512271116
-		 19 22.895987919173994 25 23.443687541091986 30 23.683442227156899 40 23.683442227156899
-		 45 23.683442227156899 50 22.381122327032692 62 21.140495182080286 64 21.140495182080286
-		 70 21.140495182080286 85 21.140495182080286 142 21.140495182080286 151 21.893695045557074
-		 162 23.923890633924302 172 26.937656476086239;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
-		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
-		1 18 18 18;
-	setAttr -s 16 ".kix[4:15]"  1 1 1 0.25832968950271606 1 1 1 1 1 0.27623537182807922 
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 22.46823512271116 15 22.46823512271116
+		 19 22.895987919173994 22 23.189306612789785 30 23.683442227156899 34 23.683442227156899
+		 40 23.683442227156899 45 23.683442227156899 50 22.381122327032692 62 21.140495182080286
+		 64 21.140495182080286 70 21.140495182080286 85 21.140495182080286 142 21.140495182080286
+		 151 21.893695045557074 162 23.923890633924302 172 26.937656476086239;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  1 1 1 1 0.25832968950271606 1 1 1 1 1 0.27623537182807922 
 		0.16427338123321533 1;
-	setAttr -s 16 ".kiy[4:15]"  0 0 0 -0.96605682373046875 0 0 0 0 0 0.96109002828598022 
-		0.98641479015350342 0;
-	setAttr -s 16 ".kox[4:15]"  1 1 1 0.25832968950271606 1 1 1 1 1 0.27623534202575684 
+	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 -0.96605682373046875 0 0 0 0 0 
+		0.96109002828598022 0.98641479015350342 0;
+	setAttr -s 17 ".kox[4:16]"  1 1 1 1 0.25832968950271606 1 1 1 1 1 0.27623534202575684 
 		0.16427339613437653 1;
-	setAttr -s 16 ".koy[4:15]"  0 0 0 -0.96605676412582397 0 0 0 0 0 0.96109002828598022 
-		0.98641484975814819 0;
+	setAttr -s 17 ".koy[4:16]"  0 0 0 0 -0.96605676412582397 0 0 0 0 0 
+		0.96109002828598022 0.98641484975814819 0;
 createNode animCurveTL -n "group1_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 13.814715071183977 15 13.85201590301951
-		 19 13.85201590301951 25 13.85201590301951 30 13.85201590301951 40 13.85201590301951
-		 45 13.85201590301951 50 13.85201590301951 62 13.85201590301951 64 13.85201590301951
-		 70 13.85201590301951 85 13.85201590301951 142 13.85201590301951 151 13.85201590301951
-		 162 13.85201590301951 172 13.85201590301951;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
-		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
-		1 18 18 18;
-	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 13.814715071183977 15 13.85201590301951
+		 19 13.85201590301951 22 13.85201590301951 30 13.85201590301951 34 13.85201590301951
+		 40 13.85201590301951 45 13.85201590301951 50 13.85201590301951 62 13.85201590301951
+		 64 13.85201590301951 70 13.85201590301951 85 13.85201590301951 142 13.85201590301951
+		 151 13.85201590301951 162 13.85201590301951 172 13.85201590301951;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "group1_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0.89185871040856979 15 4.2065883062240337
-		 19 5.2353969991596312 25 5.5424198885655827 30 6.2196202047406084 40 11.141474650474741
-		 45 12.781888746464583 50 13.073949794060646 62 13.073949794060646 64 13.073949794060646
-		 70 11.343835339995005 85 6.7639551754768661 142 4.0349042507276378 151 3.4228251538360572
-		 162 3.3572195000544123 172 3.2913827996094667;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
-		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
-		1 18 18 18;
-	setAttr -s 16 ".kix[4:15]"  0.14080934226512909 0.091051995754241943 
-		0.22253887355327606 1 1 1 0.13195805251598358 0.43626931309700012 0.61997199058532715 
-		0.91283774375915527 0.98797756433486938 1;
-	setAttr -s 16 ".kiy[4:15]"  0.9900367259979248 0.9958462119102478 0.97492378950119019 
-		0 0 0 -0.99125528335571289 -0.89981615543365479 -0.78462392091751099 -0.4083225429058075 
-		-0.15459771454334259 0;
-	setAttr -s 16 ".kox[4:15]"  0.14080934226512909 0.091051988303661346 
-		0.22253887355327606 1 1 1 0.13195805251598358 0.43626934289932251 0.17121230065822601 
-		0.9128376841545105 0.98797750473022461 1;
-	setAttr -s 16 ".koy[4:15]"  0.9900367259979248 0.9958462119102478 0.97492378950119019 
-		0 0 0 -0.99125522375106812 -0.89981615543365479 -0.98523420095443726 -0.4083225429058075 
-		-0.1545976847410202 0;
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 0.89185871040856979 15 4.2065883062240337
+		 19 5.2353969991596312 22 5.4219896945509296 30 6.2196202047406084 34 7.9371155616977038
+		 40 11.141474650474741 45 12.781888746464583 50 13.073949794060646 62 13.073949794060646
+		 64 13.073949794060646 70 11.343835339995005 85 6.7639551754768661 142 4.0349042507276378
+		 151 3.4228251538360572 162 3.3572195000544123 172 3.2913827996094667;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  0.14080934226512909 0.081003107130527496 
+		0.090447261929512024 0.22253887355327606 1 1 1 0.13195805251598358 0.43626931309700012 
+		0.61997199058532715 0.91283774375915527 0.98797756433486938 1;
+	setAttr -s 17 ".kiy[4:16]"  0.9900367259979248 0.99671381711959839 
+		0.99590122699737549 0.97492378950119019 0 0 0 -0.99125528335571289 -0.89981615543365479 
+		-0.78462392091751099 -0.4083225429058075 -0.15459771454334259 0;
+	setAttr -s 17 ".kox[4:16]"  0.14080934226512909 0.081003107130527496 
+		0.090447269380092621 0.22253887355327606 1 1 1 0.13195805251598358 0.43626934289932251 
+		0.17121230065822601 0.9128376841545105 0.98797750473022461 1;
+	setAttr -s 17 ".koy[4:16]"  0.9900367259979248 0.99671387672424316 
+		0.99590128660202026 0.97492378950119019 0 0 0 -0.99125522375106812 -0.89981615543365479 
+		-0.98523420095443726 -0.4083225429058075 -0.1545976847410202 0;
 createNode animCurveTA -n "group1_rotateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0 15 0 19 0 25 0 30 0
-		 40 0 45 0 50 0 62 0 64 0 70 0 85 0 142 0 151 0 162 0 172 0;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
-		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
-		1 18 18 18;
-	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 0 15 0 19 0 22 0 30 0
+		 34 0 40 0 45 0 50 0 62 0 64 0 70 0 85 0 142 0 151 0 162 0 172 0;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "group1_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 90 15 104.86683441245427
-		 19 126.25829116348926 25 124.12925397468196 30 90.505689369323477 40 90.505689369323477
-		 45 51.621054356036133 50 -25.599005435350655 62 -109.41022017039128 64 -109.41022017039128
-		 70 -89.06652722315404 85 -90.590557195548797 142 -123.39838219637032 151 -160.01912377272851
-		 162 -179.6263330982926 172 -178.5068148745315;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
-		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
-		1 18 18 18;
-	setAttr -s 16 ".kix[4:15]"  1 1 0.19365669786930084 0.23516245186328888 
-		1 1 1 1 0.90883564949035645 0.63184911012649536 1 1;
-	setAttr -s 16 ".kiy[4:15]"  0 0 -0.98106938600540161 -0.97195607423782349 
-		0 0 0 0 -0.41715455055236816 -0.77509135007858276 0 0;
-	setAttr -s 16 ".kox[4:15]"  1 1 0.19365669786930084 0.23516245186328888 
-		1 1 1 1 1 0.63184916973114014 1 1;
-	setAttr -s 16 ".koy[4:15]"  0 0 -0.98106938600540161 -0.97195607423782349 
-		0 0 0 0 0 -0.77509140968322754 0 0;
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 90 15 104.86683441245427
+		 19 126.25829116348926 22 140.88261859400171 30 99.800854703080077 34 92.295075642130072
+		 40 90.505689369323477 45 51.621054356036133 50 -25.599005435350655 62 -109.41022017039128
+		 64 -109.41022017039128 70 -89.06652722315404 85 -90.590557195548797 142 -123.39838219637032
+		 151 -160.01912377272853 162 -179.6263330982926 172 -178.5068148745315;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  1 0.9315335750579834 0.9315335750579834 
+		0.19365669786930084 0.23516245186328888 1 1 1 1 0.90883564949035645 0.63184911012649536 
+		1 1;
+	setAttr -s 17 ".kiy[4:16]"  0 -0.36365535855293274 -0.36365535855293274 
+		-0.98106938600540161 -0.97195607423782349 0 0 0 0 -0.41715455055236816 -0.77509135007858276 
+		0 0;
+	setAttr -s 17 ".kox[4:16]"  1 0.9315335750579834 0.93153351545333862 
+		0.19365669786930084 0.23516245186328888 1 1 1 1 1 0.63184916973114014 1 1;
+	setAttr -s 17 ".koy[4:16]"  0 -0.36365535855293274 -0.36365532875061035 
+		-0.98106938600540161 -0.97195607423782349 0 0 0 0 0 -0.77509140968322754 0 0;
 createNode animCurveTA -n "group1_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0 15 0 19 0 25 0 30 0
-		 40 0 45 0 50 0 62 0 64 0 70 0 85 0 142 0 151 0 162 0 172 0;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
-		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
-		1 18 18 18;
-	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 0 15 0 19 0 22 0 30 0
+		 34 0 40 0 45 0 50 0 62 0 64 0 70 0 85 0 142 0 151 0 162 0 172 0;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "group1_scaleX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0.064180779278468075
-		 15 0.064180779278468075 19 0.064180779278468075 25 0.064180779278468075 30 0.064180779278468075
-		 40 0.064180779278468075 45 0.064180779278468075 50 0.064180779278468075 62 0.064180779278468075
-		 64 0.064180779278468075 70 0.064180779278468075 85 0.064180779278468075 142 0.064180779278468075
-		 151 0.064180779278468075 162 0.064180779278468075 172 0.064180779278468075;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
-		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
-		1 18 18 18;
-	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 0.064180779278468075
+		 15 0.064180779278468075 19 0.064180779278468075 22 0.064180779278468075 30 0.064180779278468075
+		 34 0.064180779278468075 40 0.064180779278468075 45 0.064180779278468075 50 0.064180779278468075
+		 62 0.064180779278468075 64 0.064180779278468075 70 0.064180779278468075 85 0.064180779278468075
+		 142 0.064180779278468075 151 0.064180779278468075 162 0.064180779278468075 172 0.064180779278468075;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "group1_scaleY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0.064180779278468075
-		 15 0.064180779278468075 19 0.064180779278468075 25 0.064180779278468075 30 0.064180779278468075
-		 40 0.064180779278468075 45 0.064180779278468075 50 0.064180779278468075 62 0.064180779278468075
-		 64 0.064180779278468075 70 0.064180779278468075 85 0.064180779278468075 142 0.064180779278468075
-		 151 0.064180779278468075 162 0.064180779278468075 172 0.064180779278468075;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
-		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
-		1 18 18 18;
-	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 0.064180779278468075
+		 15 0.064180779278468075 19 0.064180779278468075 22 0.064180779278468075 30 0.064180779278468075
+		 34 0.064180779278468075 40 0.064180779278468075 45 0.064180779278468075 50 0.064180779278468075
+		 62 0.064180779278468075 64 0.064180779278468075 70 0.064180779278468075 85 0.064180779278468075
+		 142 0.064180779278468075 151 0.064180779278468075 162 0.064180779278468075 172 0.064180779278468075;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "group1_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0.064180779278468075
-		 15 0.064180779278468075 19 0.064180779278468075 25 0.064180779278468075 30 0.064180779278468075
-		 40 0.064180779278468075 45 0.064180779278468075 50 0.064180779278468075 62 0.064180779278468075
-		 64 0.064180779278468075 70 0.064180779278468075 85 0.064180779278468075 142 0.064180779278468075
-		 151 0.064180779278468075 162 0.064180779278468075 172 0.064180779278468075;
-	setAttr -s 16 ".kit[4:15]"  1 18 18 18 1 1 18 1 
+	setAttr -s 17 ".ktv[0:16]"  1.0416666666666667 0.064180779278468075
+		 15 0.064180779278468075 19 0.064180779278468075 22 0.064180779278468075 30 0.064180779278468075
+		 34 0.064180779278468075 40 0.064180779278468075 45 0.064180779278468075 50 0.064180779278468075
+		 62 0.064180779278468075 64 0.064180779278468075 70 0.064180779278468075 85 0.064180779278468075
+		 142 0.064180779278468075 151 0.064180779278468075 162 0.064180779278468075 172 0.064180779278468075;
+	setAttr -s 17 ".kit[4:16]"  1 18 18 18 18 1 1 18 
+		1 18 18 18 1;
+	setAttr -s 17 ".kot[4:16]"  1 18 18 18 18 1 1 18 
+		1 1 18 18 18;
+	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+createNode animCurveTA -n "group1_rotateX1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0 15 0 19 0 22 0 30 0
+		 34 0 40 0 45 0 50 0 60 0 70 0 85 0 141 0 150 0 161 0 171 0;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
 		18 18 18 1;
-	setAttr -s 16 ".kot[4:15]"  1 18 18 18 1 1 18 1 
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
 		1 18 18 18;
 	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
-createNode animCurveTA -n "group1_rotateX1";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 0 15 0 19 0 25 0 30 0
-		 40 0 45 0 50 0 60 0 70 0 85 0 141 0 150 0 161 0 171 0;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "group1_rotateY1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 0 15 11.434481805425891
-		 19 33.155293210951839 25 29.667401600835344 30 -2.4048028295713828 40 -2.4048028295713828
-		 45 -46.581182752059874 50 -116.73802577551201 60 -212.12455924997374 70 -183.17198567627506
-		 85 -187.76306735200114 141 -240.2090503142885 150 -268.08060939818216 161 -268.08060939818216
-		 171 -268.08060939818216;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 0.1965421587228775 0.20332655310630798 
-		1 1 0.97230148315429688 0.88021576404571533 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 -0.9804953932762146 -0.9791109561920166 
-		0 0 -0.23373006284236908 -0.47457361221313477 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 0.1965421587228775 0.20332655310630798 
-		1 1 0.97230154275894165 0.52704054117202759 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 -0.9804953932762146 -0.9791109561920166 
-		0 0 -0.23373007774353027 -0.84984010457992554 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0 15 11.434481805425891
+		 19 33.155293210951839 22 41.62274682477014 30 8.8888849165859902 34 1.0513185850764579
+		 40 -2.4048028295713828 45 -46.581182752059881 50 -116.73802577551201 60 -212.12455924997377
+		 70 -183.17198567627506 85 -187.76306735200114 141 -240.2090503142885 150 -268.08060939818216
+		 161 -268.08060939818216 171 -268.08060939818216;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
+		18 18 18 1;
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 0.89700263738632202 0.79846096038818359 
+		0.1965421587228775 0.20332655310630798 1 1 0.97230148315429688 0.88021576404571533 
+		1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 -0.44202506542205811 -0.60204654932022095 
+		-0.9804953932762146 -0.9791109561920166 0 0 -0.23373006284236908 -0.47457361221313477 
+		0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 0.8970026969909668 0.79846096038818359 
+		0.1965421587228775 0.20332655310630798 1 1 0.97230154275894165 0.52704054117202759 
+		1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 -0.44202506542205811 -0.60204654932022095 
+		-0.9804953932762146 -0.9791109561920166 0 0 -0.23373007774353027 -0.84984010457992554 
+		0 0 0;
 createNode animCurveTA -n "group1_rotateZ1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 0 15 0 19 0 25 0 30 0
-		 40 0 45 0 50 0 60 0 70 0 85 0 141 0 150 0 161 0 171 0;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0 15 0 19 0 22 0 30 0
+		 34 0 40 0 45 0 50 0 60 0 70 0 85 0 141 0 150 0 161 0 171 0;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
+		18 18 18 1;
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "group1_visibility1";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 1 15 1 19 1 25 1 30 1
-		 40 1 45 1 50 1 60 1 70 1 85 1 141 1 150 1 161 1 171 1;
-	setAttr -s 15 ".kit[0:14]"  9 9 9 9 1 9 9 9 
-		9 9 1 9 9 9 1;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 1 15 1 19 1 22 1 30 1
+		 34 1 40 1 45 1 50 1 60 1 70 1 85 1 141 1 150 1 161 1 171 1;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 1 9 9 9 
+		9 9 9 1 9 9 9 1;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "group1_translateX1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 23.713366450820047 15 23.373891903750614
-		 19 23.807532257180863 25 24.36277037069771 30 24.605825026386757 40 24.605825026386757
-		 45 24.099662564176416 50 22.26476326146636 60 20.059902122674643 70 20.180931070153825
-		 85 20.282903396326713 141 20.282903396326713 150 21.911363076752941 161 25.009324371330347
-		 171 27.277252642120107;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 0.16842184960842133 0.14691214263439178 
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 23.713366450820047 15 23.373891903750614
+		 19 23.807532257180863 22 24.104888164323199 30 24.605825026386757 34 24.605825026386757
+		 40 24.605825026386757 45 24.099662564176416 50 22.26476326146636 60 20.059902122674643
+		 70 20.180931070153825 85 20.282903396326713 141 20.282903396326713 150 21.911363076752941
+		 161 25.009324371330347 171 27.277252642120107;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
+		18 18 18 1;
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 0.16842184960842133 0.14691214263439178 
 		1 0.97602570056915283 1 1 0.166887566447258 0.15466083586215973 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 -0.98571497201919556 -0.98914957046508789 
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 -0.98571497201919556 -0.98914957046508789 
 		0 0.21765497326850891 0 0 0.98597592115402222 0.98796766996383667 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 0.16842184960842133 0.14691214263439178 
+	setAttr -s 16 ".kox[4:15]"  1 1 1 0.16842184960842133 0.14691214263439178 
 		1 0.97602581977844238 1 1 0.16688758134841919 0.15466083586215973 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 -0.98571497201919556 -0.98914957046508789 
+	setAttr -s 16 ".koy[4:15]"  0 0 0 -0.98571497201919556 -0.98914957046508789 
 		0 0.2176549881696701 0 0 0.98597598075866699 0.98796766996383667 0;
 createNode animCurveTL -n "group1_translateY1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 13.848515135182499 15 13.848515135182499
-		 19 13.848515135182499 25 13.848515135182499 30 13.848515135182499 40 13.848515135182499
-		 45 13.848515135182499 50 13.848515135182499 60 13.848515135182499 70 13.868851501163876
-		 85 13.848515135182499 141 13.848515135182499 150 13.848515135182499 161 13.848515135182499
-		 171 13.848515135182499;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 13.848515135182499 15 13.848515135182499
+		 19 13.848515135182499 22 13.848515135182499 30 13.848515135182499 34 13.848515135182499
+		 40 13.848515135182499 45 13.848515135182499 50 13.848515135182499 60 13.848515135182499
+		 70 13.868851501163876 85 13.848515135182499 141 13.848515135182499 150 13.848515135182499
+		 161 13.848515135182499 171 13.848515135182499;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
+		18 18 18 1;
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "group1_translateZ1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 1.3489000773395277 15 3.8142210446166875
-		 19 4.8375368119618534 25 5.1390408648211912 30 5.9378080533493485 40 11.880996970284254
-		 45 13.709101124345825 50 14.0642761985851 60 13.089567330609977 70 10.205997567565486
-		 85 5.8599921812418696 141 3.1796221787512646 150 2.5419675322550823 161 2.5419675322550823
-		 171 2.5419675322550823;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  0.11842041462659836 0.076978124678134918 
-		0.18447928130626678 1 0.20302793383598328 0.13701619207859039 0.37473815679550171 
-		0.61679142713546753 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0.99296361207962036 0.9970327615737915 
-		0.98283636569976807 0 -0.97917294502258301 -0.99056881666183472 -0.92713069915771484 
-		-0.78712666034698486 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  0.11842039972543716 0.076978124678134918 
-		0.18447929620742798 1 0.20302791893482208 0.1370161771774292 0.37473815679550171 
-		0.18494328856468201 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0.99296349287033081 0.9970327615737915 
-		0.98283642530441284 0 -0.97917294502258301 -0.99056875705718994 -0.92713069915771484 
-		-0.98274916410446167 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 1.3489000773395277 15 3.8142210446166875
+		 19 4.8375368119618534 22 5.0126318474543519 30 5.9378080533493485 34 8.0154274400931325
+		 40 11.880996970284254 45 13.709101124345825 50 14.0642761985851 60 13.089567330609977
+		 70 10.205997567565486 85 5.8599921812418696 141 3.1796221787512646 150 2.5419675322550823
+		 161 2.5419675322550823 171 2.5419675322550823;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
+		18 18 18 1;
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  0.11842041462659836 0.067152008414268494 
+		0.077049016952514648 0.18447928130626678 1 0.20302793383598328 0.13701619207859039 
+		0.37473815679550171 0.61679142713546753 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0.99296361207962036 0.99774277210235596 
+		0.99702727794647217 0.98283636569976807 0 -0.97917294502258301 -0.99056881666183472 
+		-0.92713069915771484 -0.78712666034698486 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  0.11842039972543716 0.067152008414268494 
+		0.077049016952514648 0.18447929620742798 1 0.20302791893482208 0.1370161771774292 
+		0.37473815679550171 0.18494328856468201 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0.99296349287033081 0.99774277210235596 
+		0.99702727794647217 0.98283642530441284 0 -0.97917294502258301 -0.99056875705718994 
+		-0.92713069915771484 -0.98274916410446167 0 0 0;
 createNode animCurveTU -n "group1_scaleX1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 0.053684248629956272
-		 15 0.053684248629956272 19 0.053684248629956272 25 0.053684248629956272 30 0.053684248629956272
-		 40 0.053684248629956272 45 0.053684248629956272 50 0.053684248629956272 60 0.053684248629956272
-		 70 0.053684248629956272 85 0.053684248629956272 141 0.053684248629956272 150 0.053684248629956272
-		 161 0.053684248629956272 171 0.053684248629956272;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0.053684248629956272
+		 15 0.053684248629956272 19 0.053684248629956272 22 0.053684248629956272 30 0.053684248629956272
+		 34 0.053684248629956272 40 0.053684248629956272 45 0.053684248629956272 50 0.053684248629956272
+		 60 0.053684248629956272 70 0.053684248629956272 85 0.053684248629956272 141 0.053684248629956272
+		 150 0.053684248629956272 161 0.053684248629956272 171 0.053684248629956272;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
+		18 18 18 1;
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "group1_scaleY1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 0.053684248629956272
-		 15 0.053684248629956272 19 0.053684248629956272 25 0.053684248629956272 30 0.053684248629956272
-		 40 0.053684248629956272 45 0.053684248629956272 50 0.053684248629956272 60 0.053684248629956272
-		 70 0.053684248629956272 85 0.053684248629956272 141 0.053684248629956272 150 0.053684248629956272
-		 161 0.053684248629956272 171 0.053684248629956272;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0.053684248629956272
+		 15 0.053684248629956272 19 0.053684248629956272 22 0.053684248629956272 30 0.053684248629956272
+		 34 0.053684248629956272 40 0.053684248629956272 45 0.053684248629956272 50 0.053684248629956272
+		 60 0.053684248629956272 70 0.053684248629956272 85 0.053684248629956272 141 0.053684248629956272
+		 150 0.053684248629956272 161 0.053684248629956272 171 0.053684248629956272;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
+		18 18 18 1;
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "group1_scaleZ1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1.0416666666666667 0.053684248629956272
-		 15 0.053684248629956272 19 0.053684248629956272 25 0.053684248629956272 30 0.053684248629956272
-		 40 0.053684248629956272 45 0.053684248629956272 50 0.053684248629956272 60 0.053684248629956272
-		 70 0.053684248629956272 85 0.053684248629956272 141 0.053684248629956272 150 0.053684248629956272
-		 161 0.053684248629956272 171 0.053684248629956272;
-	setAttr -s 15 ".kit[4:14]"  1 18 18 18 18 18 1 18 
-		18 18 1;
-	setAttr -s 15 ".kot[4:14]"  1 18 18 18 18 18 1 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 0.053684248629956272
+		 15 0.053684248629956272 19 0.053684248629956272 22 0.053684248629956272 30 0.053684248629956272
+		 34 0.053684248629956272 40 0.053684248629956272 45 0.053684248629956272 50 0.053684248629956272
+		 60 0.053684248629956272 70 0.053684248629956272 85 0.053684248629956272 141 0.053684248629956272
+		 150 0.053684248629956272 161 0.053684248629956272 171 0.053684248629956272;
+	setAttr -s 16 ".kit[4:15]"  1 18 18 18 18 18 18 1 
+		18 18 18 1;
+	setAttr -s 16 ".kot[4:15]"  1 18 18 18 18 18 18 1 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "camera1_aim_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
@@ -2190,31 +2251,74 @@ createNode animCurveTU -n "lamp_spot_blendSpotLight1orient1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  121 0;
+createNode reference -n "Stifte_TorRN";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Stifte_TorRN"
+		"Stifte_Tor:Szene1:BleistiftRN4" 0
+		"Stifte_TorRN" 0
+		"Stifte_Tor:Szene1:BleistiftRN2" 0
+		"Stifte_Tor:Szene1:BleistiftRN3" 0
+		"Stifte_Tor:Szene1:BleistiftRN5" 0
+		"Stifte_Tor:Szene1RN" 0
+		"Stifte_Tor:Szene1:BleistiftRN1" 0
+		"Stifte_Tor:Szene1:BleistiftRN4" 3
+		2 "|Stifte_Tor:Szene1:Bleistift4:Pencil" "translate" " -type \"double3\" 0.50785996925455246 8.8386300800209163 -4.3796536246505138"
+		
+		2 "|Stifte_Tor:Szene1:Bleistift4:Pencil" "translateX" " -av"
+		2 "|Stifte_Tor:Szene1:Bleistift4:Pencil" "translateZ" " -av"
+		"Stifte_Tor:Szene1:BleistiftRN5" 8
+		2 "|Stifte_Tor:Szene1:Bleistift5:Pencil" "translate" " -type \"double3\" 0.11407898620168222 12.665044145048887 -1.9054602766953539"
+		
+		2 "|Stifte_Tor:Szene1:Bleistift5:Pencil" "translateX" " -av"
+		2 "|Stifte_Tor:Szene1:Bleistift5:Pencil" "translateY" " -av"
+		2 "|Stifte_Tor:Szene1:Bleistift5:Pencil" "translateZ" " -av"
+		2 "|Stifte_Tor:Szene1:Bleistift5:Pencil|Stifte_Tor:Szene1:Bleistift5:Circle01" 
+		"translate" " -type \"double3\" 3248.7902589999999 -1046.9573580000001 1066.1424609999999"
+		
+		2 "|Stifte_Tor:Szene1:Bleistift5:Pencil|Stifte_Tor:Szene1:Bleistift5:Circle01" 
+		"translateX" " -av"
+		2 "|Stifte_Tor:Szene1:Bleistift5:Pencil|Stifte_Tor:Szene1:Bleistift5:Circle01" 
+		"translateY" " -av"
+		2 "|Stifte_Tor:Szene1:Bleistift5:Pencil|Stifte_Tor:Szene1:Bleistift5:Circle01" 
+		"translateZ" " -av"
+		"Stifte_Tor:Szene1RN" 2
+		2 "|Stifte_Tor:Szene1:camera1|Stifte_Tor:Szene1:cameraShape1" "renderable" 
+		" 0"
+		2 "|Stifte_Tor:Szene1:Camera01|Stifte_Tor:Szene1:Camera0Shape1" "renderable" 
+		" 0"
+		"Stifte_Tor:Szene1:BleistiftRN1" 3
+		2 "|Stifte_Tor:Szene1:Bleistift1:Pencil" "translate" " -type \"double3\" 1.0232827141458802 9.4253313272101149 -7.2766419814605783"
+		
+		2 "|Stifte_Tor:Szene1:Bleistift1:Pencil" "translateX" " -av"
+		2 "|Stifte_Tor:Szene1:Bleistift1:Pencil" "translateZ" " -av";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
-	setAttr ".o" 175;
-	setAttr ".unw" 175;
+	setAttr ".o" 130;
+	setAttr ".unw" 130;
 select -ne :renderPartition;
-	setAttr -s 138 ".st";
+	setAttr -s 149 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 137 ".s";
+	setAttr -s 135 ".s";
 select -ne :postProcessList1;
 	setAttr -s 3 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 69 ".u";
+	setAttr -s 83 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 26 ".r";
+	setAttr -s 28 ".r";
 select -ne :lightList1;
 	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 58 ".tx";
+	setAttr -s 72 ".tx";
 select -ne :lambert1;
 select -ne :initialShadingGroup;
-	setAttr -s 23 ".dsm";
+	setAttr -s 27 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :initialMaterialInfo;
+	setAttr -s 7 ".t";
 select -ne :defaultRenderGlobals;
 	setAttr ".mcfr" 25;
 	setAttr ".ren" -type "string" "mentalRay";
@@ -2224,8 +2328,8 @@ select -ne :defaultRenderGlobals;
 	setAttr ".ef" 175;
 	setAttr ".pff" yes;
 select -ne :defaultResolution;
-	setAttr ".w" 1280;
-	setAttr ".h" 720;
+	setAttr ".w" 1920;
+	setAttr ".h" 1080;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7777777910232544;
 select -ne :defaultLightSet;
@@ -2242,16 +2346,16 @@ select -ne :hardwareRenderingGlobals;
 select -ne :defaultHardwareRenderGlobals;
 	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
 select -ne :ikSystem;
-connectAttr "pairBlend1.orx" "Szene1RN.phl[2]";
-connectAttr "pairBlend1.ory" "Szene1RN.phl[3]";
-connectAttr "pairBlend1.orz" "Szene1RN.phl[4]";
-connectAttr "pairBlend2.otx" "Szene1RN.phl[5]";
-connectAttr "pairBlend2.oty" "Szene1RN.phl[6]";
-connectAttr "pairBlend2.otz" "Szene1RN.phl[7]";
+connectAttr "pairBlend2.otx" "Szene1RN.phl[2]";
+connectAttr "pairBlend2.oty" "Szene1RN.phl[3]";
+connectAttr "pairBlend2.otz" "Szene1RN.phl[4]";
+connectAttr "pairBlend1.orx" "Szene1RN.phl[5]";
+connectAttr "pairBlend1.ory" "Szene1RN.phl[6]";
+connectAttr "pairBlend1.orz" "Szene1RN.phl[7]";
 connectAttr "Szene1RN.phl[8]" "pairBlend1.w";
 connectAttr "lamp_spot_blendSpotLight1orient1.o" "Szene1RN.phl[9]";
-connectAttr "lamp_spot_visibility.o" "Szene1RN.phl[10]";
-connectAttr "Szene1RN.phl[11]" "pairBlend2.w";
+connectAttr "Szene1RN.phl[10]" "pairBlend2.w";
+connectAttr "lamp_spot_visibility.o" "Szene1RN.phl[11]";
 connectAttr "lamp_spot_scaleX.o" "Szene1RN.phl[12]";
 connectAttr "lamp_spot_scaleY.o" "Szene1RN.phl[13]";
 connectAttr "lamp_spot_scaleZ.o" "Szene1RN.phl[14]";
@@ -2262,44 +2366,44 @@ connectAttr "Szene1RN.phl[18]" "pairBlend2.itx2";
 connectAttr "Szene1RN.phl[19]" "pairBlend2.ity2";
 connectAttr "Szene1RN.phl[20]" "pairBlend2.itz2";
 connectAttr "pCubeShape5.iog" "Szene1RN.phl[1]";
-connectAttr "group1_rotateX1.o" "Szene1RN.phl[21]";
-connectAttr "group1_rotateY1.o" "Szene1RN.phl[22]";
-connectAttr "group1_rotateZ1.o" "Szene1RN.phl[23]";
-connectAttr "group1_visibility1.o" "Szene1RN.phl[24]";
-connectAttr "group1_translateX1.o" "Szene1RN.phl[25]";
-connectAttr "group1_translateY1.o" "Szene1RN.phl[26]";
-connectAttr "group1_translateZ1.o" "Szene1RN.phl[27]";
+connectAttr "group1_translateX1.o" "Szene1RN.phl[21]";
+connectAttr "group1_translateY1.o" "Szene1RN.phl[22]";
+connectAttr "group1_translateZ1.o" "Szene1RN.phl[23]";
+connectAttr "group1_rotateX1.o" "Szene1RN.phl[24]";
+connectAttr "group1_rotateY1.o" "Szene1RN.phl[25]";
+connectAttr "group1_rotateZ1.o" "Szene1RN.phl[26]";
+connectAttr "group1_visibility1.o" "Szene1RN.phl[27]";
 connectAttr "group1_scaleX1.o" "Szene1RN.phl[28]";
 connectAttr "group1_scaleY1.o" "Szene1RN.phl[29]";
 connectAttr "group1_scaleZ1.o" "Szene1RN.phl[30]";
-connectAttr "Szene1RN.phl[47]" "Szene1:camera1_group.ct";
-connectAttr "camera1_translateZ.o" "Szene1RN.phl[48]";
-connectAttr "camera1_translateX.o" "Szene1RN.phl[49]";
-connectAttr "camera1_translateY.o" "Szene1RN.phl[50]";
-connectAttr "Szene1:camera1_group.cry" "Szene1RN.phl[51]";
-connectAttr "Szene1:camera1_group.crx" "Szene1RN.phl[52]";
-connectAttr "Szene1:camera1_group.crz" "Szene1RN.phl[53]";
-connectAttr "camera1_scaleX.o" "Szene1RN.phl[54]";
-connectAttr "camera1_scaleY.o" "Szene1RN.phl[55]";
-connectAttr "camera1_scaleZ.o" "Szene1RN.phl[56]";
-connectAttr "Szene1RN.phl[57]" "Szene1:camera1_group.cpim";
-connectAttr "Szene1RN.phl[58]" "Szene1:camera1_group.crp";
-connectAttr "Szene1RN.phl[59]" "Szene1:camera1_group.crt";
-connectAttr "camera1_visibility.o" "Szene1RN.phl[60]";
-connectAttr "Szene1:camera1_group.db" "Szene1RN.phl[61]";
-connectAttr "group1_visibility.o" "Szene1RN.phl[31]";
-connectAttr "group1_translateX.o" "Szene1RN.phl[32]";
-connectAttr "group1_translateY.o" "Szene1RN.phl[33]";
-connectAttr "group1_translateZ.o" "Szene1RN.phl[34]";
-connectAttr "group1_rotateX.o" "Szene1RN.phl[35]";
-connectAttr "group1_rotateY.o" "Szene1RN.phl[36]";
-connectAttr "group1_rotateZ.o" "Szene1RN.phl[37]";
+connectAttr "group1_translateX.o" "Szene1RN.phl[31]";
+connectAttr "group1_translateY.o" "Szene1RN.phl[32]";
+connectAttr "group1_translateZ.o" "Szene1RN.phl[33]";
+connectAttr "group1_rotateX.o" "Szene1RN.phl[34]";
+connectAttr "group1_rotateY.o" "Szene1RN.phl[35]";
+connectAttr "group1_rotateZ.o" "Szene1RN.phl[36]";
+connectAttr "group1_visibility.o" "Szene1RN.phl[37]";
 connectAttr "group1_scaleX.o" "Szene1RN.phl[38]";
 connectAttr "group1_scaleY.o" "Szene1RN.phl[39]";
 connectAttr "group1_scaleZ.o" "Szene1RN.phl[40]";
 connectAttr "Szene1RN.phl[41]" "Szene1RN.phl[42]";
 connectAttr "Szene1RN.phl[43]" "Szene1RN.phl[44]";
 connectAttr "Szene1RN.phl[45]" "Szene1RN.phl[46]";
+connectAttr "Szene1RN.phl[47]" "Szene1:camera1_group.ct";
+connectAttr "camera1_translateX.o" "Szene1RN.phl[48]";
+connectAttr "camera1_translateY.o" "Szene1RN.phl[49]";
+connectAttr "camera1_translateZ.o" "Szene1RN.phl[50]";
+connectAttr "Szene1:camera1_group.crx" "Szene1RN.phl[51]";
+connectAttr "Szene1:camera1_group.cry" "Szene1RN.phl[52]";
+connectAttr "Szene1:camera1_group.crz" "Szene1RN.phl[53]";
+connectAttr "Szene1RN.phl[54]" "Szene1:camera1_group.crp";
+connectAttr "Szene1RN.phl[55]" "Szene1:camera1_group.crt";
+connectAttr "camera1_scaleX.o" "Szene1RN.phl[56]";
+connectAttr "camera1_scaleY.o" "Szene1RN.phl[57]";
+connectAttr "camera1_scaleZ.o" "Szene1RN.phl[58]";
+connectAttr "Szene1RN.phl[59]" "Szene1:camera1_group.cpim";
+connectAttr "camera1_visibility.o" "Szene1RN.phl[60]";
+connectAttr "Szene1:camera1_group.db" "Szene1RN.phl[61]";
 connectAttr "shot6_translateX.o" "shot6.tx";
 connectAttr "shot6_translateY.o" "shot6.ty";
 connectAttr "shot6_translateZ.o" "shot6.tz";
@@ -2316,8 +2420,8 @@ connectAttr "Szene1:camera1_aim.tz" "Szene1:camera1_group.tg[0].ttz";
 connectAttr "Szene1:camera1_aim.rp" "Szene1:camera1_group.tg[0].trp";
 connectAttr "Szene1:camera1_aim.rpt" "Szene1:camera1_group.tg[0].trt";
 connectAttr "Szene1:camera1_aim.pm" "Szene1:camera1_group.tg[0].tpm";
-connectAttr "camera1_aim_translateX.o" "Szene1:camera1_aim.tx";
 connectAttr "camera1_aim_translateY.o" "Szene1:camera1_aim.ty";
+connectAttr "camera1_aim_translateX.o" "Szene1:camera1_aim.tx";
 connectAttr "camera1_aim_translateZ.o" "Szene1:camera1_aim.tz";
 connectAttr "camera1_aim_visibility.o" "Szene1:camera1_aim.v";
 connectAttr "camera1_aim_rotateX.o" "Szene1:camera1_aim.rx";
@@ -2347,6 +2451,6 @@ connectAttr "pairBlend2_inTranslateY1.o" "pairBlend2.ity1";
 connectAttr "pairBlend2_inTranslateZ1.o" "pairBlend2.itz1";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
-applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"Szene1RN\" \"\" \"C:/GIT/desklife/03_Scenes/Szene1.ma\" 3278277900 \"C:/GIT/desklife/03_Scenes/Szene1.ma\" \"FileRef\"\nendStream\nendChannel\nendAssociations\n" 
+applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"Szene1RN\" \"\" \"C:/GIT/desklife/03_Scenes/Szene1.ma\" 3278277900 \"C:/GIT/desklife/03_Scenes/Szene1.ma\" \"FileRef\"\n1\n\"Stifte_TorRN\" \"\" \"C:/GIT/desklife/01_Models/Stifte Tor.ma\" 1289968767 \"C:/GIT/desklife/01_Models/Stifte Tor.ma\" \"FileRef\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
 // End of Shot9.ma
