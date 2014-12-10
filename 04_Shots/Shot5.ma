@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Shot5.ma
-//Last modified: Wed, Dec 10, 2014 04:44:29 PM
+//Last modified: Wed, Dec 10, 2014 06:28:32 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -15,7 +15,7 @@ file -rdi 2 -ns "Ordner" -rfn "Szene1:OrdnerRN" -op "VERS|2015|UVER|undef|MADE|u
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner1" -rfn "Szene1:OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner2" -rfn "Szene1:OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
-file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Wed, Dec 10, 2014 05:05:03 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -rdi 2 -ns "Bleistift2" -rfn "Szene1:BleistiftRN2" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
@@ -41,8 +41,6 @@ file -r -ns "Szene1" -dr 1 -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
 		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
-requires "stereoCamera" "10.0";
-requires "OpenEXRLoader" "2012";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2015";
@@ -52,16 +50,16 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.103329211796527 25.807671156363966 26.857291258579821 ;
-	setAttr ".r" -type "double3" -29.13835272951637 -5.7999999999966017 0 ;
+	setAttr ".t" -type "double3" 10.481262200745196 24.402891206377287 11.537336048015963 ;
+	setAttr ".r" -type "double3" -24.338352729513041 -77.799999999994682 7.5252756297663748e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 12.027914949878955;
+	setAttr ".coi" 13.562882488651836;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 26.204192810343145 18.541949273334012 13.603814190816658 ;
+	setAttr ".tp" -type "double3" 26.580976186320463 18.310085103046852 13.013674297633997 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	setAttr ".v" no;
@@ -105,14 +103,14 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode transform -n "shot5";
-	setAttr ".t" -type "double3" 9.1638435435891221 14.067945576586068 8.1644395444909499 ;
-	setAttr ".r" -type "double3" 14.999470843474841 -89.599999999999795 0 ;
+	setAttr ".t" -type "double3" 7.7890454496476069 14.150962362715218 7.9027603352769624 ;
+	setAttr ".r" -type "double3" 14.399492009736615 -91.599999999999497 0 ;
 createNode camera -n "shotShape5" -p "shot5";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.4173 0.9449 ;
 	setAttr ".ff" 0;
-	setAttr ".coi" 3.0832572721119385;
+	setAttr ".coi" 11.718565216173795;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
@@ -292,7 +290,7 @@ createNode renderLayerManager -n "renderLayerManager";
 createNode renderLayer -n "defaultRenderLayer";
 	setAttr ".g" yes;
 createNode reference -n "Szene1RN";
-	setAttr -s 66 ".phl";
+	setAttr -s 76 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -359,6 +357,16 @@ createNode reference -n "Szene1RN";
 	setAttr ".phl[64]" 0;
 	setAttr ".phl[65]" 0;
 	setAttr ".phl[66]" 0;
+	setAttr ".phl[67]" 0;
+	setAttr ".phl[68]" 0;
+	setAttr ".phl[69]" 0;
+	setAttr ".phl[70]" 0;
+	setAttr ".phl[71]" 0;
+	setAttr ".phl[72]" 0;
+	setAttr ".phl[73]" 0;
+	setAttr ".phl[74]" 0;
+	setAttr ".phl[75]" 0;
+	setAttr ".phl[76]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
 		"Szene1:SchreibtischlampeRN" 0
@@ -377,19 +385,14 @@ createNode reference -n "Szene1RN";
 		"Szene1:bueroklammerRN" 0
 		"Szene1:StuhlRN" 0
 		"Szene1:BleistiftRN3" 0
-		"Szene1:bueroklammerRN2" 0
-		"Szene1:bueroklammerRN1" 0
 		"Szene1:Tisch2RN" 0
-		"Szene1:DeckenlampeRN" 0
+		"Szene1:bueroklammerRN1" 0
+		"Szene1:bueroklammerRN2" 0
 		"Szene1:OrdnerRN2" 0
+		"Szene1:DeckenlampeRN" 0
 		"Szene1:BecherRN" 0
 		"Szene1:BleistiftRN4" 0
-		"Szene1:SchreibtischlampeRN" 31
-		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
-		"translate" " -type \"double3\" 0.032209700000000001 -0.855896 1.123594"
-		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
-		"rotate" " -type \"double3\" 69.912531366872969 -21.057130574434932 -45.416071673669116"
-		
+		"Szene1:SchreibtischlampeRN" 40
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator|Szene1:Schreibtischlampe:group1|Szene1:Schreibtischlampe:lampe:ikHandle1" 
 		"translate" " -type \"double3\" 0.12055164233921722 3.2239864897507768 -0.2699740709594991"
 		
@@ -397,13 +400,13 @@ createNode reference -n "Szene1RN";
 		"rotate" " -type \"double3\" 21.39564224795059 -9.2072654322758485 -0.8401533606390823"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3" 
-		"rotate" " -type \"double3\" -0.1123868084680075 -72.256563224301217 -1.201028126739536"
+		"rotate" " -type \"double3\" -0.12169982285716718 -76.2928616436445 -1.3005521934745996"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4" 
 		"translate" " -type \"double3\" 1.349462 -0.0022044600000000001 -0.035114800000000002"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4" 
-		"rotate" " -type \"double3\" 25.253577597818296 -52.560404184197182 -26.05357929560105"
+		"rotate" " -type \"double3\" 52.8480819956158 -60.656506095329846 -61.807412202230807"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4" 
 		"rotateX" " -av"
@@ -417,16 +420,18 @@ createNode reference -n "Szene1RN";
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4|Szene1:Schreibtischlampe:lampe:lamp_cone" 
 		"translate" " -type \"double3\" 0.802229 0.0017433399999999999 0"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.270383506012084 19.427297474759037 15.837502346061953"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.216670575623276 19.527088450690485 15.348919118351231"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateZ" " -av"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotate" " -type \"double3\" 190.38465159140395 215.3476386163332 53.815577479402819"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotate" " -type \"double3\" 180.5842806803814 197.82908523016837 66.237467508006532"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateX" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateY" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateZ" " -av"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot|Szene1:Schreibtischlampe:lampe:lamp_spotShape" 
+		"coneAngle" " 90.676648584251311"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot|Szene1:Schreibtischlampe:lampe:coneShape1" 
 		"visibleFraction" " 0"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot|Szene1:Schreibtischlampe:lampe:directedDiscShape1" 
@@ -447,32 +452,52 @@ createNode reference -n "Szene1RN";
 		"fogRadius" " 0"
 		2 "|Szene1:Schreibtischlampe:lampe:pointLight1|Szene1:Schreibtischlampe:lampe:pointLightShape1" 
 		"fogIntensity" " 0"
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.rotateX" 
+		"Szene1RN.placeHolderList[1]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.rotateY" 
+		"Szene1RN.placeHolderList[2]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.rotateZ" 
+		"Szene1RN.placeHolderList[3]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateX" 
+		"Szene1RN.placeHolderList[4]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateY" 
+		"Szene1RN.placeHolderList[5]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateZ" 
+		"Szene1RN.placeHolderList[6]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.visibility" 
+		"Szene1RN.placeHolderList[7]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.scaleX" 
+		"Szene1RN.placeHolderList[8]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.scaleY" 
+		"Szene1RN.placeHolderList[9]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.scaleZ" 
+		"Szene1RN.placeHolderList[10]" ""
 		"Szene1:BleistiftRN1" 14
-		2 "|Szene1:Bleistift1:Pencil" "translate" " -type \"double3\" 1.0232827141458802 9.3906082571238016 -5.9323664719579883"
+		2 "|Szene1:Bleistift1:Pencil" "translate" " -type \"double3\" 0.91302586230167426 9.3906082571238016 -5.8514093540274201"
 		
 		2 "|Szene1:Bleistift1:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift1:Pencil" "translateZ" " -av"
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.translateX" "Szene1RN.placeHolderList[1]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.translateX" "Szene1RN.placeHolderList[11]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.translateY" "Szene1RN.placeHolderList[2]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.translateY" "Szene1RN.placeHolderList[12]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.translateZ" "Szene1RN.placeHolderList[3]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.translateZ" "Szene1RN.placeHolderList[13]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.visibility" "Szene1RN.placeHolderList[4]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.visibility" "Szene1RN.placeHolderList[14]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.rotateX" "Szene1RN.placeHolderList[5]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.rotateX" "Szene1RN.placeHolderList[15]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.rotateY" "Szene1RN.placeHolderList[6]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.rotateY" "Szene1RN.placeHolderList[16]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.rotateZ" "Szene1RN.placeHolderList[7]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.rotateZ" "Szene1RN.placeHolderList[17]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.scaleX" "Szene1RN.placeHolderList[8]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.scaleX" "Szene1RN.placeHolderList[18]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.scaleY" "Szene1RN.placeHolderList[9]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.scaleY" "Szene1RN.placeHolderList[19]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.scaleZ" "Szene1RN.placeHolderList[10]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.scaleZ" "Szene1RN.placeHolderList[20]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.MaxHandle" "Szene1RN.placeHolderList[11]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.MaxHandle" "Szene1RN.placeHolderList[21]" 
 		""
 		"Szene1:MonitorRN" 4
 		2 "|Szene1:Monitor:monitor:LCDFBXASC032Display" "rotate" " -type \"double3\" 0 0 0"
@@ -487,7 +512,7 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Ordner1:Camera01|Szene1:Ordner1:Camera0Shape1" "renderable" " 0"
 		
 		"Szene1:BleistiftRN2" 26
-		2 "|Szene1:Bleistift2:Pencil" "translate" " -type \"double3\" -4.9410824928723001 9.0698685418218297 3.6050739514403425"
+		2 "|Szene1:Bleistift2:Pencil" "translate" " -type \"double3\" -4.9410824928723001 9.0698685418218297 -1.9891012650137876"
 		
 		2 "|Szene1:Bleistift2:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift2:Pencil" "translateZ" " -av"
@@ -512,33 +537,33 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Bleistift2:Pencil|Szene1:Bleistift2:Circle01" "MaxHandle" " -k 1 15"
 		
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.translateX" "Szene1RN.placeHolderList[12]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.translateX" "Szene1RN.placeHolderList[22]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.translateY" "Szene1RN.placeHolderList[13]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.translateY" "Szene1RN.placeHolderList[23]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.translateZ" "Szene1RN.placeHolderList[14]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.translateZ" "Szene1RN.placeHolderList[24]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.rotateX" "Szene1RN.placeHolderList[15]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.rotateX" "Szene1RN.placeHolderList[25]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.rotateY" "Szene1RN.placeHolderList[16]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.rotateY" "Szene1RN.placeHolderList[26]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.rotateZ" "Szene1RN.placeHolderList[17]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.rotateZ" "Szene1RN.placeHolderList[27]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.visibility" "Szene1RN.placeHolderList[18]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.visibility" "Szene1RN.placeHolderList[28]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.scaleX" "Szene1RN.placeHolderList[19]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.scaleX" "Szene1RN.placeHolderList[29]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.scaleY" "Szene1RN.placeHolderList[20]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.scaleY" "Szene1RN.placeHolderList[30]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.scaleZ" "Szene1RN.placeHolderList[21]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.scaleZ" "Szene1RN.placeHolderList[31]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.MaxHandle" "Szene1RN.placeHolderList[22]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift2:Pencil.MaxHandle" "Szene1RN.placeHolderList[32]" 
 		""
 		"Szene1RN" 2
 		2 "|Szene1:camera1|Szene1:cameraShape1" "renderable" " 0"
 		2 "|Szene1:Camera01|Szene1:Camera0Shape1" "renderable" " 0"
 		"Szene1:BleistiftRN5" 34
-		2 "|Szene1:Bleistift5:Pencil" "translate" " -type \"double3\" -4.4768302379922371 10.980791233130622 0.11431971667287333"
+		2 "|Szene1:Bleistift5:Pencil" "translate" " -type \"double3\" -2.2039598054713481 10.980791233130622 3.0045616038176846"
 		
 		2 "|Szene1:Bleistift5:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift5:Pencil" "translateY" " -av"
@@ -556,50 +581,50 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01" "translateZ" " -av"
 		
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.translateX" "Szene1RN.placeHolderList[45]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.translateX" "Szene1RN.placeHolderList[55]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.translateY" "Szene1RN.placeHolderList[46]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.translateY" "Szene1RN.placeHolderList[56]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.translateZ" "Szene1RN.placeHolderList[47]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.translateZ" "Szene1RN.placeHolderList[57]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.rotateX" "Szene1RN.placeHolderList[48]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.rotateX" "Szene1RN.placeHolderList[58]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.rotateY" "Szene1RN.placeHolderList[49]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.rotateY" "Szene1RN.placeHolderList[59]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.rotateZ" "Szene1RN.placeHolderList[50]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.rotateZ" "Szene1RN.placeHolderList[60]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.visibility" "Szene1RN.placeHolderList[51]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.visibility" "Szene1RN.placeHolderList[61]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.scaleX" "Szene1RN.placeHolderList[52]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.scaleX" "Szene1RN.placeHolderList[62]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.scaleY" "Szene1RN.placeHolderList[53]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.scaleY" "Szene1RN.placeHolderList[63]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.scaleZ" "Szene1RN.placeHolderList[54]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.scaleZ" "Szene1RN.placeHolderList[64]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.MaxHandle" "Szene1RN.placeHolderList[55]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil.MaxHandle" "Szene1RN.placeHolderList[65]" 
 		""
 		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateX" 
-		"Szene1RN.placeHolderList[56]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateY" 
-		"Szene1RN.placeHolderList[57]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateZ" 
-		"Szene1RN.placeHolderList[58]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.visibility" 
-		"Szene1RN.placeHolderList[59]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateX" 
-		"Szene1RN.placeHolderList[60]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateY" 
-		"Szene1RN.placeHolderList[61]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateZ" 
-		"Szene1RN.placeHolderList[62]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleX" 
-		"Szene1RN.placeHolderList[63]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleY" 
-		"Szene1RN.placeHolderList[64]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleZ" 
-		"Szene1RN.placeHolderList[65]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.MaxHandle" 
 		"Szene1RN.placeHolderList[66]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateY" 
+		"Szene1RN.placeHolderList[67]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateZ" 
+		"Szene1RN.placeHolderList[68]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.visibility" 
+		"Szene1RN.placeHolderList[69]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateX" 
+		"Szene1RN.placeHolderList[70]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateY" 
+		"Szene1RN.placeHolderList[71]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateZ" 
+		"Szene1RN.placeHolderList[72]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleX" 
+		"Szene1RN.placeHolderList[73]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleY" 
+		"Szene1RN.placeHolderList[74]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleZ" 
+		"Szene1RN.placeHolderList[75]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.MaxHandle" 
+		"Szene1RN.placeHolderList[76]" ""
 		"Szene1:bueroklammerRN" 2
 		2 "|Szene1:bueroklammer:Paperclip" "translate" " -type \"double3\" 21.470642 14.299804707232449 14.867706679059328"
 		
@@ -609,7 +634,7 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Stuhl:bstuhl:ARMCHAIR" "translate" " -type \"double3\" -10.608080941286122 3.4035610000000003 7.3644669999999994"
 		
 		"Szene1:BleistiftRN3" 26
-		2 "|Szene1:Bleistift3:Pencil" "translate" " -type \"double3\" -4.2065088399075128 9.4612488385970508 3.3050414379919717"
+		2 "|Szene1:Bleistift3:Pencil" "translate" " -type \"double3\" -4.2065088399075128 9.4612488385970508 -2.2288823994187661"
 		
 		2 "|Szene1:Bleistift3:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift3:Pencil" "translateZ" " -av"
@@ -634,27 +659,27 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Bleistift3:Pencil|Szene1:Bleistift3:Circle01" "MaxHandle" " -k 1 15"
 		
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.translateX" "Szene1RN.placeHolderList[23]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.translateX" "Szene1RN.placeHolderList[33]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.translateY" "Szene1RN.placeHolderList[24]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.translateY" "Szene1RN.placeHolderList[34]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.translateZ" "Szene1RN.placeHolderList[25]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.translateZ" "Szene1RN.placeHolderList[35]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.rotateX" "Szene1RN.placeHolderList[26]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.rotateX" "Szene1RN.placeHolderList[36]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.rotateY" "Szene1RN.placeHolderList[27]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.rotateY" "Szene1RN.placeHolderList[37]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.rotateZ" "Szene1RN.placeHolderList[28]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.rotateZ" "Szene1RN.placeHolderList[38]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.visibility" "Szene1RN.placeHolderList[29]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.visibility" "Szene1RN.placeHolderList[39]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.scaleX" "Szene1RN.placeHolderList[30]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.scaleX" "Szene1RN.placeHolderList[40]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.scaleY" "Szene1RN.placeHolderList[31]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.scaleY" "Szene1RN.placeHolderList[41]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.scaleZ" "Szene1RN.placeHolderList[32]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.scaleZ" "Szene1RN.placeHolderList[42]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.MaxHandle" "Szene1RN.placeHolderList[33]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift3:Pencil.MaxHandle" "Szene1RN.placeHolderList[43]" 
 		""
 		"Szene1:bueroklammerRN2" 2
 		2 "|Szene1:bueroklammer2:Paperclip" "translate" " -type \"double3\" 22.638873 14.42360297126227 14.896573186002163"
@@ -670,31 +695,31 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Ordner2:Camera01|Szene1:Ordner2:Camera0Shape1" "renderable" " 0"
 		
 		"Szene1:BleistiftRN4" 14
-		2 "|Szene1:Bleistift4:Pencil" "translate" " -type \"double3\" 0.21472855265036861 8.8039070099346031 -5.3201912760967236"
+		2 "|Szene1:Bleistift4:Pencil" "translate" " -type \"double3\" 0.13396778747164229 8.8039070099346031 -5.3987287596466302"
 		
 		2 "|Szene1:Bleistift4:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift4:Pencil" "translateZ" " -av"
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.translateX" "Szene1RN.placeHolderList[34]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.translateX" "Szene1RN.placeHolderList[44]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.translateY" "Szene1RN.placeHolderList[35]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.translateY" "Szene1RN.placeHolderList[45]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.translateZ" "Szene1RN.placeHolderList[36]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.translateZ" "Szene1RN.placeHolderList[46]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.rotateX" "Szene1RN.placeHolderList[37]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.rotateX" "Szene1RN.placeHolderList[47]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.rotateY" "Szene1RN.placeHolderList[38]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.rotateY" "Szene1RN.placeHolderList[48]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.rotateZ" "Szene1RN.placeHolderList[39]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.rotateZ" "Szene1RN.placeHolderList[49]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.visibility" "Szene1RN.placeHolderList[40]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.visibility" "Szene1RN.placeHolderList[50]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.scaleX" "Szene1RN.placeHolderList[41]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.scaleX" "Szene1RN.placeHolderList[51]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.scaleY" "Szene1RN.placeHolderList[42]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.scaleY" "Szene1RN.placeHolderList[52]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.scaleZ" "Szene1RN.placeHolderList[43]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.scaleZ" "Szene1RN.placeHolderList[53]" 
 		""
-		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.MaxHandle" "Szene1RN.placeHolderList[44]" 
+		5 4 "Szene1RN" "|Szene1:Bleistift4:Pencil.MaxHandle" "Szene1RN.placeHolderList[54]" 
 		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -954,8 +979,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -keyReleaseCommand \"nodeEdKeyReleaseCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                $editorName;;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -ignoreAssets 1\n"
 		+ "                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -keyReleaseCommand \"nodeEdKeyReleaseCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                $editorName;;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"createNodePanel\" -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Texture Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n"
-		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"blendShapePanel\" (localizedPanelLabel(\"Blend Shape\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tblendShapePanel -unParent -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tblendShapePanel -edit -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"blendShapePanel\" (localizedPanelLabel(\"Blend Shape\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tblendShapePanel -unParent -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tblendShapePanel -edit -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n"
 		+ "            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n"
@@ -1342,9 +1367,50 @@ createNode animCurveTU -n "Pencil_MaxHandle4";
 	setAttr ".wgt" no;
 	setAttr -s 8 ".ktv[0:7]"  1 19 29 19 40 19 50 19 65 19 75 19 85 19
 		 95 19;
+createNode animCurveTA -n "lamp_rotator_rotateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 90.179617077152955;
+createNode animCurveTA -n "lamp_rotator_rotateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 -17.923739687004669;
+createNode animCurveTA -n "lamp_rotator_rotateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 -67.140050211912552;
+createNode animCurveTU -n "lamp_rotator_visibility";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "lamp_rotator_translateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 0.032209700000000001;
+createNode animCurveTL -n "lamp_rotator_translateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 -0.855896;
+createNode animCurveTL -n "lamp_rotator_translateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 1.123594;
+createNode animCurveTU -n "lamp_rotator_scaleX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 1;
+createNode animCurveTU -n "lamp_rotator_scaleY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 1;
+createNode animCurveTU -n "lamp_rotator_scaleZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  94 1;
 select -ne :time1;
-	setAttr ".o" 88;
-	setAttr ".unw" 88;
+	setAttr ".o" 67;
+	setAttr ".unw" 67;
 select -ne :renderPartition;
 	setAttr -s 125 ".st";
 select -ne :renderGlobalsList1;
@@ -1388,72 +1454,82 @@ select -ne :hardwareRenderingGlobals;
 select -ne :defaultHardwareRenderGlobals;
 	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
 select -ne :ikSystem;
-connectAttr "Pencil_translateX3.o" "Szene1RN.phl[1]";
-connectAttr "Pencil_translateY3.o" "Szene1RN.phl[2]";
-connectAttr "Pencil_translateZ3.o" "Szene1RN.phl[3]";
-connectAttr "Pencil_visibility3.o" "Szene1RN.phl[4]";
-connectAttr "Pencil_rotateX3.o" "Szene1RN.phl[5]";
-connectAttr "Pencil_rotateY3.o" "Szene1RN.phl[6]";
-connectAttr "Pencil_rotateZ3.o" "Szene1RN.phl[7]";
-connectAttr "Pencil_scaleX3.o" "Szene1RN.phl[8]";
-connectAttr "Pencil_scaleY3.o" "Szene1RN.phl[9]";
-connectAttr "Pencil_scaleZ3.o" "Szene1RN.phl[10]";
-connectAttr "Pencil_MaxHandle3.o" "Szene1RN.phl[11]";
-connectAttr "Pencil_translateX.o" "Szene1RN.phl[12]";
-connectAttr "Pencil_translateY.o" "Szene1RN.phl[13]";
-connectAttr "Pencil_translateZ.o" "Szene1RN.phl[14]";
-connectAttr "Pencil_rotateX.o" "Szene1RN.phl[15]";
-connectAttr "Pencil_rotateY.o" "Szene1RN.phl[16]";
-connectAttr "Pencil_rotateZ.o" "Szene1RN.phl[17]";
-connectAttr "Pencil_visibility.o" "Szene1RN.phl[18]";
-connectAttr "Pencil_scaleX.o" "Szene1RN.phl[19]";
-connectAttr "Pencil_scaleY.o" "Szene1RN.phl[20]";
-connectAttr "Pencil_scaleZ.o" "Szene1RN.phl[21]";
-connectAttr "Pencil_MaxHandle.o" "Szene1RN.phl[22]";
-connectAttr "Pencil_translateX2.o" "Szene1RN.phl[45]";
-connectAttr "Pencil_translateY2.o" "Szene1RN.phl[46]";
-connectAttr "Pencil_translateZ2.o" "Szene1RN.phl[47]";
-connectAttr "Pencil_rotateX2.o" "Szene1RN.phl[48]";
-connectAttr "Pencil_rotateY2.o" "Szene1RN.phl[49]";
-connectAttr "Pencil_rotateZ2.o" "Szene1RN.phl[50]";
-connectAttr "Pencil_visibility2.o" "Szene1RN.phl[51]";
-connectAttr "Pencil_scaleX2.o" "Szene1RN.phl[52]";
-connectAttr "Pencil_scaleY2.o" "Szene1RN.phl[53]";
-connectAttr "Pencil_scaleZ2.o" "Szene1RN.phl[54]";
-connectAttr "Pencil_MaxHandle2.o" "Szene1RN.phl[55]";
-connectAttr "Circle01_translateX.o" "Szene1RN.phl[56]";
-connectAttr "Circle01_translateY.o" "Szene1RN.phl[57]";
-connectAttr "Circle01_translateZ.o" "Szene1RN.phl[58]";
-connectAttr "Circle01_visibility.o" "Szene1RN.phl[59]";
-connectAttr "Circle01_rotateX.o" "Szene1RN.phl[60]";
-connectAttr "Circle01_rotateY.o" "Szene1RN.phl[61]";
-connectAttr "Circle01_rotateZ.o" "Szene1RN.phl[62]";
-connectAttr "Circle01_scaleX.o" "Szene1RN.phl[63]";
-connectAttr "Circle01_scaleY.o" "Szene1RN.phl[64]";
-connectAttr "Circle01_scaleZ.o" "Szene1RN.phl[65]";
-connectAttr "Circle01_MaxHandle.o" "Szene1RN.phl[66]";
-connectAttr "Pencil_translateX1.o" "Szene1RN.phl[23]";
-connectAttr "Pencil_translateY1.o" "Szene1RN.phl[24]";
-connectAttr "Pencil_translateZ1.o" "Szene1RN.phl[25]";
-connectAttr "Pencil_rotateX1.o" "Szene1RN.phl[26]";
-connectAttr "Pencil_rotateY1.o" "Szene1RN.phl[27]";
-connectAttr "Pencil_rotateZ1.o" "Szene1RN.phl[28]";
-connectAttr "Pencil_visibility1.o" "Szene1RN.phl[29]";
-connectAttr "Pencil_scaleX1.o" "Szene1RN.phl[30]";
-connectAttr "Pencil_scaleY1.o" "Szene1RN.phl[31]";
-connectAttr "Pencil_scaleZ1.o" "Szene1RN.phl[32]";
-connectAttr "Pencil_MaxHandle1.o" "Szene1RN.phl[33]";
-connectAttr "Pencil_translateX4.o" "Szene1RN.phl[34]";
-connectAttr "Pencil_translateY4.o" "Szene1RN.phl[35]";
-connectAttr "Pencil_translateZ4.o" "Szene1RN.phl[36]";
-connectAttr "Pencil_rotateX4.o" "Szene1RN.phl[37]";
-connectAttr "Pencil_rotateY4.o" "Szene1RN.phl[38]";
-connectAttr "Pencil_rotateZ4.o" "Szene1RN.phl[39]";
-connectAttr "Pencil_visibility4.o" "Szene1RN.phl[40]";
-connectAttr "Pencil_scaleX4.o" "Szene1RN.phl[41]";
-connectAttr "Pencil_scaleY4.o" "Szene1RN.phl[42]";
-connectAttr "Pencil_scaleZ4.o" "Szene1RN.phl[43]";
-connectAttr "Pencil_MaxHandle4.o" "Szene1RN.phl[44]";
+connectAttr "lamp_rotator_rotateX.o" "Szene1RN.phl[1]";
+connectAttr "lamp_rotator_rotateY.o" "Szene1RN.phl[2]";
+connectAttr "lamp_rotator_rotateZ.o" "Szene1RN.phl[3]";
+connectAttr "lamp_rotator_translateX.o" "Szene1RN.phl[4]";
+connectAttr "lamp_rotator_translateY.o" "Szene1RN.phl[5]";
+connectAttr "lamp_rotator_translateZ.o" "Szene1RN.phl[6]";
+connectAttr "lamp_rotator_visibility.o" "Szene1RN.phl[7]";
+connectAttr "lamp_rotator_scaleX.o" "Szene1RN.phl[8]";
+connectAttr "lamp_rotator_scaleY.o" "Szene1RN.phl[9]";
+connectAttr "lamp_rotator_scaleZ.o" "Szene1RN.phl[10]";
+connectAttr "Pencil_translateX3.o" "Szene1RN.phl[11]";
+connectAttr "Pencil_translateY3.o" "Szene1RN.phl[12]";
+connectAttr "Pencil_translateZ3.o" "Szene1RN.phl[13]";
+connectAttr "Pencil_visibility3.o" "Szene1RN.phl[14]";
+connectAttr "Pencil_rotateX3.o" "Szene1RN.phl[15]";
+connectAttr "Pencil_rotateY3.o" "Szene1RN.phl[16]";
+connectAttr "Pencil_rotateZ3.o" "Szene1RN.phl[17]";
+connectAttr "Pencil_scaleX3.o" "Szene1RN.phl[18]";
+connectAttr "Pencil_scaleY3.o" "Szene1RN.phl[19]";
+connectAttr "Pencil_scaleZ3.o" "Szene1RN.phl[20]";
+connectAttr "Pencil_MaxHandle3.o" "Szene1RN.phl[21]";
+connectAttr "Pencil_translateX.o" "Szene1RN.phl[22]";
+connectAttr "Pencil_translateY.o" "Szene1RN.phl[23]";
+connectAttr "Pencil_translateZ.o" "Szene1RN.phl[24]";
+connectAttr "Pencil_rotateX.o" "Szene1RN.phl[25]";
+connectAttr "Pencil_rotateY.o" "Szene1RN.phl[26]";
+connectAttr "Pencil_rotateZ.o" "Szene1RN.phl[27]";
+connectAttr "Pencil_visibility.o" "Szene1RN.phl[28]";
+connectAttr "Pencil_scaleX.o" "Szene1RN.phl[29]";
+connectAttr "Pencil_scaleY.o" "Szene1RN.phl[30]";
+connectAttr "Pencil_scaleZ.o" "Szene1RN.phl[31]";
+connectAttr "Pencil_MaxHandle.o" "Szene1RN.phl[32]";
+connectAttr "Pencil_translateX2.o" "Szene1RN.phl[55]";
+connectAttr "Pencil_translateY2.o" "Szene1RN.phl[56]";
+connectAttr "Pencil_translateZ2.o" "Szene1RN.phl[57]";
+connectAttr "Pencil_rotateX2.o" "Szene1RN.phl[58]";
+connectAttr "Pencil_rotateY2.o" "Szene1RN.phl[59]";
+connectAttr "Pencil_rotateZ2.o" "Szene1RN.phl[60]";
+connectAttr "Pencil_visibility2.o" "Szene1RN.phl[61]";
+connectAttr "Pencil_scaleX2.o" "Szene1RN.phl[62]";
+connectAttr "Pencil_scaleY2.o" "Szene1RN.phl[63]";
+connectAttr "Pencil_scaleZ2.o" "Szene1RN.phl[64]";
+connectAttr "Pencil_MaxHandle2.o" "Szene1RN.phl[65]";
+connectAttr "Circle01_translateX.o" "Szene1RN.phl[66]";
+connectAttr "Circle01_translateY.o" "Szene1RN.phl[67]";
+connectAttr "Circle01_translateZ.o" "Szene1RN.phl[68]";
+connectAttr "Circle01_visibility.o" "Szene1RN.phl[69]";
+connectAttr "Circle01_rotateX.o" "Szene1RN.phl[70]";
+connectAttr "Circle01_rotateY.o" "Szene1RN.phl[71]";
+connectAttr "Circle01_rotateZ.o" "Szene1RN.phl[72]";
+connectAttr "Circle01_scaleX.o" "Szene1RN.phl[73]";
+connectAttr "Circle01_scaleY.o" "Szene1RN.phl[74]";
+connectAttr "Circle01_scaleZ.o" "Szene1RN.phl[75]";
+connectAttr "Circle01_MaxHandle.o" "Szene1RN.phl[76]";
+connectAttr "Pencil_translateX1.o" "Szene1RN.phl[33]";
+connectAttr "Pencil_translateY1.o" "Szene1RN.phl[34]";
+connectAttr "Pencil_translateZ1.o" "Szene1RN.phl[35]";
+connectAttr "Pencil_rotateX1.o" "Szene1RN.phl[36]";
+connectAttr "Pencil_rotateY1.o" "Szene1RN.phl[37]";
+connectAttr "Pencil_rotateZ1.o" "Szene1RN.phl[38]";
+connectAttr "Pencil_visibility1.o" "Szene1RN.phl[39]";
+connectAttr "Pencil_scaleX1.o" "Szene1RN.phl[40]";
+connectAttr "Pencil_scaleY1.o" "Szene1RN.phl[41]";
+connectAttr "Pencil_scaleZ1.o" "Szene1RN.phl[42]";
+connectAttr "Pencil_MaxHandle1.o" "Szene1RN.phl[43]";
+connectAttr "Pencil_translateX4.o" "Szene1RN.phl[44]";
+connectAttr "Pencil_translateY4.o" "Szene1RN.phl[45]";
+connectAttr "Pencil_translateZ4.o" "Szene1RN.phl[46]";
+connectAttr "Pencil_rotateX4.o" "Szene1RN.phl[47]";
+connectAttr "Pencil_rotateY4.o" "Szene1RN.phl[48]";
+connectAttr "Pencil_rotateZ4.o" "Szene1RN.phl[49]";
+connectAttr "Pencil_visibility4.o" "Szene1RN.phl[50]";
+connectAttr "Pencil_scaleX4.o" "Szene1RN.phl[51]";
+connectAttr "Pencil_scaleY4.o" "Szene1RN.phl[52]";
+connectAttr "Pencil_scaleZ4.o" "Szene1RN.phl[53]";
+connectAttr "Pencil_MaxHandle4.o" "Szene1RN.phl[54]";
 connectAttr ":mentalrayGlobals.msg" ":mentalrayItemsList.glb";
 connectAttr ":miDefaultOptions.msg" ":mentalrayItemsList.opt" -na;
 connectAttr ":miDefaultFramebuffer.msg" ":mentalrayItemsList.fb" -na;

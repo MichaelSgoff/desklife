@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Shot2.ma
-//Last modified: Wed, Dec 10, 2014 03:35:31 PM
+//Last modified: Wed, Dec 10, 2014 06:08:58 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;p=17;f=0" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -15,7 +15,7 @@ file -rdi 2 -ns "Ordner" -rfn "Szene1:OrdnerRN" -op "VERS|2015|UVER|undef|MADE|u
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner1" -rfn "Szene1:OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner2" -rfn "Szene1:OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
-file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Wed, Dec 10, 2014 05:05:03 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -rdi 2 -ns "Bleistift2" -rfn "Szene1:BleistiftRN2" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
@@ -36,6 +36,7 @@ file -rdi 2 -ns "bueroklammer2" -rfn "Szene1:bueroklammerRN2" "C:/GIT/desklife/0
 file -rdi 2 -ns "Bett" -rfn "Szene1:BettRN" -op "v=0;" "C:/GIT/desklife/01_Models/Bett.ma";
 file -rdi 2 -ns "ph_auto" -rfn "Szene1:ph_autoRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/ph_auto.ma";
 file -rdi 2 -ns "car_ms" -rfn "Szene1:car_msRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/car ms.ma";
+file -rdi 2 -ns "computer" -dr 1 -rfn "Szene1:computerRN" -op "v=0;" "C:/GIT/desklife/01_Models/computer.ma";
 file -r -ns "Szene1" -dr 1 -rfn "Szene1RN" -op "v=0;p=17;f=0" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
@@ -55,6 +56,7 @@ createNode transform -s -n "persp";
 	setAttr ".r" -type "double3" -21.938352729670285 -37.39999999999803 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
+	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".coi" 224.70634453755667;
 	setAttr ".imn" -type "string" "persp";
@@ -106,10 +108,20 @@ createNode camera -s -n "sideShape" -p "side";
 createNode transform -n "Schreibtischspot";
 createNode spotLight -n "SchreibtischspotShape" -p "Schreibtischspot";
 	setAttr -k off ".v";
-	setAttr ".in" 2.2556390762329102;
-	setAttr ".ca" 79.850270230465995;
-	setAttr ".pa" -2.0300751962327865;
-	setAttr ".dro" 11.503759471706598;
+	setAttr ".cl" -type "float3" 0.93900001 0.80079722 0.61222804 ;
+	setAttr ".in" 1.0829999446868896;
+	setAttr ".shr" 30;
+	setAttr ".rdl" 1;
+	setAttr ".lr" 0.82758623361587524;
+	setAttr ".ca" 81;
+	setAttr ".pa" -1.6;
+	setAttr ".dro" 8.5;
+createNode directedDisc -n "directedDiscShape1" -p "Schreibtischspot";
+	setAttr -k off ".v";
+	setAttr ".rt" 2;
+	setAttr ".sso" yes;
+	setAttr ".ssa" 20;
+	setAttr ".msa" 20;
 createNode mentalrayItemsList -s -n "mentalrayItemsList";
 	setAttr -s 19 ".opt";
 createNode mentalrayGlobals -s -n "mentalrayGlobals";
@@ -128,7 +140,7 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 	setAttr ".rfrr" 1;
 	setAttr ".maxr" 2;
 	setAttr ".shrd" 2;
-	setAttr ".miSamplesQualityR" 0.24843750894069672;
+	setAttr ".miSamplesQualityR" 1.0499999523162842;
 	setAttr -s 48 ".stringOptions";
 	setAttr ".stringOptions[0].name" -type "string" "rast motion factor";
 	setAttr ".stringOptions[0].value" -type "string" "1.0";
@@ -221,7 +233,7 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 	setAttr ".stringOptions[29].value" -type "string" "true";
 	setAttr ".stringOptions[29].type" -type "string" "boolean";
 	setAttr ".stringOptions[30].name" -type "string" "samples quality";
-	setAttr ".stringOptions[30].value" -type "string" "0.25 0.25 0.25 0.25";
+	setAttr ".stringOptions[30].value" -type "string" "1.05 1.05 1.05 1.05";
 	setAttr ".stringOptions[30].type" -type "string" "color";
 	setAttr ".stringOptions[31].name" -type "string" "samples min";
 	setAttr ".stringOptions[31].value" -type "string" "1.0";
@@ -277,8 +289,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 138 ".lnk";
-	setAttr -s 139 ".slnk";
+	setAttr -s 139 ".lnk";
+	setAttr -s 140 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -298,25 +310,15 @@ createNode reference -n "Szene1RN";
 	setAttr ".phl[10]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
-		"Szene1:RaumRN" 0
 		"Szene1:BleistiftRN1" 0
+		"Szene1:RaumRN" 0
 		"Szene1:OrdnerRN" 0
 		"Szene1:ph_autoRN" 0
 		"Szene1RN" 0
 		"Szene1:bueroklammerRN2" 0
 		"Szene1:OrdnerRN2" 0
 		"Szene1:BecherRN" 0
-		"Szene1:SchreibtischlampeRN" 8
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 24.090116539701814 19.60594534986398 15.924078221261992"
-		
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateZ" " -av"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotate" " -type \"double3\" 290.13566014843212 253.71503265270232 -35.302791478797509"
-		
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateX" " -av"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateY" " -av"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateZ" " -av"
+		"Szene1:SchreibtischlampeRN" 0
 		"Szene1:BettRN" 0
 		"Szene1:Tür2RN" 0
 		"Szene1:SchreibtischunerlageRN" 0
@@ -348,14 +350,13 @@ createNode reference -n "Szene1RN";
 		"Szene1:OrdnerRN1" 1
 		2 "|Szene1:Ordner1:Camera01|Szene1:Ordner1:Camera0Shape1" "renderable" " 0"
 		
-		"Szene1:SchreibtischlampeRN" 29
+		"Szene1:SchreibtischlampeRN" 38
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller" "translate" " -type \"double3\" 27.488786332651063 14.272715871272649 16.52314049472611"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"visibility" " -av 1"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
-		"translate" " -type \"double3\" 0.76113344914708259 -1.2318633512757762 0.98506856128050679"
-		
+		"translate" " -type \"double3\" 0.032209700000000001 -0.855896 1.123594"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"translateX" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
@@ -363,7 +364,7 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"translateZ" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
-		"rotate" " -type \"double3\" 69.17332366157234 -6.8594886781839346 10.992718078689764"
+		"rotate" " -type \"double3\" 45.875081641248087 -42.959601481014936 -8.1250609732683703"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"rotateX" " -av"
@@ -380,7 +381,7 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"scaleZ" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4" 
-		"rotate" " -type \"double3\" 36.852517619283958 9.760343179328629 5.0659685623614044"
+		"rotate" " -type \"double3\" 33.578867653291724 -46.672484800489073 -8.2846096550812458"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4" 
 		"rotateX" " -av"
@@ -390,19 +391,31 @@ createNode reference -n "Szene1RN";
 		"rotateZ" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:lamp_base" 
 		"translate" " -type \"double3\" -0.0034849188846400756 0 -0.0016735889859972645"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 23.922370468265154 20.875867627036776 16.060987749823234"
+		
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateZ" " -av"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotate" " -type \"double3\" 215.72532318231603 216.24026127638442 6.5214192141317486"
+		
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateX" " -av"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateY" " -av"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateZ" " -av"
+		2 "|Szene1:Schreibtischlampe:lampe:pointLight1|Szene1:Schreibtischlampe:lampe:pointLightShape1" 
+		"useOnlySingleDmap" " 0"
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.rotateX" 
 		"Szene1RN.placeHolderList[1]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.rotateY" 
 		"Szene1RN.placeHolderList[2]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.rotateZ" 
 		"Szene1RN.placeHolderList[3]" ""
-		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateX" 
-		"Szene1RN.placeHolderList[4]" ""
-		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateY" 
-		"Szene1RN.placeHolderList[5]" ""
-		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateZ" 
-		"Szene1RN.placeHolderList[6]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.visibility" 
+		"Szene1RN.placeHolderList[4]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateX" 
+		"Szene1RN.placeHolderList[5]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateY" 
+		"Szene1RN.placeHolderList[6]" ""
+		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.translateZ" 
 		"Szene1RN.placeHolderList[7]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.scaleX" 
 		"Szene1RN.placeHolderList[8]" ""
@@ -417,7 +430,7 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:camera1" "rotatePivot" " -type \"double3\" 0 0 0"
 		2 "|Szene1:camera1" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Szene1:camera1|Szene1:cameraShape1" "renderable" " 0"
+		2 "|Szene1:camera1|Szene1:cameraShape1" "renderable" " 1"
 		2 "|Szene1:camera1|Szene1:cameraShape1" "nearClipPlane" " 0.1"
 		2 "|Szene1:camera1|Szene1:cameraShape1" "farClipPlane" " 10000"
 		2 "|Szene1:camera1|Szene1:cameraShape1" "centerOfInterest" " 27.865177132489571"
@@ -1027,27 +1040,28 @@ createNode animCurveTU -n "spotLight1_scaleZ";
 	setAttr -s 15 ".kiy[1:14]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 	setAttr -s 15 ".kox[1:14]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 15 ".koy[1:14]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+createNode opticalFX -n "opticalFX1";
 select -ne :time1;
-	setAttr ".o" 140;
-	setAttr ".unw" 140;
+	setAttr ".o" 69;
+	setAttr ".unw" 69;
 select -ne :renderPartition;
 	setAttr -s 139 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 122 ".s";
+	setAttr -s 123 ".s";
 select -ne :postProcessList1;
-	setAttr -s 3 ".p";
+	setAttr -s 4 ".p";
 select -ne :defaultRenderUtilityList1;
 	setAttr -s 74 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 26 ".r";
 select -ne :lightList1;
-	setAttr -s 2 ".l";
+	setAttr -s 3 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 63 ".tx";
 select -ne :lambert1;
 select -ne :initialShadingGroup;
-	setAttr -s 25 ".dsm";
+	setAttr -s 27 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -1057,12 +1071,12 @@ select -ne :defaultRenderGlobals;
 	setAttr ".mcfr" 25;
 	setAttr ".ren" -type "string" "mentalRay";
 select -ne :defaultResolution;
-	setAttr ".w" 1280;
-	setAttr ".h" 720;
+	setAttr ".w" 1920;
+	setAttr ".h" 1080;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7777777910232544;
 select -ne :defaultLightSet;
-	setAttr -s 2 ".dsm";
+	setAttr -s 3 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
@@ -1078,10 +1092,10 @@ select -ne :ikSystem;
 connectAttr "lamp_rotator_rotateX.o" "Szene1RN.phl[1]";
 connectAttr "lamp_rotator_rotateY.o" "Szene1RN.phl[2]";
 connectAttr "lamp_rotator_rotateZ.o" "Szene1RN.phl[3]";
-connectAttr "lamp_rotator_translateX.o" "Szene1RN.phl[4]";
-connectAttr "lamp_rotator_translateY.o" "Szene1RN.phl[5]";
-connectAttr "lamp_rotator_translateZ.o" "Szene1RN.phl[6]";
-connectAttr "lamp_rotator_visibility.o" "Szene1RN.phl[7]";
+connectAttr "lamp_rotator_visibility.o" "Szene1RN.phl[4]";
+connectAttr "lamp_rotator_translateX.o" "Szene1RN.phl[5]";
+connectAttr "lamp_rotator_translateY.o" "Szene1RN.phl[6]";
+connectAttr "lamp_rotator_translateZ.o" "Szene1RN.phl[7]";
 connectAttr "lamp_rotator_scaleX.o" "Szene1RN.phl[8]";
 connectAttr "lamp_rotator_scaleY.o" "Szene1RN.phl[9]";
 connectAttr "lamp_rotator_scaleZ.o" "Szene1RN.phl[10]";
@@ -1095,6 +1109,7 @@ connectAttr "spotLight1_rotateZ.o" "Schreibtischspot.rz";
 connectAttr "spotLight1_scaleX.o" "Schreibtischspot.sx";
 connectAttr "spotLight1_scaleY.o" "Schreibtischspot.sy";
 connectAttr "spotLight1_scaleZ.o" "Schreibtischspot.sz";
+connectAttr "opticalFX1.ln" "SchreibtischspotShape.lg";
 connectAttr ":mentalrayGlobals.msg" ":mentalrayItemsList.glb";
 connectAttr ":miDefaultOptions.msg" ":mentalrayItemsList.opt" -na;
 connectAttr ":miDefaultFramebuffer.msg" ":mentalrayItemsList.fb" -na;
@@ -1106,8 +1121,13 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr "SchreibtischspotShape.wm" "opticalFX1.lw";
+connectAttr "SchreibtischspotShape.cl" "opticalFX1.lr";
+connectAttr "directedDiscShape1.vf" "opticalFX1.gvb";
+connectAttr "opticalFX1.msg" ":postProcessList1.p" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "SchreibtischspotShape.ltd" ":lightList1.l" -na;
+connectAttr "directedDiscShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Schreibtischspot.iog" ":defaultLightSet.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
 applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"Szene1RN\" \"\" \"C:/GIT/desklife/03_Scenes/Szene1.ma\" 3278277900 \"C:/GIT/desklife/03_Scenes/Szene1.ma\" \"FileRef\"\n1\n\"|Schreibtischspot|SchreibtischspotShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
