@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Shot9.ma
-//Last modified: Thu, Dec 11, 2014 01:37:53 PM
+//Last modified: Thu, Dec 11, 2014 01:40:48 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -1133,8 +1133,8 @@ createNode reference -n "Szene1RN";
 	setAttr ".phl[63]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
-		"Szene1:BleistiftRN1" 0
 		"Szene1:RaumRN" 0
+		"Szene1:BleistiftRN1" 0
 		"Szene1:OrdnerRN" 0
 		"Szene1:ph_autoRN" 0
 		"Szene1RN" 0
@@ -1448,9 +1448,9 @@ createNode reference -n "Szene1RN";
 		"rotate" " -type \"double3\" 0 21.780464677775317 0"
 		3 "|Szene1:car_ms:group1|Szene1:car_ms:transform11|Szene1:car_ms:pCylinder3|Szene1:car_ms:pCylinderShape3.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Szene1:car_ms:group1|Szene1:car_ms:transform10|Szene1:car_ms:pCylinder2|Szene1:car_ms:pCylinderShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Szene1:car_ms:group1|Szene1:car_ms:transform9|Szene1:car_ms:pCylinder1|Szene1:car_ms:pCylinderShape1.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Szene1:car_ms:group1|Szene1:car_ms:transform10|Szene1:car_ms:pCylinder2|Szene1:car_ms:pCylinderShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 4 "Szene1RN" "|Szene1:car_ms:group1.translateX" "Szene1RN.placeHolderList[31]" 
 		""
