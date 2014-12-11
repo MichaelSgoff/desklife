@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Shot8.ma
-//Last modified: Wed, Dec 10, 2014 11:09:47 PM
+//Last modified: Thu, Dec 11, 2014 05:55:00 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -15,7 +15,7 @@ file -rdi 2 -ns "Ordner" -rfn "Szene1:OrdnerRN" -op "VERS|2015|UVER|undef|MADE|u
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner1" -rfn "Szene1:OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner2" -rfn "Szene1:OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
-file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Wed, Dec 10, 2014 05:05:03 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Thu, Dec 11, 2014 05:42:40 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -rdi 2 -ns "Bleistift2" -rfn "Szene1:BleistiftRN2" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
@@ -40,15 +40,15 @@ file -rdi 2 -ns "computer" -dr 1 -rfn "Szene1:computerRN" -op "v=0;" "C:/GIT/des
 file -r -ns "Szene1" -dr 1 -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
-		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.16 ";
+		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
 requires "stereoCamera" "10.0";
 requires "OpenEXRLoader" "2012";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2015";
 fileInfo "version" "2015";
-fileInfo "cutIdentifier" "201405190330-916664";
-fileInfo "osv" "Microsoft Windows 7 Business Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
+fileInfo "cutIdentifier" "201410051530-933320";
+fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
@@ -290,8 +290,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 276 ".lnk";
-	setAttr -s 278 ".slnk";
+	setAttr -s 141 ".lnk";
+	setAttr -s 142 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -378,8 +378,8 @@ createNode reference -n "Szene1RN";
 	setAttr ".phl[76]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
-		"Szene1:RaumRN" 0
 		"Szene1:BleistiftRN1" 0
+		"Szene1:RaumRN" 0
 		"Szene1:OrdnerRN" 0
 		"Szene1:ph_autoRN" 0
 		"Szene1RN" 0
@@ -429,7 +429,7 @@ createNode reference -n "Szene1RN";
 		"segmentScaleCompensate" " 1"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4|Szene1:Schreibtischlampe:lampe:lamp_cone" 
 		"translate" " -type \"double3\" 0.802229 0.0017433399999999999 0"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.333061098327651 19.440079516638537 15.716021985929308"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.357279239518512 20.184970994006118 17.108965825110008"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
@@ -497,6 +497,9 @@ createNode reference -n "Szene1RN";
 		""
 		5 4 "Szene1RN" "|Szene1:Bleistift1:Pencil.MaxHandle" "Szene1RN.placeHolderList[21]" 
 		""
+		"Szene1:SchreibtischunerlageRN" 1
+		2 "Szene1:Schreibtischunerlage:file5" "fileTextureName" " -type \"string\" \"C:/GIT/desklife/02_Textures/unterlage-strecke.jpg\""
+		
 		"Szene1:MonitorRN" 4
 		2 "|Szene1:Monitor:monitor:LCDFBXASC032Display" "rotate" " -type \"double3\" 0 0 0"
 		
@@ -1515,20 +1518,20 @@ select -ne :time1;
 	setAttr ".o" 150;
 	setAttr ".unw" 150;
 select -ne :renderPartition;
-	setAttr -s 139 ".st";
+	setAttr -s 141 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 123 ".s";
+	setAttr -s 125 ".s";
 select -ne :postProcessList1;
 	setAttr -s 3 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 74 ".u";
+	setAttr -s 76 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 26 ".r";
 select -ne :lightList1;
 	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 63 ".tx";
+	setAttr -s 65 ".tx";
 select -ne :lambert1;
 select -ne :initialShadingGroup;
 	setAttr -s 26 ".dsm";
@@ -1633,13 +1636,13 @@ connectAttr "Pencil_scaleX4.o" "Szene1RN.phl[51]";
 connectAttr "Pencil_scaleY4.o" "Szene1RN.phl[52]";
 connectAttr "Pencil_scaleZ4.o" "Szene1RN.phl[53]";
 connectAttr "Pencil_MaxHandle4.o" "Szene1RN.phl[54]";
+connectAttr "shot5_translateX.o" "shot5.tx";
+connectAttr "shot5_translateY.o" "shot5.ty";
+connectAttr "shot5_translateZ.o" "shot5.tz";
 connectAttr "shot5_rotateX.o" "shot5.rx";
 connectAttr "shot5_rotateY.o" "shot5.ry";
 connectAttr "shot5_rotateZ.o" "shot5.rz";
 connectAttr "shot5_visibility.o" "shot5.v";
-connectAttr "shot5_translateX.o" "shot5.tx";
-connectAttr "shot5_translateY.o" "shot5.ty";
-connectAttr "shot5_translateZ.o" "shot5.tz";
 connectAttr "shot5_scaleX.o" "shot5.sx";
 connectAttr "shot5_scaleY.o" "shot5.sy";
 connectAttr "shot5_scaleZ.o" "shot5.sz";
