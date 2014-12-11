@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Stifte Tor.ma
-//Last modified: Wed, Dec 10, 2014 05:31:24 PM
+//Last modified: Thu, Dec 11, 2014 10:17:10 AM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -dr 1 -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -53,17 +53,17 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.4434983840478237 27.653511034372379 32.875787349778584 ;
-	setAttr ".r" -type "double3" -34.800000000000054 -10.400000000000047 0 ;
+	setAttr ".t" -type "double3" 15.176652091760774 16.897618163119816 1.0653202647389826 ;
+	setAttr ".r" -type "double3" -12.600000000002117 -101.6000000000008 0 ;
 	setAttr ".rpt" -type "double3" 1.8147315404806e-015 1.8670000849380616e-015 2.319117705265365e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 27.003921955158283;
+	setAttr ".coi" 9.6791320372381335;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 19.035444544699143 7.3473093104496936 20.011361553200938 ;
+	setAttr ".tp" -type "double3" 25.414046764221609 16.079977798192701 3.2988100514975294 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	setAttr ".v" no;
@@ -263,7 +263,7 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 createNode reference -n "Szene1RN";
 	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/03_Scenes/Szene1.ma";
-	setAttr -s 11 ".phl";
+	setAttr -s 21 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -275,10 +275,20 @@ createNode reference -n "Szene1RN";
 	setAttr ".phl[9]" 0;
 	setAttr ".phl[10]" 0;
 	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
-		"Szene1:BleistiftRN1" 0
 		"Szene1:RaumRN" 0
+		"Szene1:BleistiftRN1" 0
 		"Szene1:OrdnerRN" 1
 		2 "|Szene1:Ordner:Camera01|Szene1:Ordner:Camera0Shape1" "renderable" " 0"
 		
@@ -398,7 +408,7 @@ createNode reference -n "Szene1RN";
 		"Szene1:DeckenlampeRN" 0
 		"Szene1:car_msRN" 0
 		"Szene1:BleistiftRN4" 0
-		"Szene1:BleistiftRN3" 18
+		"Szene1:BleistiftRN3" 23
 		2 "|Szene1:Bleistift3:Pencil" "visibility" " 1"
 		2 "|Szene1:Bleistift3:Pencil" "translate" " -type \"double3\" -0.12165942504241567 9.4612488385970508 -2.4638216956546808"
 		
@@ -428,7 +438,17 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Bleistift3:Pencil|Szene1:Bleistift3:Circle01" "MaxHandle" " -k 1 15"
 		
-		"Szene1:BleistiftRN2" 18
+		3 "Szene1:Bleistift3:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		"Szene1:Bleistift3:materialInfo6.material" ""
+		3 "Szene1:Bleistift3:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		":defaultShaderList1.shaders" "-na"
+		3 "Szene1:Bleistift3:FBXASC0481FBXASC032FBXASC045FBXASC032Default.outColor" 
+		"Szene1:Bleistift3:Cone02SG.surfaceShader" ""
+		5 4 "Szene1RN" "Szene1:Bleistift3:Cone02SG.surfaceShader" "Szene1RN.placeHolderList[5]" 
+		""
+		5 4 "Szene1RN" "Szene1:Bleistift3:materialInfo6.material" "Szene1RN.placeHolderList[6]" 
+		""
+		"Szene1:BleistiftRN2" 23
 		2 "|Szene1:Bleistift2:Pencil" "visibility" " 1"
 		2 "|Szene1:Bleistift2:Pencil" "translate" " -type \"double3\" 0.24793532518164785 9.0698685418218297 -0.42750761889810196"
 		
@@ -458,7 +478,17 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Bleistift2:Pencil|Szene1:Bleistift2:Circle01" "MaxHandle" " -k 1 15"
 		
-		"Szene1:BleistiftRN5" 26
+		3 "Szene1:Bleistift2:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		"Szene1:Bleistift2:materialInfo6.material" ""
+		3 "Szene1:Bleistift2:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		":defaultShaderList1.shaders" "-na"
+		3 "Szene1:Bleistift2:FBXASC0481FBXASC032FBXASC045FBXASC032Default.outColor" 
+		"Szene1:Bleistift2:Cone02SG.surfaceShader" ""
+		5 4 "Szene1RN" "Szene1:Bleistift2:Cone02SG.surfaceShader" "Szene1RN.placeHolderList[3]" 
+		""
+		5 4 "Szene1RN" "Szene1:Bleistift2:materialInfo6.material" "Szene1RN.placeHolderList[4]" 
+		""
+		"Szene1:BleistiftRN5" 32
 		2 "|Szene1:Bleistift5:Pencil" "visibility" " 1"
 		2 "|Szene1:Bleistift5:Pencil" "translate" " -type \"double3\" 0.11407898620168222 12.630321074962573 -1.6949400805152401"
 		
@@ -481,32 +511,44 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01" "translateZ" " -av"
 		
+		2 "Szene1:Bleistift5:FBXASC0481FBXASC032FBXASC045FBXASC032Default" "ambientColor" 
+		" -type \"float3\" 0 0 0"
+		3 "Szene1:Bleistift5:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		":defaultShaderList1.shaders" "-na"
+		3 "Szene1:Bleistift5:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		"Szene1:Bleistift5:materialInfo6.material" ""
+		3 "Szene1:Bleistift5:FBXASC0481FBXASC032FBXASC045FBXASC032Default.outColor" 
+		"Szene1:Bleistift5:Cone02SG.surfaceShader" ""
 		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateX" 
-		"Szene1RN.placeHolderList[1]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateY" 
-		"Szene1RN.placeHolderList[2]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateZ" 
-		"Szene1RN.placeHolderList[3]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.visibility" 
-		"Szene1RN.placeHolderList[4]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateX" 
-		"Szene1RN.placeHolderList[5]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateY" 
-		"Szene1RN.placeHolderList[6]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateZ" 
-		"Szene1RN.placeHolderList[7]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleX" 
-		"Szene1RN.placeHolderList[8]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleY" 
 		"Szene1RN.placeHolderList[9]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleZ" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateY" 
 		"Szene1RN.placeHolderList[10]" ""
-		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.MaxHandle" 
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.translateZ" 
 		"Szene1RN.placeHolderList[11]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.visibility" 
+		"Szene1RN.placeHolderList[12]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateX" 
+		"Szene1RN.placeHolderList[13]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateY" 
+		"Szene1RN.placeHolderList[14]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.rotateZ" 
+		"Szene1RN.placeHolderList[15]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleX" 
+		"Szene1RN.placeHolderList[16]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleY" 
+		"Szene1RN.placeHolderList[17]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.scaleZ" 
+		"Szene1RN.placeHolderList[18]" ""
+		5 4 "Szene1RN" "|Szene1:Bleistift5:Pencil|Szene1:Bleistift5:Circle01.MaxHandle" 
+		"Szene1RN.placeHolderList[19]" ""
+		5 4 "Szene1RN" "Szene1:Bleistift5:Cone02SG.surfaceShader" "Szene1RN.placeHolderList[20]" 
+		""
+		5 4 "Szene1RN" "Szene1:Bleistift5:materialInfo6.material" "Szene1RN.placeHolderList[21]" 
+		""
 		"Szene1RN" 2
 		2 "|Szene1:camera1|Szene1:cameraShape1" "renderable" " 0"
 		2 "|Szene1:Camera01|Szene1:Camera0Shape1" "renderable" " 0"
-		"Szene1:BleistiftRN1" 7
+		"Szene1:BleistiftRN1" 12
 		2 "|Szene1:Bleistift1:Pencil" "visibility" " 1"
 		2 "|Szene1:Bleistift1:Pencil" "translate" " -type \"double3\" 1.0232827141458802 9.3906082571238016 -7.0661217852804645"
 		
@@ -516,7 +558,17 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Bleistift1:Pencil" "scale" " -type \"double3\" 0.0034718399999999999 0.0034718399999999999 0.0034718399999999999"
 		
 		2 "|Szene1:Bleistift1:Pencil" "MaxHandle" " -k 1 0"
-		"Szene1:BleistiftRN4" 7
+		3 "Szene1:Bleistift1:FBXASC0481FBXASC032FBXASC045FBXASC032Default.outColor" 
+		"Szene1:Bleistift1:Cone02SG.surfaceShader" ""
+		3 "Szene1:Bleistift1:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		":defaultShaderList1.shaders" "-na"
+		3 "Szene1:Bleistift1:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		"Szene1:Bleistift1:materialInfo6.material" ""
+		5 4 "Szene1RN" "Szene1:Bleistift1:Cone02SG.surfaceShader" "Szene1RN.placeHolderList[1]" 
+		""
+		5 4 "Szene1RN" "Szene1:Bleistift1:materialInfo6.material" "Szene1RN.placeHolderList[2]" 
+		""
+		"Szene1:BleistiftRN4" 12
 		2 "|Szene1:Bleistift4:Pencil" "visibility" " 1"
 		2 "|Szene1:Bleistift4:Pencil" "translate" " -type \"double3\" 0.50785996925455246 8.8039070099346031 -4.1691334284704"
 		
@@ -526,7 +578,17 @@ createNode reference -n "Szene1RN";
 		
 		2 "|Szene1:Bleistift4:Pencil" "scale" " -type \"double3\" 0.0031959100000000002 0.0031959100000000002 0.0031959100000000002"
 		
-		2 "|Szene1:Bleistift4:Pencil" "MaxHandle" " -k 1 0";
+		2 "|Szene1:Bleistift4:Pencil" "MaxHandle" " -k 1 0"
+		3 "Szene1:Bleistift4:FBXASC0481FBXASC032FBXASC045FBXASC032Default.outColor" 
+		"Szene1:Bleistift4:Cone02SG.surfaceShader" ""
+		3 "Szene1:Bleistift4:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		"Szene1:Bleistift4:materialInfo6.material" ""
+		3 "Szene1:Bleistift4:FBXASC0481FBXASC032FBXASC045FBXASC032Default.message" 
+		":defaultShaderList1.shaders" "-na"
+		5 4 "Szene1RN" "Szene1:Bleistift4:Cone02SG.surfaceShader" "Szene1RN.placeHolderList[7]" 
+		""
+		5 4 "Szene1RN" "Szene1:Bleistift4:materialInfo6.material" "Szene1RN.placeHolderList[8]" 
+		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTL -n "Circle01_translateX";
@@ -876,6 +938,21 @@ createNode script -n "uiConfigurationScriptNode";
 createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode lambert -n "lambert2";
+	setAttr ".dc" 1;
+	setAttr ".c" -type "float3" 0 0 0 ;
+createNode lambert -n "lambert3";
+	setAttr ".dc" 1;
+	setAttr ".c" -type "float3" 0 0 0 ;
+createNode lambert -n "lambert4";
+	setAttr ".dc" 1;
+	setAttr ".c" -type "float3" 0 0 0 ;
+createNode lambert -n "lambert5";
+	setAttr ".dc" 1;
+	setAttr ".c" -type "float3" 0 0 0 ;
+createNode lambert -n "lambert7";
+	setAttr ".dc" 1;
+	setAttr ".c" -type "float3" 0 0 0 ;
 select -ne :time1;
 	setAttr ".o" 95;
 	setAttr ".unw" 95;
@@ -892,6 +969,7 @@ select -ne :defaultRenderingList1;
 	setAttr -s 7 ".r";
 select -ne :defaultTextureList1;
 	setAttr -s 14 ".tx";
+select -ne :lambert1;
 select -ne :initialShadingGroup;
 	setAttr -s 9 ".dsm";
 	setAttr ".ro" yes;
@@ -916,17 +994,27 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 select -ne :defaultHardwareRenderGlobals;
 	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
-connectAttr "Circle01_translateX.o" "Szene1RN.phl[1]";
-connectAttr "Circle01_translateY.o" "Szene1RN.phl[2]";
-connectAttr "Circle01_translateZ.o" "Szene1RN.phl[3]";
-connectAttr "Circle01_visibility.o" "Szene1RN.phl[4]";
-connectAttr "Circle01_rotateX.o" "Szene1RN.phl[5]";
-connectAttr "Circle01_rotateY.o" "Szene1RN.phl[6]";
-connectAttr "Circle01_rotateZ.o" "Szene1RN.phl[7]";
-connectAttr "Circle01_scaleX.o" "Szene1RN.phl[8]";
-connectAttr "Circle01_scaleY.o" "Szene1RN.phl[9]";
-connectAttr "Circle01_scaleZ.o" "Szene1RN.phl[10]";
-connectAttr "Circle01_MaxHandle.o" "Szene1RN.phl[11]";
+connectAttr "lambert7.oc" "Szene1RN.phl[5]";
+connectAttr "lambert7.msg" "Szene1RN.phl[6]";
+connectAttr "lambert2.oc" "Szene1RN.phl[3]";
+connectAttr "lambert2.msg" "Szene1RN.phl[4]";
+connectAttr "Circle01_translateX.o" "Szene1RN.phl[9]";
+connectAttr "Circle01_translateY.o" "Szene1RN.phl[10]";
+connectAttr "Circle01_translateZ.o" "Szene1RN.phl[11]";
+connectAttr "Circle01_visibility.o" "Szene1RN.phl[12]";
+connectAttr "Circle01_rotateX.o" "Szene1RN.phl[13]";
+connectAttr "Circle01_rotateY.o" "Szene1RN.phl[14]";
+connectAttr "Circle01_rotateZ.o" "Szene1RN.phl[15]";
+connectAttr "Circle01_scaleX.o" "Szene1RN.phl[16]";
+connectAttr "Circle01_scaleY.o" "Szene1RN.phl[17]";
+connectAttr "Circle01_scaleZ.o" "Szene1RN.phl[18]";
+connectAttr "Circle01_MaxHandle.o" "Szene1RN.phl[19]";
+connectAttr "lambert3.oc" "Szene1RN.phl[20]";
+connectAttr "lambert3.msg" "Szene1RN.phl[21]";
+connectAttr "lambert4.oc" "Szene1RN.phl[1]";
+connectAttr "lambert4.msg" "Szene1RN.phl[2]";
+connectAttr "lambert5.oc" "Szene1RN.phl[7]";
+connectAttr "lambert5.msg" "Szene1RN.phl[8]";
 connectAttr ":mentalrayGlobals.msg" ":mentalrayItemsList.glb";
 connectAttr ":miDefaultOptions.msg" ":mentalrayItemsList.opt" -na;
 connectAttr ":miDefaultFramebuffer.msg" ":mentalrayItemsList.fb" -na;
@@ -939,6 +1027,11 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr "lambert4.msg" ":defaultShaderList1.s" -na;
+connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
+connectAttr "lambert7.msg" ":defaultShaderList1.s" -na;
+connectAttr "lambert5.msg" ":defaultShaderList1.s" -na;
+connectAttr "lambert3.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
 applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"Szene1RN\" \"\" \"C:/GIT/desklife/03_Scenes/Szene1.ma\" 3278277900 \"C:/GIT/desklife/03_Scenes/Szene1.ma\" \"FileRef\"\nendStream\nendChannel\nendAssociations\n" 
