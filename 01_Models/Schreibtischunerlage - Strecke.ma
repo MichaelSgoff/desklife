@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Schreibtischunerlage.ma
-//Last modified: Thu, Dec 11, 2014 05:17:57 PM
+//Last modified: Thu, Dec 11, 2014 05:13:17 PM
 //Codeset: 1252
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
@@ -376,7 +376,7 @@ createNode shadingEngine -n "lambert56SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo7";
 createNode file -n "file5";
-	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/unterlage-leer.jpg";
+	setAttr ".ftn" -type "string" "C:/GIT/desklife/02_Textures/unterlage-strecke.jpg";
 createNode place2dTexture -n "place2dTexture5";
 	setAttr ".rf" 90;
 	setAttr ".re" -type "float2" 1 1.7 ;
@@ -581,6 +581,6 @@ connectAttr "file3.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file4.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file5.msg" ":defaultTextureList1.tx" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
-applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"file1\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/Unterlage.png\" 76726192 \"C:/GIT/desklife/02_Textures/Unterlage.png\" \"sourceImages\"\n1\n\"file3\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/Unterlage.png\" 76726192 \"C:/GIT/desklife/02_Textures/Unterlage.png\" \"sourceImages\"\n2\n\"file5\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/unterlage-leer.jpg\" 3550949176 \"C:/GIT/desklife/02_Textures/unterlage-leer.jpg\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
+applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"file1\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/Unterlage.png\" 76726192 \"C:/GIT/desklife/02_Textures/Unterlage.png\" \"sourceImages\"\n1\n\"file3\" \"fileTextureName\" \"C:/Users/Michael/Dropbox/uni/5. Semester/3D-Modelierung/DeskLife/Abgabe 3 - Licht/02_Textures/Unterlage.png\" 76726192 \"C:/GIT/desklife/02_Textures/Unterlage.png\" \"sourceImages\"\n2\n\"file5\" \"fileTextureName\" \"C:/GIT/desklife/02_Textures/unterlage-strecke.jpg\" 3709838652 \"C:/GIT/desklife/02_Textures/unterlage-strecke.jpg\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
 // End of Schreibtischunerlage.ma
