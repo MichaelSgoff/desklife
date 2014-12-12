@@ -1,6 +1,6 @@
 //Maya ASCII 2015 scene
 //Name: Shot6.ma
-//Last modified: Wed, Dec 10, 2014 11:18:35 PM
+//Last modified: Thu, Dec 11, 2014 06:24:06 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
@@ -15,7 +15,7 @@ file -rdi 2 -ns "Ordner" -rfn "Szene1:OrdnerRN" -op "VERS|2015|UVER|undef|MADE|u
 		 "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner1" -rfn "Szene1:OrdnerRN1" "C:/GIT/desklife/01_Models/Ordner.ma";
 file -rdi 2 -ns "Ordner2" -rfn "Szene1:OrdnerRN2" "C:/GIT/desklife/01_Models/Ordner.ma";
-file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Wed, Dec 10, 2014 05:05:03 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
+file -rdi 2 -ns "Bleistift1" -rfn "Szene1:BleistiftRN1" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Thu, Dec 11, 2014 05:42:40 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
 file -rdi 2 -ns "Bleistift2" -rfn "Szene1:BleistiftRN2" -op "VERS|2015|UVER|undef|MADE|undef|CHNG|Mon, Dec 08, 2014 03:34:05 PM|ICON|undef|INFO|undef|OBJN|52|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|"
 		 "C:/GIT/desklife/01_Models/Bleistift.ma";
@@ -40,15 +40,15 @@ file -rdi 2 -ns "computer" -dr 1 -rfn "Szene1:computerRN" -op "v=0;" "C:/GIT/des
 file -r -ns "Szene1" -dr 1 -rfn "Szene1RN" -op "v=0;" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
-		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.16 ";
+		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
 requires "stereoCamera" "10.0";
 requires "OpenEXRLoader" "2012";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2015";
 fileInfo "version" "2015";
-fileInfo "cutIdentifier" "201405190330-916664";
-fileInfo "osv" "Microsoft Windows 7 Business Edition, 64-bit Windows 7 Service Pack 1 (Build 7601)\n";
+fileInfo "cutIdentifier" "201410051530-933320";
+fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
@@ -282,8 +282,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 413 ".lnk";
-	setAttr -s 416 ".slnk";
+	setAttr -s 141 ".lnk";
+	setAttr -s 142 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -370,8 +370,8 @@ createNode reference -n "Szene1RN";
 	setAttr ".phl[76]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
-		"Szene1:RaumRN" 0
 		"Szene1:BleistiftRN1" 0
+		"Szene1:RaumRN" 0
 		"Szene1:OrdnerRN" 0
 		"Szene1:ph_autoRN" 0
 		"Szene1RN" 0
@@ -424,7 +424,7 @@ createNode reference -n "Szene1RN";
 		"segmentScaleCompensate" " 1"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4|Szene1:Schreibtischlampe:lampe:lamp_cone" 
 		"translate" " -type \"double3\" 0.802229 0.0017433399999999999 0"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 25.940055667737742 19.685618108104496 15.604726643644067"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 26.546158208229134 20.239720770503563 17.138376814015977"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
@@ -470,7 +470,7 @@ createNode reference -n "Szene1RN";
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4|Szene1:Schreibtischlampe:lampe:lamp_bulb.rotateZ" 
 		"Szene1RN.placeHolderList[10]" ""
 		"Szene1:BleistiftRN1" 14
-		2 "|Szene1:Bleistift1:Pencil" "translate" " -type \"double3\" 1.0232827141458802 9.3906082571238016 -7.0661217852804645"
+		2 "|Szene1:Bleistift1:Pencil" "translate" " -type \"double3\" -3.3833650308647822 9.3906082571238016 -6.8990066368218015"
 		
 		2 "|Szene1:Bleistift1:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift1:Pencil" "translateZ" " -av"
@@ -509,11 +509,11 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Ordner1:Camera01|Szene1:Ordner1:Camera0Shape1" "renderable" " 0"
 		
 		"Szene1:BleistiftRN2" 26
-		2 "|Szene1:Bleistift2:Pencil" "translate" " -type \"double3\" 0.24793532518164785 9.0698685418218297 -0.42750761889810196"
+		2 "|Szene1:Bleistift2:Pencil" "translate" " -type \"double3\" -1.204842239906653 9.0698685418218297 -4.1196216582673459"
 		
 		2 "|Szene1:Bleistift2:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift2:Pencil" "translateZ" " -av"
-		2 "|Szene1:Bleistift2:Pencil" "rotate" " -type \"double3\" -90.000000000000185 55.946036710758342 -1.5616148638172809"
+		2 "|Szene1:Bleistift2:Pencil" "rotate" " -type \"double3\" -89.999999999999986 0 -1.5616148638207186"
 		
 		2 "|Szene1:Bleistift2:Pencil" "rotateX" " -av"
 		2 "|Szene1:Bleistift2:Pencil" "rotateY" " -av"
@@ -560,12 +560,12 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:camera1|Szene1:cameraShape1" "renderable" " 0"
 		2 "|Szene1:Camera01|Szene1:Camera0Shape1" "renderable" " 0"
 		"Szene1:BleistiftRN5" 34
-		2 "|Szene1:Bleistift5:Pencil" "translate" " -type \"double3\" 0.11407898620168222 12.630321074962573 -1.6949400805152401"
+		2 "|Szene1:Bleistift5:Pencil" "translate" " -type \"double3\" -2.1260976355363654 10.980791233130622 -3.0810650552319503"
 		
 		2 "|Szene1:Bleistift5:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift5:Pencil" "translateY" " -av"
 		2 "|Szene1:Bleistift5:Pencil" "translateZ" " -av"
-		2 "|Szene1:Bleistift5:Pencil" "rotate" " -type \"double3\" -174.78850774480085 0.96166173229471386 4.4895229229171054"
+		2 "|Szene1:Bleistift5:Pencil" "rotate" " -type \"double3\" -90.470708000000016 -0.611476 4.346048"
 		
 		2 "|Szene1:Bleistift5:Pencil" "rotateX" " -av"
 		2 "|Szene1:Bleistift5:Pencil" "rotateY" " -av"
@@ -631,12 +631,11 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Stuhl:bstuhl:ARMCHAIR" "translate" " -type \"double3\" -10.608080941286122 3.4035610000000003 7.3644669999999994"
 		
 		"Szene1:BleistiftRN3" 26
-		2 "|Szene1:Bleistift3:Pencil" "translate" " -type \"double3\" -0.12165942504241567 9.4612488385970508 -2.4638216956546808"
+		2 "|Szene1:Bleistift3:Pencil" "translate" " -type \"double3\" -0.47026858694186591 9.4612488385970508 -5.3984603703852851"
 		
 		2 "|Szene1:Bleistift3:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift3:Pencil" "translateZ" " -av"
-		2 "|Szene1:Bleistift3:Pencil" "rotate" " -type \"double3\" -90.000000000000071 55.946036710758236 0"
-		
+		2 "|Szene1:Bleistift3:Pencil" "rotate" " -type \"double3\" -90 0 0"
 		2 "|Szene1:Bleistift3:Pencil" "rotateX" " -av"
 		2 "|Szene1:Bleistift3:Pencil" "rotateY" " -av"
 		2 "|Szene1:Bleistift3:Pencil" "rotateZ" " -av"
@@ -692,7 +691,7 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Ordner2:Camera01|Szene1:Ordner2:Camera0Shape1" "renderable" " 0"
 		
 		"Szene1:BleistiftRN4" 14
-		2 "|Szene1:Bleistift4:Pencil" "translate" " -type \"double3\" 0.50785996925455246 8.8039070099346031 -4.1691334284704"
+		2 "|Szene1:Bleistift4:Pencil" "translate" " -type \"double3\" -3.0681069838436748 8.8039070099346031 -5.7635863337176705"
 		
 		2 "|Szene1:Bleistift4:Pencil" "translateX" " -av"
 		2 "|Szene1:Bleistift4:Pencil" "translateZ" " -av"
@@ -992,7 +991,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
-	setAttr ".b" -type "string" "playbackOptions -min 125 -max 200 -ast 1 -aet 200 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 200 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode mentalrayOptions -s -n "PreviewImrRayTracyOff";
 	setAttr ".minsp" 0;
@@ -1511,23 +1510,23 @@ createNode animCurveTU -n "lamp_bulb_scaleZ";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  92 1;
 select -ne :time1;
-	setAttr ".o" 175;
-	setAttr ".unw" 175;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :renderPartition;
-	setAttr -s 139 ".st";
+	setAttr -s 141 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 123 ".s";
+	setAttr -s 125 ".s";
 select -ne :postProcessList1;
 	setAttr -s 3 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 74 ".u";
+	setAttr -s 76 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 26 ".r";
 select -ne :lightList1;
 	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 63 ".tx";
+	setAttr -s 65 ".tx";
 select -ne :lambert1;
 select -ne :initialShadingGroup;
 	setAttr -s 26 ".dsm";
