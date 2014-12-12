@@ -1,10 +1,11 @@
 //Maya ASCII 2015 scene
 //Name: Shot2.ma
-//Last modified: Thu, Dec 11, 2014 05:05:36 PM
+//Last modified: Fri, Dec 12, 2014 03:37:58 PM
 //Codeset: 1252
 file -rdi 1 -ns "Szene1" -rfn "Szene1RN" -op "v=0;p=17;f=0" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 file -rdi 2 -ns "Raum" -rfn "Szene1:RaumRN" "C:/GIT/desklife/01_Models/Raum.ma";
-file -rdi 2 -ns "Schreibtischlampe" -rfn "Szene1:SchreibtischlampeRN" "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
+file -rdi 2 -ns "Schreibtischlampe" -dr 1 -rfn "Szene1:SchreibtischlampeRN"
+		 "C:/GIT/desklife/01_Models/Schreibtischlampe.ma";
 file -rdi 2 -ns "Stuhl" -rfn "Szene1:StuhlRN" "C:/GIT/desklife/01_Models/Stuhl.ma";
 file -rdi 2 -ns "Monitor" -rfn "Szene1:MonitorRN" "C:/GIT/desklife/01_Models/Monitor.ma";
 file -rdi 2 -ns "Bild" -rfn "Szene1:BildRN" "C:/GIT/desklife/01_Models/Bild.ma";
@@ -37,7 +38,11 @@ file -rdi 2 -ns "Bett" -rfn "Szene1:BettRN" -op "v=0;" "C:/GIT/desklife/01_Model
 file -rdi 2 -ns "ph_auto" -rfn "Szene1:ph_autoRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/ph_auto.ma";
 file -rdi 2 -ns "car_ms" -rfn "Szene1:car_msRN" -op "v=0;p=17;f=0" "C:/GIT/desklife/01_Models/car ms.ma";
 file -rdi 2 -ns "computer" -rfn "Szene1:computerRN" -op "v=0;" "C:/GIT/desklife/01_Models/computer.ma";
+file -rdi 1 -ns "Schreibtischlampe2" -rfn "Schreibtischlampe2RN" -op "v=0;p=17;f=0"
+		 "C:/GIT/desklife/01_Models/Schreibtischlampe2.ma";
 file -r -ns "Szene1" -dr 1 -rfn "Szene1RN" -op "v=0;p=17;f=0" "C:/GIT/desklife/03_Scenes/Szene1.ma";
+file -r -ns "Schreibtischlampe2" -dr 1 -rfn "Schreibtischlampe2RN" -op "v=0;p=17;f=0"
+		 "C:/GIT/desklife/01_Models/Schreibtischlampe2.ma";
 requires maya "2015";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
 		 -nodeType "mentalrayItemsList" -dataType "byteArray" "Mayatomr" "2015.0 - 3.12.1.18 ";
@@ -52,17 +57,17 @@ fileInfo "osv" "Microsoft Windows 8 Enterprise Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -102.87748271509973 102.16716224041481 176.12793337216277 ;
-	setAttr ".r" -type "double3" -21.938352729670285 -37.39999999999803 0 ;
+	setAttr ".t" -type "double3" -6.5512151818046256 27.04531585518713 9.6965673613662844 ;
+	setAttr ".r" -type "double3" -16.538352729709828 -438.5999999999774 8.0456275374258137e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 224.70634453755667;
+	setAttr ".coi" 18.454883903142903;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 26.702293544839961 18.754490322546339 15.11013393668973 ;
+	setAttr ".tp" -type "double3" 22.772106300587851 14.000687 16.681481606368301 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	setAttr ".v" no;
@@ -105,22 +110,6 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".man" -type "string" "side_mask";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
-createNode transform -n "Schreibtischspot";
-createNode spotLight -n "SchreibtischspotShape" -p "Schreibtischspot";
-	setAttr -k off ".v";
-	setAttr ".cl" -type "float3" 0.93900001 0.80079722 0.61222804 ;
-	setAttr ".shr" 30;
-	setAttr ".rdl" 1;
-	setAttr ".lr" 0.82758623361587524;
-	setAttr ".ca" 81;
-	setAttr ".pa" -1.6;
-	setAttr ".dro" 8.5;
-createNode directedDisc -n "directedDiscShape1" -p "Schreibtischspot";
-	setAttr -k off ".v";
-	setAttr ".rt" 2;
-	setAttr ".sso" yes;
-	setAttr ".ssa" 20;
-	setAttr ".msa" 20;
 createNode mentalrayItemsList -s -n "mentalrayItemsList";
 	setAttr -s 19 ".opt";
 createNode mentalrayGlobals -s -n "mentalrayGlobals";
@@ -139,7 +128,7 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 	setAttr ".rfrr" 1;
 	setAttr ".maxr" 2;
 	setAttr ".shrd" 2;
-	setAttr ".miSamplesQualityR" 1;
+	setAttr ".miSamplesQualityR" 1.1390625238418579;
 	setAttr -s 48 ".stringOptions";
 	setAttr ".stringOptions[0].name" -type "string" "rast motion factor";
 	setAttr ".stringOptions[0].value" -type "string" "1.0";
@@ -232,7 +221,7 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 	setAttr ".stringOptions[29].value" -type "string" "true";
 	setAttr ".stringOptions[29].type" -type "string" "boolean";
 	setAttr ".stringOptions[30].name" -type "string" "samples quality";
-	setAttr ".stringOptions[30].value" -type "string" "1 1 1 1";
+	setAttr ".stringOptions[30].value" -type "string" "1.14 1.14 1.14 1.14";
 	setAttr ".stringOptions[30].type" -type "string" "color";
 	setAttr ".stringOptions[31].name" -type "string" "samples min";
 	setAttr ".stringOptions[31].value" -type "string" "1.0";
@@ -288,8 +277,8 @@ createNode mentalrayOptions -s -n "miDefaultOptions";
 createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	setAttr ".dat" 2;
 createNode lightLinker -s -n "lightLinker1";
-	setAttr -s 141 ".lnk";
-	setAttr -s 142 ".slnk";
+	setAttr -s 159 ".lnk";
+	setAttr -s 162 ".slnk";
 createNode displayLayerManager -n "layerManager";
 createNode displayLayer -n "defaultLayer";
 createNode renderLayerManager -n "renderLayerManager";
@@ -298,20 +287,10 @@ createNode renderLayer -n "defaultRenderLayer";
 createNode reference -n "Szene1RN";
 	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/03_Scenes/Szene1.ma";
 	setAttr -s 10 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Szene1RN"
-		"Szene1:BleistiftRN1" 0
 		"Szene1:RaumRN" 0
+		"Szene1:BleistiftRN1" 0
 		"Szene1:OrdnerRN" 0
 		"Szene1:ph_autoRN" 0
 		"Szene1:computerRN" 0
@@ -319,31 +298,13 @@ createNode reference -n "Szene1RN";
 		"Szene1:bueroklammerRN2" 0
 		"Szene1:OrdnerRN2" 0
 		"Szene1:BecherRN" 0
-		"Szene1:SchreibtischlampeRN" 0
-		"Szene1:BettRN" 0
-		"Szene1:Tür2RN" 0
-		"Szene1:SchreibtischunerlageRN" 0
-		"Szene1:MonitorRN" 0
-		"Szene1:BildRN" 0
-		"Szene1:BleistiftRN2" 0
-		"Szene1:OrdnerRN1" 0
-		"Szene1:BleistiftRN5" 0
-		"Szene1:bueroklammerRN" 0
-		"Szene1:StuhlRN" 0
-		"Szene1:BleistiftRN3" 0
-		"Szene1:Tisch2RN" 0
-		"Szene1:bueroklammerRN1" 0
-		"Szene1:DeckenlampeRN" 0
-		"Szene1:car_msRN" 0
-		"Szene1:BleistiftRN4" 0
 		"Szene1:SchreibtischlampeRN" 41
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller" "translate" " -type \"double3\" 27.488786332651063 14.272715871272649 16.52314049472611"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"visibility" " -av 1"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
-		"translate" " -type \"double3\" -0.25778776935968878 -1.2350619114551584 1.169537410145036"
-		
+		"translate" " -type \"double3\" 0.032209700000000001 -0.855896 1.123594"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"translateX" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
@@ -351,7 +312,7 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"translateZ" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
-		"rotate" " -type \"double3\" 78.625554698019343 0.64203338780471564 6.4081609108867221"
+		"rotate" " -type \"double3\" 65.660279537563611 0.71421251812064246 -2.8152850839782411"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"rotateX" " -av"
@@ -368,7 +329,7 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator" 
 		"scaleZ" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4" 
-		"rotate" " -type \"double3\" 6.230505968582734 -4.2796366867841895 -2.5100614489365078"
+		"rotate" " -type \"double3\" 9.7372820376910916 -10.025677290802717 -10.575217161979682"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:joint2|Szene1:Schreibtischlampe:lampe:joint3|Szene1:Schreibtischlampe:lampe:joint4" 
 		"rotateX" " -av"
@@ -378,12 +339,12 @@ createNode reference -n "Szene1RN";
 		"rotateZ" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:joint1|Szene1:Schreibtischlampe:lampe:lamp_base" 
 		"translate" " -type \"double3\" -0.0034849188846400756 0 -0.0016735889859972645"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 23.601737448112246 19.352866655033296 15.872098012075492"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translate" " -type \"double3\" 23.663500160694532 20.48101898982198 16.663325101491939"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateX" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateY" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "translateZ" " -av"
-		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotate" " -type \"double3\" 291.18725344879675 258.5593465703044 -34.165642978059424"
+		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotate" " -type \"double3\" 228.43949703136127 259.99878186505799 16.498773832724531"
 		
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateX" " -av"
 		2 "|Szene1:Schreibtischlampe:lampe:lamp_spot" "rotateY" " -av"
@@ -416,12 +377,45 @@ createNode reference -n "Szene1RN";
 		"Szene1RN.placeHolderList[9]" ""
 		5 4 "Szene1RN" "|Szene1:Schreibtischlampe:lampe:LAMP_controller|Szene1:Schreibtischlampe:lampe:lamp_rotator.scaleZ" 
 		"Szene1RN.placeHolderList[10]" ""
+		"Szene1:BettRN" 0
+		"Szene1:Tür2RN" 0
+		"Szene1:SchreibtischunerlageRN" 0
+		"Szene1:MonitorRN" 0
+		"Szene1:BildRN" 0
+		"Szene1:BleistiftRN2" 0
+		"Szene1:OrdnerRN1" 0
+		"Szene1:BleistiftRN5" 0
+		"Szene1:bueroklammerRN" 0
+		"Szene1:StuhlRN" 0
+		"Szene1:BleistiftRN3" 0
+		"Szene1:Tisch2RN" 0
+		"Szene1:bueroklammerRN1" 0
+		"Szene1:DeckenlampeRN" 0
+		"Szene1:car_msRN" 0
+		"Szene1:BleistiftRN4" 0
 		"Szene1:MonitorRN" 4
 		2 "|Szene1:Monitor:monitor:LCDFBXASC032Display" "rotate" " -type \"double3\" 0 0 0"
 		
 		2 "|Szene1:Monitor:monitor:LCDFBXASC032Display" "rotateY" " -av"
 		2 "|Szene1:Monitor:monitor:LCDFBXASC032Display" "rotateX" " -av"
 		2 "|Szene1:Monitor:monitor:LCDFBXASC032Display" "rotateZ" " -av"
+		"Szene1:bueroklammerRN" 1
+		2 "|Szene1:bueroklammer:Paperclip" "translate" " -type \"double3\" 21.470642 13.938814455209972 16.990833"
+		
+		"Szene1:bueroklammerRN2" 8
+		2 "|Szene1:bueroklammer2:Paperclip" "visibility" " 1"
+		2 "|Szene1:bueroklammer2:Paperclip" "translate" " -type \"double3\" 22.638873 13.959447049443957 16.616778"
+		
+		2 "|Szene1:bueroklammer2:Paperclip" "translateY" " -av"
+		2 "|Szene1:bueroklammer2:Paperclip" "translateX" " -av"
+		2 "|Szene1:bueroklammer2:Paperclip" "translateZ" " -av"
+		2 "|Szene1:bueroklammer2:Paperclip" "rotate" " -type \"double3\" -90 0 0"
+		
+		2 "|Szene1:bueroklammer2:Paperclip" "scale" " -type \"double3\" 0.050709499999999998 0.050709499999999998 0.050709499999999998"
+		
+		2 "|Szene1:bueroklammer2:Paperclip" "MaxHandle" " -k 1 64"
+		"Szene1:Tisch2RN" 1
+		2 "Szene1:Tisch2:WoodFBXASC032Mix" "reflectivity" " 0.23931623995304108"
 		"Szene1:OrdnerRN" 1
 		2 "|Szene1:Ordner:Camera01|Szene1:Ordner:Camera0Shape1" "renderable" " 0"
 		
@@ -435,9 +429,9 @@ createNode reference -n "Szene1RN";
 		2 "Szene1:Bleistift2:FBXASC0482FBXASC032FBXASC045FBXASC032Default" "ambientColor" 
 		" -type \"float3\" 0 0 0"
 		"Szene1RN" 15
-		2 "|Szene1:camera1" "translate" " -type \"double3\" -6.1066057155983913 30.059800501000858 6.7397389761585389"
+		2 "|Szene1:camera1" "translate" " -type \"double3\" -0.72944364330223566 30.260690864598097 7.6603106557224017"
 		
-		2 "|Szene1:camera1" "rotate" " -type \"double3\" -24.000000000001439 -90 0"
+		2 "|Szene1:camera1" "rotate" " -type \"double3\" -28.799999999997191 -88.799999999999969 0"
 		
 		2 "|Szene1:camera1" "scale" " -type \"double3\" 1 1 1"
 		2 "|Szene1:camera1" "rotatePivot" " -type \"double3\" 0 0 0"
@@ -445,7 +439,7 @@ createNode reference -n "Szene1RN";
 		2 "|Szene1:camera1|Szene1:cameraShape1" "renderable" " 1"
 		2 "|Szene1:camera1|Szene1:cameraShape1" "nearClipPlane" " 0.1"
 		2 "|Szene1:camera1|Szene1:cameraShape1" "farClipPlane" " 10000"
-		2 "|Szene1:camera1|Szene1:cameraShape1" "centerOfInterest" " 64.990255304630395"
+		2 "|Szene1:camera1|Szene1:cameraShape1" "centerOfInterest" " 14.152483596088899"
 		
 		2 "|Szene1:camera1|Szene1:cameraShape1" "tumblePivot" " -type \"double3\" 23.47279618175909 18.099299824822296 13.572233171850403"
 		
@@ -852,16 +846,16 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"createNodePanel\" -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Texture Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Texture Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"blendShapePanel\" (localizedPanelLabel(\"Blend Shape\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tblendShapePanel -unParent -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tblendShapePanel -edit -l (localizedPanelLabel(\"Blend Shape\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n"
 		+ "\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n"
-		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n"
-		+ "\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n"
-		+ "                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n"
-		+ "                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n"
-		+ "                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n"
-		+ "                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n"
-		+ "                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n"
-		+ "                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n"
-		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
+		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n"
+		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
+		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n"
+		+ "                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n"
+		+ "                -shadows 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n"
+		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n"
+		+ "                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n"
+		+ "                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-defaultImage \"\"\n"
+		+ "\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
 		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"Szene1:camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"all\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 1\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"Szene1:camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"all\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 1\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
@@ -869,207 +863,315 @@ createNode script -n "uiConfigurationScriptNode";
 createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".b" -type "string" "playbackOptions -min 1.041667 -max 208.333333 -ast 1.041667 -aet 208.333333 ";
 	setAttr ".st" 6;
-createNode animCurveTL -n "spotLight1_translateX";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 22.83919810817391 19 22.83919810817391
-		 25 22.83919810817391 50 22.732773766399216 63 23.812293670064616 73 22.862969551204383
-		 90 24.885660128811239 99 24.431219436628243 107 23.295030940262272 109 23.323386132282902
-		 113 23.305719613100745 117 23.567677017383708 136 22.900855741413469 146 22.96036432961122
-		 150 23.011726422176277 180 22.770532147708789;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 1 1 0.39308992028236389 1 1 1 1 
-		1 0.98095923662185669 1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 0 0 -0.91950005292892456 0 0 0 
-		0 0 0.1942136287689209 0 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 1 1 1 1 0.39308992028236389 1 1 1 1 
-		1 0.98095929622650146 1 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0 0 0 0 -0.91950005292892456 0 0 0 
-		0 0 0.1942136287689209 0 0;
-createNode animCurveTL -n "spotLight1_translateY";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 19.017749132353369 19 19.017749132353369
-		 25 19.017749132353369 50 20.88130300082538 63 21.237135390873391 73 19.06555591265311
-		 90 20.580950665475989 99 19.855814355079982 107 18.024163011609744 109 17.941115016621833
-		 113 18.021773797994296 117 18.257484633022763 136 17.958107529345913 146 18.056001539654435
-		 150 18.080208013199265 180 17.682738243376338;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 0.56505668163299561 1 1 1 0.25702396035194397 
-		0.30572488903999329 1 0.711128830909729 1 1 0.97704529762268066 1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0.82505202293395996 0 0 0 -0.96640497446060181 
-		-0.95211988687515259 0 0.70306175947189331 0 0 0.21303164958953857 0 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 0.56505674123764038 1 1 1 0.25702399015426636 
-		0.30572488903999329 1 0.711128830909729 1 1 0.97704529762268066 1 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0.82505208253860474 0 0 0 -0.96640509366989136 
-		-0.95211988687515259 0 0.70306175947189331 0 0 0.21303163468837738 0 0;
-createNode animCurveTL -n "spotLight1_translateZ";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 16.127452791028908 19 16.127452791028908
-		 25 16.127452791028908 50 16.318859430224393 63 14.506478772882188 73 16.038134232090584
-		 90 18.313464403602925 99 17.860332322008837 107 15.557831256219584 109 14.955818749559104
-		 113 13.572233171850401 117 13.054966980201316 136 17.051205240955703 146 19.33843740359465
-		 150 19.596525646867079 180 15.763093504020773;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 0.27291929721832275 1 0.25599884986877441 
-		0.13642905652523041 0.11999689787626266 0.16600948572158813 1 0.18154369294643402 
-		0.2148725688457489 1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 0.96203696727752686 0 -0.96667706966400146 
-		-0.99064987897872925 -0.99277430772781372 -0.98612415790557861 0 0.98338282108306885 
-		0.97664213180541992 0 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 1 1 0.27291926741600037 1 0.25599884986877441 
-		0.13642904162406921 0.11999689787626266 0.16600948572158813 1 0.18154370784759521 
-		0.2148725688457489 1 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0 0 0.96203690767288208 0 -0.96667706966400146 
-		-0.99064981937408447 -0.99277430772781372 -0.98612415790557861 0 0.9833829402923584 
-		0.97664207220077515 0 0;
-createNode animCurveTU -n "spotLight1_visibility";
-	setAttr ".tan" 5;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 1 19 1 25 1 50 1 63 1
-		 73 1 90 1 99 1 107 1 109 1 113 1 117 1 136 1 146 1 150 1 180 1;
-	setAttr -s 16 ".kit[0:15]"  9 1 1 9 9 9 9 9 
-		9 9 9 9 9 9 9 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-createNode animCurveTA -n "spotLight1_rotateX";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 -79.860769013474666 19 -79.860769013474666
-		 25 -79.860769013474666 50 -88.961341391111617 63 -7.0087555384608846 73 -89.079413736949434
-		 90 -152.87019210882195 99 -141.49807401707466 107 -107.44130825667658 109 -95.612528410601087
-		 113 -69.294916595260219 117 -53.721304890400205 136 -80.329223231164633 146 -101.22383708334073
-		 150 -109.24990392211963 180 -89.721106346040827;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 0.3905436098575592 1 0.65100425481796265 
-		0.4468320906162262 0.3391183614730835 0.40095138549804688 1 0.81356626749038696 0.74279201030731201 
-		1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 -0.92058449983596802 0 0.75907403230667114 
-		0.89461779594421387 0.94074368476867676 0.91609930992126465 0 -0.58147215843200684 
-		-0.66952240467071533 0 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 1 1 0.39054358005523682 1 0.65100425481796265 
-		0.44683212041854858 0.3391183614730835 0.40095138549804688 1 0.81356626749038696 
-		0.74279195070266724 1 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0 0 -0.92058444023132324 0 0.75907409191131592 
-		0.89461785554885864 0.94074368476867676 0.91609930992126465 0 -0.58147221803665161 
-		-0.66952228546142578 0 0;
-createNode animCurveTA -n "spotLight1_rotateY";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 3.8681872934326185 19 3.8681872934326185
-		 25 3.8681872934326185 50 0.57245089893821388 63 8.8025775565194131 73 8.5550450643183744
-		 90 3.868187293432618 99 0.54202478837648427 107 -3.0662545122555311 109 -4.4868191421682528
-		 113 -7.764780787500424 117 -9.7133277991701341 136 20.380742840341636 146 38.36102031400042
-		 150 42.123546311292515 180 47.744811063350724;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 0.99947547912597656 0.99107909202575684 
-		0.984527587890625 0.97676229476928711 0.9462851881980896 0.96168947219848633 1 0.81025540828704834 
-		0.82783037424087524 0.99282681941986084 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 -0.032384924590587616 -0.13327497243881226 
-		-0.17522966861724854 -0.21432572603225708 -0.32333314418792725 -0.27414122223854065 
-		0 0.58607691526412964 0.56097859144210815 0.11956122517585754 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 1 1 0.99947541952133179 0.99107909202575684 
-		0.984527587890625 0.97676229476928711 0.9462851881980896 0.96168947219848633 1 0.81025546789169312 
-		0.82783031463623047 0.99282681941986084 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0 0 -0.032384920865297318 -0.13327497243881226 
-		-0.17522966861724854 -0.21432572603225708 -0.32333314418792725 -0.27414122223854065 
-		0 0.58607691526412964 0.56097859144210815 0.11956124007701874 0;
-createNode animCurveTA -n "spotLight1_rotateZ";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 -20.667955246713515 19 -20.667955246713515
-		 25 -20.667955246713515 50 -78.226046420191963 63 -7.2289596764417565 73 -17.318550955015429
-		 90 -20.667955246713575 99 -15.021795287079165 107 -10.29025714517311 109 -11.184075769537953
-		 113 -16.865683088671481 117 -22.666025415438359 136 -23.02293484659786 146 -23.096117120399601
-		 150 -23.167684088085412 180 2.1697912428958626;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 0.97721916437149048 1 0.96630865335464478 
-		1 0.90216302871704102 0.84752422571182251 0.99969780445098877 0.99997907876968384 
-		0.99998980760574341 1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 -0.21223276853561401 0 0.25738614797592163 
-		0 -0.43139532208442688 -0.53075677156448364 -0.024581685662269592 -0.0064709973521530628 
-		-0.0045112953521311283 0 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 1 1 0.97721916437149048 1 0.96630859375 
-		1 0.90216302871704102 0.84752422571182251 0.99969780445098877 0.99997907876968384 
-		0.99998986721038818 1 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0 0 -0.21223276853561401 0 0.25738614797592163 
-		0 -0.43139532208442688 -0.53075677156448364 -0.024581687524914742 -0.0064709973521530628 
-		-0.0045112958177924156 0 0;
-createNode animCurveTU -n "spotLight1_scaleX";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 5.0108995206808018 19 5.0108995206808018
-		 25 5.0108995206808018 50 5.0108995206808018 63 5.0108995206808018 73 5.0108995206808018
-		 90 5.0108995206808018 99 5.0108995206808018 107 5.0108995206808018 109 5.0108995206808018
-		 113 5.0108995206808018 117 5.0108995206808018 136 5.0108995206808018 146 5.0108995206808018
-		 150 5.0108995206808018 180 5.0108995206808018;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-createNode animCurveTU -n "spotLight1_scaleY";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 5.0108995206808018 19 5.0108995206808018
-		 25 5.0108995206808018 50 5.0108995206808018 63 5.0108995206808018 73 5.0108995206808018
-		 90 5.0108995206808018 99 5.0108995206808018 107 5.0108995206808018 109 5.0108995206808018
-		 113 5.0108995206808018 117 5.0108995206808018 136 5.0108995206808018 146 5.0108995206808018
-		 150 5.0108995206808018 180 5.0108995206808018;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-createNode animCurveTU -n "spotLight1_scaleZ";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  1.0416666666666667 1.0523005169380559 19 1.0523005169380559
-		 25 1.0523005169380559 50 1.0523005169380559 63 1.0523005169380559 73 1.0523005169380559
-		 90 1.0523005169380559 99 1.0523005169380559 107 1.0523005169380559 109 1.0523005169380559
-		 113 1.0523005169380559 117 1.0523005169380559 136 1.0523005169380559 146 1.0523005169380559
-		 150 1.0523005169380559 180 1.0523005169380559;
-	setAttr -s 16 ".kit[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kot[1:15]"  1 1 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 16 ".kix[1:15]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[1:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[1:15]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[1:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode opticalFX -n "opticalFX1";
+	setAttr ".lw" -type "matrix" 4.6777252295246408 -1.7645759625833548 -0.33804194370043228 0
+		 -1.3908040054857467e-016 0.94279978643103712 -4.9214065640896489 0 0.37730355609147104 0.96478900840361481 0.18482579303874203 0
+		 22.83919810817391 19.017749132353369 16.127452791028908 1;
 createNode reference -n "sharedReferenceNode";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sharedReferenceNode";
-createNode animCurveTU -n "SchreibtischspotShape_intensity";
+createNode reference -n "Schreibtischlampe2RN";
+	setAttr ".fn[0]" -type "string" "C:/GIT/desklife/01_Models/Schreibtischlampe2.ma";
+	setAttr -s 21 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Schreibtischlampe2RN"
+		"Schreibtischlampe2RN" 0
+		"Schreibtischlampe2RN" 57
+		2 "|Schreibtischlampe2:lampe:LAMP_controller" "translate" " -type \"double3\" 28.411794002017544 14.272715871272649 16.52314049472611"
+		
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"visibility" " -av 1"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"translate" " -type \"double3\" 0.36869484090060273 -0.35082801813741499 2.0149075127312033"
+		
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"translateX" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"translateY" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"translateZ" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"rotate" " -type \"double3\" 49.199013725180343 -74.81447719625848 42.735106561529157"
+		
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"rotateX" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"rotateY" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"rotateZ" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"scaleX" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"scaleY" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator" 
+		"scaleZ" " -av"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1|Schreibtischlampe2:spotLightShape1" 
+		"color" " -type \"float3\" 0.96078432000000002 0.80224918999999995 0.52748941999999999"
+		
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1|Schreibtischlampe2:spotLightShape1" 
+		"intensity" " -av 1.2333345413208008"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1|Schreibtischlampe2:spotLightShape1" 
+		"shadowRays" " 23"
+		2 "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1|Schreibtischlampe2:spotLightShape1" 
+		"lightRadius" " 0.895652174949646"
+		2 "|Schreibtischlampe2:lampe:pointLight1" "translate" " -type \"double3\" 0 34 0.07"
+		
+		2 "|Schreibtischlampe2:lampe:pointLight1" "scale" " -type \"double3\" 1.1539310559875398 1.1539310559875398 1.1539310559875398"
+		
+		2 "|Schreibtischlampe2:lampe:pointLight1|Schreibtischlampe2:lampe:pointLightShape1" 
+		"color" " -type \"float3\" 1 0.88300002 0.73000001999999997"
+		2 "|Schreibtischlampe2:lampe:pointLight1|Schreibtischlampe2:lampe:pointLightShape1" 
+		"intensity" " 0.60000002384185791"
+		2 "|Schreibtischlampe2:lampe:pointLight1|Schreibtischlampe2:lampe:pointLightShape1" 
+		"shadowColor" " -type \"float3\" 0.109 0.109 0.109"
+		2 "|Schreibtischlampe2:lampe:pointLight1|Schreibtischlampe2:lampe:pointLightShape1" 
+		"useDepthMapShadows" " 1"
+		2 "|Schreibtischlampe2:lampe:pointLight1|Schreibtischlampe2:lampe:pointLightShape1" 
+		"dmapFilterSize" " 4"
+		2 "|Schreibtischlampe2:lampe:pointLight1|Schreibtischlampe2:lampe:pointLightShape1" 
+		"dmapBias" " 0.31305035948753357"
+		2 "|Schreibtischlampe2:lampe:pointLight1|Schreibtischlampe2:lampe:pointLightShape1" 
+		"fogShadowIntensity" " 7"
+		2 "|Schreibtischlampe2:lampe:pointLight1|Schreibtischlampe2:lampe:pointLightShape1" 
+		"useOnlySingleDmap" " 0"
+		2 "Schreibtischlampe2:lampe:bulb" "diffuse" " 0.69230771064758301"
+		2 "Schreibtischlampe2:lampe:bulb" "color" " -type \"float3\" 1 0.78333330000000001 0.5"
+		
+		2 "Schreibtischlampe2:lampe:bulb" "transparency" " -type \"float3\" 0.419 0.419 0.419"
+		
+		2 "Schreibtischlampe2:lampe:bulb" "ambientColor" " -type \"float3\" 0.60000001999999997 0.49110000999999998 0.33000001000000001"
+		
+		2 "Schreibtischlampe2:lampe:bulb" "translucence" " 0.25600001215934753"
+		2 "Schreibtischlampe2:lampe:bulb" "glowIntensity" " 0.28600001335144043"
+		2 "Schreibtischlampe2:lampe:bulb" "reflectivity" " 0.40200001001358032"
+		2 "Schreibtischlampe2:lampe:bulb" "cosinePower" " 39.692001342773438"
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.rotateX" 
+		"Schreibtischlampe2RN.placeHolderList[1]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.rotateY" 
+		"Schreibtischlampe2RN.placeHolderList[2]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.rotateZ" 
+		"Schreibtischlampe2RN.placeHolderList[3]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.translateX" 
+		"Schreibtischlampe2RN.placeHolderList[4]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.translateY" 
+		"Schreibtischlampe2RN.placeHolderList[5]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.translateZ" 
+		"Schreibtischlampe2RN.placeHolderList[6]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.visibility" 
+		"Schreibtischlampe2RN.placeHolderList[7]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.scaleX" 
+		"Schreibtischlampe2RN.placeHolderList[8]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.scaleY" 
+		"Schreibtischlampe2RN.placeHolderList[9]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:lamp_rotator.scaleZ" 
+		"Schreibtischlampe2RN.placeHolderList[10]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.translateX" 
+		"Schreibtischlampe2RN.placeHolderList[11]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.translateY" 
+		"Schreibtischlampe2RN.placeHolderList[12]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.translateZ" 
+		"Schreibtischlampe2RN.placeHolderList[13]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.visibility" 
+		"Schreibtischlampe2RN.placeHolderList[14]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.rotateX" 
+		"Schreibtischlampe2RN.placeHolderList[15]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.rotateY" 
+		"Schreibtischlampe2RN.placeHolderList[16]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.rotateZ" 
+		"Schreibtischlampe2RN.placeHolderList[17]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.scaleX" 
+		"Schreibtischlampe2RN.placeHolderList[18]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.scaleY" 
+		"Schreibtischlampe2RN.placeHolderList[19]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1.scaleZ" 
+		"Schreibtischlampe2RN.placeHolderList[20]" ""
+		5 4 "Schreibtischlampe2RN" "|Schreibtischlampe2:lampe:LAMP_controller|Schreibtischlampe2:lampe:joint1|Schreibtischlampe2:lampe:joint2|Schreibtischlampe2:lampe:joint3|Schreibtischlampe2:lampe:joint4|Schreibtischlampe2:spotLight1|Schreibtischlampe2:spotLightShape1.intensity" 
+		"Schreibtischlampe2RN.placeHolderList[21]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode animCurveTL -n "spotLight1_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1.0416666666666667 0 19 0 20 1.2799999713897705;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 0.67423524558193471 24 0.67423524558193471;
+createNode animCurveTL -n "spotLight1_translateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 -0.042560789381587472
+		 24 -0.042560789381587472;
+createNode animCurveTL -n "spotLight1_translateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 -0.020009901961529408
+		 24 -0.020009901961529408;
+createNode animCurveTU -n "spotLight1_visibility";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 1 24 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTA -n "spotLight1_rotateX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 -50.15764715482193 24 -50.15764715482193;
+createNode animCurveTA -n "spotLight1_rotateY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 -89.616428514290249 24 -89.616428514290249;
+createNode animCurveTA -n "spotLight1_rotateZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 52.099509119280661 24 52.099509119280661;
+createNode animCurveTU -n "spotLight1_scaleX";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 1.211547450207566 24 1.211547450207566;
+createNode animCurveTU -n "spotLight1_scaleY";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 1.2115474502075665 24 1.2115474502075665;
+createNode animCurveTU -n "spotLight1_scaleZ";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  1.0416666666666667 1.211547450207566 24 1.211547450207566;
+createNode animCurveTL -n "lamp_rotator_translateX1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 0.19656161893180199 25 0.19656161893180199
+		 60 0.19656161893180199 99 0.19656161893180199 130 -0.1993249728895182 156 -0.1993249728895182
+		 195 0.36869484090060273;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  1 1;
+	setAttr -s 7 ".kiy[5:6]"  0 0;
+	setAttr -s 7 ".kox[5:6]"  1 1;
+	setAttr -s 7 ".koy[5:6]"  0 0;
+createNode animCurveTL -n "lamp_rotator_translateY1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 -1.2238863469924999 25 -1.2238863469924999
+		 60 0.67601487239804203 99 0.67601487239804203 130 0.67601487239804203 156 0.67601487239804203
+		 195 -0.35082801813741499;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  1 1;
+	setAttr -s 7 ".kiy[5:6]"  0 0;
+	setAttr -s 7 ".kox[5:6]"  1 1;
+	setAttr -s 7 ".koy[5:6]"  0 0;
+createNode animCurveTL -n "lamp_rotator_translateZ1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 2.0460757613520295 25 2.0460757613520295
+		 60 2.0460757613520295 99 2.0460757613520295 130 2.1177591445967443 156 2.1177591445967443
+		 195 2.0149075127312033;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  1 1;
+	setAttr -s 7 ".kiy[5:6]"  0 0;
+	setAttr -s 7 ".kox[5:6]"  1 1;
+	setAttr -s 7 ".koy[5:6]"  0 0;
+createNode animCurveTU -n "lamp_rotator_visibility1";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 1 25 1 60 1 99 1 130 1
+		 156 1 195 1;
+	setAttr -s 7 ".kit[0:6]"  9 9 9 9 9 1 1;
+	setAttr -s 7 ".kix[5:6]"  1 1;
+	setAttr -s 7 ".kiy[5:6]"  0 0;
+createNode animCurveTA -n "lamp_rotator_rotateX1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 83.069869870688734 25 83.069869870688734
+		 60 83.069869870688734 99 50.717712183583338 130 20.204444997268364 156 10.231417253663457
+		 195 49.199013725180343;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  0.96446788311004639 1;
+	setAttr -s 7 ".kiy[5:6]"  0.26419997215270996 0;
+	setAttr -s 7 ".kox[5:6]"  0.96446788311004639 1;
+	setAttr -s 7 ".koy[5:6]"  0.26419997215270996 0;
+createNode animCurveTA -n "lamp_rotator_rotateY1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 6.1761862724565617 25 6.1761862724565617
+		 60 6.1761862724565617 99 6.1761862724565733 130 -75.73275155996896 156 -75.732751559968918
+		 195 -74.81447719625848;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  1 1;
+	setAttr -s 7 ".kiy[5:6]"  0 0;
+	setAttr -s 7 ".kox[5:6]"  1 1;
+	setAttr -s 7 ".koy[5:6]"  0 0;
+createNode animCurveTA -n "lamp_rotator_rotateZ1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 3.998903927350705e-016
+		 25 3.998903927350705e-016 60 3.998903927350705e-016 99 -3.998903927350704e-016 130 36.792350498396047
+		 156 36.792350498395969 195 42.735106561529157;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  0.9881126880645752 1;
+	setAttr -s 7 ".kiy[5:6]"  0.15373153984546661 0;
+	setAttr -s 7 ".kox[5:6]"  0.98811262845993042 1;
+	setAttr -s 7 ".koy[5:6]"  0.15373153984546661 0;
+createNode animCurveTU -n "lamp_rotator_scaleX1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 1 25 1 60 1 99 1 130 1
+		 156 1 195 1;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  1 1;
+	setAttr -s 7 ".kiy[5:6]"  0 0;
+	setAttr -s 7 ".kox[5:6]"  1 1;
+	setAttr -s 7 ".koy[5:6]"  0 0;
+createNode animCurveTU -n "lamp_rotator_scaleY1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 1 25 1 60 1 99 1 130 1
+		 156 1 195 1;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  1 1;
+	setAttr -s 7 ".kiy[5:6]"  0 0;
+	setAttr -s 7 ".kox[5:6]"  1 1;
+	setAttr -s 7 ".koy[5:6]"  0 0;
+createNode animCurveTU -n "lamp_rotator_scaleZ1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  1.0416666666666667 1 25 1 60 1 99 1 130 1
+		 156 1 195 1;
+	setAttr -s 7 ".kit[5:6]"  1 1;
+	setAttr -s 7 ".kot[5:6]"  1 1;
+	setAttr -s 7 ".kix[5:6]"  1 1;
+	setAttr -s 7 ".kiy[5:6]"  0 0;
+	setAttr -s 7 ".kox[5:6]"  1 1;
+	setAttr -s 7 ".koy[5:6]"  0 0;
+createNode animCurveTU -n "spotLightShape1_intensity";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  1.0416666666666667 0 24 0 25 1.2333345413208008;
 	setAttr -s 3 ".kit[1:2]"  1 18;
 	setAttr -s 3 ".kot[1:2]"  1 18;
 	setAttr -s 3 ".kix[1:2]"  1 1;
@@ -1077,26 +1179,26 @@ createNode animCurveTU -n "SchreibtischspotShape_intensity";
 	setAttr -s 3 ".kox[1:2]"  1 1;
 	setAttr -s 3 ".koy[1:2]"  0 0;
 select -ne :time1;
-	setAttr ".o" 191;
-	setAttr ".unw" 191;
+	setAttr ".o" 201;
+	setAttr ".unw" 201;
 select -ne :renderPartition;
-	setAttr -s 141 ".st";
+	setAttr -s 143 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 124 ".s";
+	setAttr -s 126 ".s";
 select -ne :postProcessList1;
 	setAttr -s 4 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 74 ".u";
+	setAttr -s 76 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 27 ".r";
 select -ne :lightList1;
-	setAttr -s 3 ".l";
+	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 63 ".tx";
+	setAttr -s 65 ".tx";
 select -ne :lambert1;
 select -ne :initialShadingGroup;
-	setAttr -s 27 ".dsm";
+	setAttr -s 25 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -1105,13 +1207,19 @@ select -ne :initialMaterialInfo;
 select -ne :defaultRenderGlobals;
 	setAttr ".mcfr" 25;
 	setAttr ".ren" -type "string" "mentalRay";
+	setAttr ".outf" 32;
+	setAttr ".imfkey" -type "string" "png";
+	setAttr ".an" yes;
+	setAttr ".ef" 200;
+	setAttr ".pff" yes;
+	setAttr ".peie" 2;
 select -ne :defaultResolution;
-	setAttr ".w" 1920;
-	setAttr ".h" 1080;
+	setAttr ".w" 1280;
+	setAttr ".h" 720;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7777777910232544;
 select -ne :defaultLightSet;
-	setAttr -s 3 ".dsm";
+	setAttr -s 2 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
@@ -1124,28 +1232,27 @@ select -ne :hardwareRenderingGlobals;
 select -ne :defaultHardwareRenderGlobals;
 	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
 select -ne :ikSystem;
-connectAttr "lamp_rotator_rotateX.o" "Szene1RN.phl[1]";
-connectAttr "lamp_rotator_rotateY.o" "Szene1RN.phl[2]";
-connectAttr "lamp_rotator_rotateZ.o" "Szene1RN.phl[3]";
-connectAttr "lamp_rotator_visibility.o" "Szene1RN.phl[4]";
-connectAttr "lamp_rotator_translateX.o" "Szene1RN.phl[5]";
-connectAttr "lamp_rotator_translateY.o" "Szene1RN.phl[6]";
-connectAttr "lamp_rotator_translateZ.o" "Szene1RN.phl[7]";
-connectAttr "lamp_rotator_scaleX.o" "Szene1RN.phl[8]";
-connectAttr "lamp_rotator_scaleY.o" "Szene1RN.phl[9]";
-connectAttr "lamp_rotator_scaleZ.o" "Szene1RN.phl[10]";
-connectAttr "spotLight1_translateX.o" "Schreibtischspot.tx";
-connectAttr "spotLight1_translateY.o" "Schreibtischspot.ty";
-connectAttr "spotLight1_translateZ.o" "Schreibtischspot.tz";
-connectAttr "spotLight1_visibility.o" "Schreibtischspot.v";
-connectAttr "spotLight1_rotateX.o" "Schreibtischspot.rx";
-connectAttr "spotLight1_rotateY.o" "Schreibtischspot.ry";
-connectAttr "spotLight1_rotateZ.o" "Schreibtischspot.rz";
-connectAttr "spotLight1_scaleX.o" "Schreibtischspot.sx";
-connectAttr "spotLight1_scaleY.o" "Schreibtischspot.sy";
-connectAttr "spotLight1_scaleZ.o" "Schreibtischspot.sz";
-connectAttr "opticalFX1.ln" "SchreibtischspotShape.lg";
-connectAttr "SchreibtischspotShape_intensity.o" "SchreibtischspotShape.in";
+connectAttr "lamp_rotator_rotateX1.o" "Schreibtischlampe2RN.phl[1]";
+connectAttr "lamp_rotator_rotateY1.o" "Schreibtischlampe2RN.phl[2]";
+connectAttr "lamp_rotator_rotateZ1.o" "Schreibtischlampe2RN.phl[3]";
+connectAttr "lamp_rotator_translateX1.o" "Schreibtischlampe2RN.phl[4]";
+connectAttr "lamp_rotator_translateY1.o" "Schreibtischlampe2RN.phl[5]";
+connectAttr "lamp_rotator_translateZ1.o" "Schreibtischlampe2RN.phl[6]";
+connectAttr "lamp_rotator_visibility1.o" "Schreibtischlampe2RN.phl[7]";
+connectAttr "lamp_rotator_scaleX1.o" "Schreibtischlampe2RN.phl[8]";
+connectAttr "lamp_rotator_scaleY1.o" "Schreibtischlampe2RN.phl[9]";
+connectAttr "lamp_rotator_scaleZ1.o" "Schreibtischlampe2RN.phl[10]";
+connectAttr "spotLight1_translateX.o" "Schreibtischlampe2RN.phl[11]";
+connectAttr "spotLight1_translateY.o" "Schreibtischlampe2RN.phl[12]";
+connectAttr "spotLight1_translateZ.o" "Schreibtischlampe2RN.phl[13]";
+connectAttr "spotLight1_visibility.o" "Schreibtischlampe2RN.phl[14]";
+connectAttr "spotLight1_rotateX.o" "Schreibtischlampe2RN.phl[15]";
+connectAttr "spotLight1_rotateY.o" "Schreibtischlampe2RN.phl[16]";
+connectAttr "spotLight1_rotateZ.o" "Schreibtischlampe2RN.phl[17]";
+connectAttr "spotLight1_scaleX.o" "Schreibtischlampe2RN.phl[18]";
+connectAttr "spotLight1_scaleY.o" "Schreibtischlampe2RN.phl[19]";
+connectAttr "spotLight1_scaleZ.o" "Schreibtischlampe2RN.phl[20]";
+connectAttr "spotLightShape1_intensity.o" "Schreibtischlampe2RN.phl[21]";
 connectAttr ":mentalrayGlobals.msg" ":mentalrayItemsList.glb";
 connectAttr ":miDefaultOptions.msg" ":mentalrayItemsList.opt" -na;
 connectAttr ":miDefaultFramebuffer.msg" ":mentalrayItemsList.fb" -na;
@@ -1157,16 +1264,21 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr "lamp_rotator_rotateX.o" "Szene1RN.phl[1]";
+connectAttr "lamp_rotator_rotateY.o" "Szene1RN.phl[2]";
+connectAttr "lamp_rotator_rotateZ.o" "Szene1RN.phl[3]";
+connectAttr "lamp_rotator_visibility.o" "Szene1RN.phl[4]";
+connectAttr "lamp_rotator_translateX.o" "Szene1RN.phl[5]";
+connectAttr "lamp_rotator_translateY.o" "Szene1RN.phl[6]";
+connectAttr "lamp_rotator_translateZ.o" "Szene1RN.phl[7]";
+connectAttr "lamp_rotator_scaleX.o" "Szene1RN.phl[8]";
+connectAttr "lamp_rotator_scaleY.o" "Szene1RN.phl[9]";
+connectAttr "lamp_rotator_scaleZ.o" "Szene1RN.phl[10]";
 connectAttr "sharedReferenceNode.sr" "Szene1RN.sr";
-connectAttr "SchreibtischspotShape.wm" "opticalFX1.lw";
-connectAttr "SchreibtischspotShape.cl" "opticalFX1.lr";
-connectAttr "directedDiscShape1.vf" "opticalFX1.gvb";
+connectAttr "sharedReferenceNode.sr" "Schreibtischlampe2RN.sr";
 connectAttr "opticalFX1.msg" ":postProcessList1.p" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "SchreibtischspotShape.ltd" ":lightList1.l" -na;
-connectAttr "directedDiscShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "Schreibtischspot.iog" ":defaultLightSet.dsm" -na;
 dataStructure -fmt "raw" -as "name=externalContentTable:string=node:string=key:string=upath:uint32=upathcrc:string=rpath:string=roles";
-applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"Szene1RN\" \"\" \"C:/GIT/desklife/03_Scenes/Szene1.ma\" 3278277900 \"C:/GIT/desklife/03_Scenes/Szene1.ma\" \"FileRef\"\n1\n\"|Schreibtischspot|SchreibtischspotShape\" \"dmapName\" \"depthmap\" 2097411553 \"\" \"sourceImages\"\nendStream\nendChannel\nendAssociations\n" 
+applyMetadata -fmt "raw" -v "channel\nname externalContentTable\nstream\nname v1.0\nindexType numeric\nstructure externalContentTable\n0\n\"Szene1RN\" \"\" \"C:/GIT/desklife/03_Scenes/Szene1.ma\" 3278277900 \"C:/GIT/desklife/03_Scenes/Szene1.ma\" \"FileRef\"\n1\n\"Schreibtischlampe2RN\" \"\" \"C:/GIT/desklife/01_Models/Schreibtischlampe2.ma\" 2372844177 \"C:/GIT/desklife/01_Models/Schreibtischlampe2.ma\" \"FileRef\"\nendStream\nendChannel\nendAssociations\n" 
 		-scn;
 // End of Shot2.ma
